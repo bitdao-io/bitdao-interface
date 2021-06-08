@@ -110,36 +110,38 @@ export default {
         pin: true, // pin the trigger element while active
         start: 'top top', // when the top of the trigger hits the top of the viewport
         // end: '+=500', // end after scrolling 500px beyond the start
-        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        snap: {
-          snapTo: 'labels', // snap to the closest label in the timeline
-          duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-          delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-          ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
-        }
+        scrub: 1 // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        // snap: {
+        //   snapTo: 'labels', // snap to the closest label in the timeline
+        //   duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+        //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+        //   ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
+        // }
       }
     })
     // 0 120 240
     tl.add(TweenMax.to(flow1, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'first')
+      .add(TweenMax.to(flow1, 1.5, { }), 'first')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 120 }), 'second')
       .add(TweenMax.to(flow1, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'second')
       .add(TweenMax.to(flow2, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'second')
+      .add(TweenMax.to(flow2, 1.5, { }), 'second')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 240 }), 'third')
       .add(TweenMax.to(flow2, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'third')
       .add(TweenMax.to(flow3, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'third')
-    tl.add(TweenMax.to(flow3, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'third')
+      .add(TweenMax.to(flow3, 1.5, { }), 'third')
+    // tl.add(TweenMax.to(flow3, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'forth')
   }
 }
 </script>
 
 <style scoped lang="scss">
 .bitflow {
-  // background: linear-gradient(180deg,#43A3C6, #F6EDF6 50%, #77CFF5);
   background-size: cover;
   background-blend-mode: multiply;
-  height: 1200px;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;

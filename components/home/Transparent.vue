@@ -42,7 +42,6 @@ export default {
 <style scoped lang="scss">
 .transparent-container {
   position: relative;
-  // background: linear-gradient(180deg, #E4E8F4 0%, #EAEAF5 100%);
   background-size: cover;
   background-blend-mode: multiply;
 }

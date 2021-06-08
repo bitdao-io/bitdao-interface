@@ -50,32 +50,35 @@ export default {
       scrollTrigger: {
         trigger: container,
         pin: true, // pin the trigger element while active
-        start: 'top 100px', // when the top of the trigger hits the top of the viewport
+        start: 'top 50px', // when the top of the trigger hits the top of the viewport
         // end: '+=500', // end after scrolling 500px beyond the start
-        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        snap: {
-          snapTo: 'labels', // snap to the closest label in the timeline
-          duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-          delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-          ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
-        }
+        scrub: 1 // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        // snap: {
+        //   snapTo: 'labels', // snap to the closest label in the timeline
+        //   duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+        //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+        //   ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
+        // }
       }
     })
-    tl.add(TweenMax.from(selector, 1, { y: 100, opacity: 0 }), 'first')
+    tl.add(TweenMax.from(selector, 1, { y: 50, opacity: 0 }), 'first')
       .add(TweenMax.to(growth1, 1, { opacity: 1 }), 'first')
+      .add(TweenMax.to(growth1, 1.5, { opacity: 1 }), 'first')
       .add(TweenMax.to(rocket, 1, { y: 300 }), 'first')
 
-      .add(TweenMax.to(selector, 1, { y: 360 }), 'second')
+      .add(TweenMax.to(selector, 1, { y: 310 }), 'second')
       .add(TweenMax.to(growth1, 1, { opacity: 0.5 }), 'second')
       .add(TweenMax.to(growth2, 1, { opacity: 1 }), 'second')
+      .add(TweenMax.to(growth2, 1.5, { opacity: 1 }), 'second')
       .add(TweenMax.to(rocket, 1, { y: 100 }), 'second')
 
-      .add(TweenMax.to(selector, 1, { y: 580 }), 'third')
+      .add(TweenMax.to(selector, 1, { y: 530 }), 'third')
       .add(TweenMax.to(growth2, 1, { opacity: 0.5 }), 'third')
       .add(TweenMax.to(growth3, 1, { opacity: 1 }), 'third')
+      .add(TweenMax.to(growth3, 1.5, { opacity: 1 }), 'third')
       .add(TweenMax.to(rocket, 1, { y: -100 }), 'third')
 
-      .add(TweenMax.to(selector, 1, { y: 700, opacity: 0 }), 'forth')
+      .add(TweenMax.to(selector, 1, { y: 650, opacity: 0 }), 'forth')
       .add(TweenMax.to(growth3, 1, { opacity: 0.5 }), 'forth')
       .add(TweenMax.to(rocket, 1, { y: -500 }), 'forth')
   }
@@ -88,11 +91,10 @@ export default {
 }
 .growth-container {
   position: relative;
-  // background: linear-gradient(180deg, #76CFF5 0%, #43A3C6 100%);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
-  height: 1600px;
+  height: 1200px;
 }
 .growth {
   position: relative;
@@ -107,7 +109,7 @@ export default {
     left: 100px;
     .select-bg {
       position: absolute;
-      transform: translate(0, 150px); // 150, 360, 580
+      transform: translate(0, 100px); // 150, 360, 580
       background: linear-gradient(81.64deg, #FFF0F1 -20.74%, #FFFFFF 90.58%);
       box-shadow: 14px 13px 26px rgba(253, 233, 233, 0.24);
       border-radius: 28px;
@@ -120,7 +122,7 @@ export default {
       font-size: 42px;
       font-weight: 700;
       color: #0E47EF;
-      margin-bottom: 150px;
+      margin-bottom: 100px;
       position: relative;
       span  {
         color: #000;
@@ -163,7 +165,7 @@ export default {
   width: 100%;
   left: 0;
   right: 0;
-  bottom: 400px;
+  bottom: -100px;
   background-size: cover;
   background-blend-mode: multiply;
   z-index: 1;

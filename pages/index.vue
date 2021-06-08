@@ -4,18 +4,27 @@
     <Video />
     <div class="section-container">
       <Treasury />
-      <Transparent />
-      <Blank />
-      <Vision />
-      <Blank />
-      <BitCounts />
-      <Blank />
-      <Forum />
-      <Blank />
-      <Growth />
-      <Blank />
-      <BitFlow />
-      <Partner />
+      <div class="treasury-section">
+        <Transparent />
+      </div>
+      <div class="vision-section">
+        <Vision />
+      </div>
+      <div class="counts-section">
+        <BitCounts />
+      </div>
+      <div class="forum-section">
+        <Forum />
+      </div>
+      <div class="growth-section">
+        <Growth />
+      </div>
+      <div class="flow-section">
+        <BitFlow />
+      </div>
+      <div class="partner-section">
+        <Partner />
+      </div>
     </div>
     <Footer />
   </div>
@@ -33,7 +42,7 @@ import Forum from '@/components/home/Forum.vue'
 import Growth from '@/components/home/Growth.vue'
 import BitFlow from '@/components/home/Bitflow.vue'
 import Partner from '@/components/home/Partner.vue'
-import Blank from '@/components/home/Blank.vue'
+// import Blank from '@/components/home/Blank.vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 if (process.client) { gsap.registerPlugin(ScrollTrigger) }
@@ -50,19 +59,49 @@ export default {
     Forum,
     Growth,
     BitFlow,
-    Partner,
-    Blank
+    Partner
+    // Blank
   }
 }
 </script>
 
+<style lang="scss" scoped>
+.treasury-section {
+  background: linear-gradient(180deg, #E4E8F4 0%, #EAEAF5 100%);
+  padding: 200px 0;
+}
+.vision-section {
+  background: linear-gradient(#EAEAF5,#FDEFF6);
+  padding-bottom: 200px;
+}
+.counts-section {
+  background: linear-gradient(180deg, #FDEFF6 80%, #BEDDEF);
+  padding: 200px 0;
+}
+.forum-section {
+  background: linear-gradient(180deg,#BEDDEF, #76CFF5);
+  padding: 100px 0;
+}
+.growth-section {
+  background: linear-gradient(180deg, #76CFF5 0%, #43A3C6 100%);
+  padding: 100px 0;
+}
+.flow-section {
+  background: linear-gradient(180deg,#43A3C6, #F6EDF6 10%, #F6EDF6 50%, #F6EDF6 90%, #77CFF5);
+  padding: 200px 0;
+}
+.partner-section {
+  background: linear-gradient(180deg, #77CFF5 0%, #1CADDF 100%);
+  padding: 200px 0;
+}
+</style>
 <style lang="scss">
 .container {
   overflow-x: hidden;
 }
 .section-container {
   // background: linear-gradient(179.92deg, #D9E5F3 0.07%, #FDEFF6 25.84%, #BEDDEF 42.18%, #76CFF5 57.8%, #43A3C6 64.27%, #F6EDF6 71.82%, rgba(247, 238, 246, 0.61) 82.8%, #77CFF5 88.87%, #1CADDF 104.81%);
-  background-color: #76CFF5;
+  // background-color: #76CFF5;
 }
 
 // .title {

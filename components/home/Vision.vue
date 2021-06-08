@@ -29,14 +29,14 @@ export default {
         trigger: container,
         pin: true, // pin the trigger element while active
         start: 'top top', // when the top of the trigger hits the top of the viewport
-        end: '+=500', // end after scrolling 500px beyond the start
-        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        snap: {
-          snapTo: 'labels', // snap to the closest label in the timeline
-          duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-          delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-          ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
-        }
+        // end: '+=500', // end after scrolling 500px beyond the start
+        scrub: 1 // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        // snap: {
+        //   snapTo: 'labels', // snap to the closest label in the timeline
+        //   duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+        //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+        //   ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
+        // }
       },
       defaults: { duration: 10 }
     })
@@ -61,7 +61,6 @@ export default {
 }
 .vision-container {
   position: relative;
-  // background: linear-gradient(#EAEAF5,#FDEFF6);
   background-size: cover;
   background-blend-mode: multiply;
   .vision-inner {
@@ -71,7 +70,7 @@ export default {
     color: #0E47EF;
     position: relative;
     width: 1450px;
-    height: 880px;
+    height: 800px;
     margin: auto;
     // -webkit-filter: blur(5px); filter: blur(5px);
     h1 {
@@ -93,7 +92,7 @@ export default {
       padding: 50px;
       @include flex-start;
       position: absolute;
-      transform: translate(-100px, 230px);
+      transform: translate(-100px, 150px);
       z-index: 100;
     }
     .innovation {
@@ -102,7 +101,7 @@ export default {
       position: absolute;
       padding: 140px 50px 20px;
       @include flex-start;
-      transform: translate(1150px, 100px);
+      transform: translate(1150px, 0);
       z-index: 96;
       &:after {
         content: "";

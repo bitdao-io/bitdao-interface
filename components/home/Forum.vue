@@ -48,7 +48,6 @@ export default {
 
 <style scoped lang="scss">
 .forum-container {
-  // background: linear-gradient(180deg,#BEDDEF, #76CFF5);
   background-size: auto;
   background-blend-mode: multiply;
   height: 100vh;

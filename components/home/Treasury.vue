@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
 .treasury {
-  // background: linear-gradient(#D9E5F3, #E4E8F4);
+  background: linear-gradient(#D9E5F3, #E4E8F4);
   display: flex;
   align-items: center;
   justify-content: center;

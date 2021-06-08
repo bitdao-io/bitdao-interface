@@ -70,8 +70,6 @@
 
 <style scoped lang="scss">
 .partner {
-  // background: linear-gradient(180deg, #77CFF5 0%, #1CADDF 100%);
-  padding: 200px 0;
   display: flex;
   align-items: center;
   justify-content: center;
