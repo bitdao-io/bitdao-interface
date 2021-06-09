@@ -1,0 +1,145 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  font-variant: none;
+  background-color: "F7F8FA";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Roboto", "Arial", sans-serif;
+
+  line-height: 1.55;
+  /* max-width: 1440px; */
+  width: 100%;
+  margin: 0px auto;
+  font-weight: 400 !important;
+  color: white;
+  
+  @media (min-width: 1441px) {
+      overflow-x: visible;
+  }
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+.title{
+  letter-spacing: -0.05em;
+  font-size: 72px;
+}
+
+h1 {
+  margin-top: 1.75rem ;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+h3 {
+  font-weight: 400; }
+
+
+
+#gatsby-focus-wrapper{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+a{
+  // color: #FF007A;
+  text-decoration: none;
+}
+
+button{
+  color: #010101;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+strong{
+  font-weight: bold;
+  color: #191B1F;
+}
+
+.docs-body {
+  .anchor {
+    position: absolute;
+    top: 0;
+    font-size: 100%;
+    left: -1.5rem;
+    letter-spacing: -1px;
+    width: 24px;
+  }
+  
+  .anchor svg {
+    opacity: 0;
+    transform: translateX(3px);
+    transition: all 0.3s ease;
+  }
+  
+  .anchor:hover svg {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  p, h1, h2, h3, ul {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 24px;
+  }
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+  ol li {
+    list-style-type: decimal;
+  }
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  ol li, ul li {
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+  }
+  h1 {
+    color: #0E47EF;
+  }
+}

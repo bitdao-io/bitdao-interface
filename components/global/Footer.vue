@@ -94,7 +94,7 @@
 
 <style scoped lang="scss">
 footer {
-  background: #fff;
+  background: linear-gradient(180deg, #ECF8FF 0%, rgba(255, 255, 255, 0) 100%);
   color: #2D82B7;
   margin: auto;
   .footer-container{

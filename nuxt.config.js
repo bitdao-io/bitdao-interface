@@ -45,8 +45,31 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs',
+      [
+        'markdown-it-anchor',
+        {
+          level: 1,
+          // slugify: string => string,
+          permalink: true,
+          // renderPermalink: (slug, opts, state, permalink) => {},
+          permalinkClass: 'header-anchor',
+          permalinkSymbol: '¶',
+          permalinkBefore: true
+        }
+      ],
+      'markdown-it-toc-done-right'
+    ]
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
