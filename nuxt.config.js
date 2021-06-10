@@ -28,7 +28,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vue_plugins.js'
+    '@/plugins/vue_plugins.js',
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -52,6 +53,10 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
+    html: false,
+    injected: true,
+    xhtmlOut: true,
+    typographer: true,
     use: [
       'markdown-it-div',
       'markdown-it-attrs',

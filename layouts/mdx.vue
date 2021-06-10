@@ -6,7 +6,7 @@
         {{ title }} <svg-icon class="icon" icon-class="title-suffix" />
       </h1>
       <div class="sidebar-body">
-        <Toc />
+        <Toc :tocs="toc" />
         <div class="docs-body">
           <Nuxt />
         </div>
@@ -27,10 +27,12 @@ export default {
     Footer,
     Toc
   },
-  props: {
-    title: {
-      type: String,
-      default: 'BitDAO 🚀 🌙 ToDa Moon'
+  computed: {
+    title () {
+      return this.$store.state.docs.title
+    },
+    toc () {
+      return this.$store.state.docs.toc
     }
   }
 }
@@ -44,7 +46,7 @@ export default {
   padding: 4rem 5rem;
   box-sizing: border-box;
   position: relative;
-  width: 1200px;
+  max-width: 1450px;
   margin: auto;
   h1.docs-title {
     font-size: 48px;
@@ -66,6 +68,8 @@ export default {
     }
   }
 }
-.docs-body {}
+.docs-body {
+  margin-left: 100px;
+}
 .toc-sidebar{}
 </style>

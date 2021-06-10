@@ -48,7 +48,7 @@ and at least 300,000,000 votes are cast for the proposal, it is queued in the Ti
 2 days. The proposal minimum delegate amount, the voting delay, and voting period can be changed through
 governance.
 
-![](images/governance-flow.png)
+![](@/assets/image/governance-flow.svg)
 
 # BIT
 BIT is an ERC-20 token that allows the owner to delegate voting rights to any address, including their own address.
@@ -285,7 +285,168 @@ export default {
     Color2,
     KeyEventsTable
   },
-  layout: 'mdx'
+  layout: 'mdx',
+  data () {
+    return {
+      title: 'Governance',
+      toc: [
+        {
+          text: 'Overview',
+          href: 'Overview',
+          level: 1
+        },
+        {
+          text: 'Code',
+          href: 'Code',
+          level: 1
+        },
+        {
+          text: 'Deployed Contracts',
+          href: 'DeployedContracts',
+          level: 1
+        },
+        {
+          text: 'Process',
+          href: 'Process',
+          level: 1
+        },
+        {
+          text: 'Glossary',
+          href: 'Glossary',
+          level: 1
+        },
+        {
+          text: 'Governance Reference',
+          href: 'GovernanceReference',
+          level: 1
+        },
+        {
+          text: 'BIT',
+          href: 'BIT',
+          level: 1
+        },
+        {
+          text: 'Delegate',
+          href: 'Delegate',
+          level: 1
+        },
+        {
+          text: 'Delegate By Signature ',
+          href: 'DelegateBySignature',
+          level: 1
+        },
+        {
+          text: 'Get Current Votes',
+          href: 'GetCurrentVotes',
+          level: 1
+        },
+        {
+          text: 'Get Prior Votes ',
+          href: 'GetPriorVotes',
+          level: 1
+        },
+        {
+          text: 'Key Events',
+          href: 'KeyEvents',
+          level: 1
+        },
+        {
+          text: 'Governor Bravo',
+          href: 'GovernorBravo',
+          level: 1
+        },
+        {
+          text: 'Quorum Votes',
+          href: 'QuorumVotes',
+          level: 1
+        },
+        {
+          text: 'Proposal Threshold ',
+          href: 'ProposalThreshold',
+          level: 1
+        },
+        {
+          text: 'Proposal Max Operations ',
+          href: 'ProposalMaxOperations',
+          level: 1
+        },
+        {
+          text: 'Voting Delay',
+          href: 'VotingDelay',
+          level: 1
+        },
+        {
+          text: 'Voting Period',
+          href: 'VotingPeriod',
+          level: 1
+        },
+        {
+          text: 'Propose',
+          href: 'Propose',
+          level: 1
+        },
+        {
+          text: 'Queue',
+          href: 'Queue',
+          level: 1
+        },
+        {
+          text: 'Execute',
+          href: 'Execute',
+          level: 1
+        },
+        {
+          text: 'Cancel',
+          href: 'Cancel',
+          level: 1
+        },
+        {
+          text: 'Get Actions',
+          href: 'GetActions',
+          level: 1
+        },
+        {
+          text: 'Get Receipt',
+          href: 'GetReceipt',
+          level: 1
+        },
+        {
+          text: 'State',
+          href: 'State',
+          level: 1
+        },
+        {
+          text: 'Cast Vote',
+          href: 'CastVote',
+          level: 1
+        },
+        {
+          text: 'Cast Vote With Reason',
+          href: 'CastVoteWithReason',
+          level: 1
+        },
+        {
+          text: 'Cast Vote By Signature',
+          href: 'CastVoteBySignature',
+          level: 1
+        },
+        {
+          text: 'Timelock',
+          href: 'Timelock',
+          level: 1
+        },
+        {
+          text: 'Pause Guardian',
+          href: 'PauseGuardian',
+          level: 1
+        }
+      ]
+    }
+  },
+  created () {
+    this.$store.commit('docs/setTitle', this.title)
+    this.$store.commit('docs/setToc', this.toc)
+  }
 }
 </script>
 

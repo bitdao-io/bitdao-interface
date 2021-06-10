@@ -1,16 +1,16 @@
 <template>
-  <table class="bit-table">
+  <table class="faq-table">
     <colgroup>
-      <col width="45%">
-      <col width="55%">
+      <col width="50%">
+      <col width="50%">
     </colgroup>
-    <thead class="bit-thead">
+    <thead class="faq-thead">
       <tr>
         <th>Event</th>
         <th>Description</th>
       </tr>
     </thead>
-    <tbody class="bit-tbody">
+    <tbody class="faq-tbody">
       <tr>
         <td><span class="weightSpan">DelegateChanged</span> (address indexed delegator, address indexed fromDelegate, address indexed toDelegate)</td>
         <td>An event thats emitted when an account changes its <span class="colorSpan">delegate</span>.</td>
@@ -50,74 +50,23 @@
 .colorSpan {
   color: #00dfff;
 }
-.bit-table {
-  table-layout: auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  text-align: left;
-  width: 100%;
-  background: transparent;
-  box-sizing: border-box;
-  font-size: 14px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  .bit-thead {
-    tr {
-      th {
-        background: #fafafa;
-        border-bottom: 1px solid #f0f0f0;
-        color: rgba(0,0,0,.85);
-        font-weight: 600;
-        font-size: 20px;
-        text-align: center;
-      }
-      th:first-child {
-        border-bottom-left-radius: 100px;
-        border-top-left-radius: 100px;
-      }
-      th:last-child {
-        border-bottom-right-radius: 100px;
-        border-top-right-radius: 100px;
-      }
-    }
-  }
-  .bit-tbody {
-    tr {
-      td {
-        color: #FFFFFF;
-        border-bottom: 1px solid #FFFFFF;
-        overflow-wrap: break-word;
-        position: relative;
-        box-sizing: border-box;
-        padding: 16px;
-      }
-      td:first-child {
-        padding-left: 0;
-      }
-      td:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-}
-
 .faq-table {
-  border: 1px solid #a7a7a6;
-  border-radius: 20px;
+  border: 1px solid #D4D4D4;
   border-collapse: collapse;
-  border-style:hidden;
-  background-color: #FFFFFF;
+  border-radius: 16px;
+  // border-style:hidden;
   width: 100%;
   color: #000000;
   margin-bottom: 20px;
   th, td {
-    border: 1px solid #a7a7a6;
+    border: 1px solid #D4D4D4;
+    line-height: 22px;
   }
   .faq-thead {
+    background: linear-gradient(180deg, rgba(253, 253, 253, 0.08) 0%, #FFF7F8 83.33%);
     tr {
       line-height: 20px;
+      border: 1px solid #D4D4D4;
       th {
         padding: 16px;
         font-weight: 600;
@@ -127,13 +76,32 @@
     }
   }
   .faq-tbody {
+    background-color: #FFFFFF;
+    a {
+      color: #2C81B8;
+    }
     tr {
       line-height: 10px;
       td {
-        padding: 16px;
+        padding: 10px 20px;
         text-align: left;
+        vertical-align: middle;
       }
     }
   }
+}
+table tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
 }
 </style>

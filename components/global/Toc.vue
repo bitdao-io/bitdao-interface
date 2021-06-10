@@ -1,90 +1,25 @@
 <template>
   <ul>
     <li v-for="item of tocs" :key="item.href">
-      <a :href="item.href">{{ item.text }}</a>
+      <a :href="`#${item.href}`" :class="[ faq ? 'faq' : '' ]">{{ item.text }}</a>
     </li>
   </ul>
 </template>
 <script>
 export default {
+  props: {
+    tocs: {
+      type: Array,
+      default: () => []
+    }
+  },
   data () {
     return {
-      tocs: [{
-        text: 'Contents',
-        href: 'Contents',
-        level: 1
-      },
-      {
-        text: '1. Introduction',
-        href: 'Introduction',
-        level: 1
-      },
-      {
-        text: '2. The BitDAO Protocol',
-        href: 'TheBitDAOProtocol',
-        level: 1
-      },
-      {
-        text: '2.1 BIT Token',
-        href: 'BITToken2',
-        level: 2
-      },
-      {
-        text: '2.11 Primary Use Cases',
-        href: 'PrimaryUseCases',
-        level: 3
-      },
-      {
-        text: '2.2 Delegation of Votes',
-        href: 'DelegationofVotes',
-        level: 2
-      },
-      {
-        text: '2.2.1 Delegation by Signature',
-        href: 'DelegationbySignature',
-        level: 3
-      },
-      {
-        text: '2.3 Proposals',
-        href: 'Proposals',
-        level: 2
-      },
-      {
-        text: '2.4 Casting of Votes',
-        href: 'CastingofVotes',
-        level: 2
-      },
-      {
-        text: '2.4.1 Casting of Votes by Signature',
-        href: 'CastingofVotesbySignature',
-        level: 3
-      },
-      {
-        text: '3. Implementation & Architecture',
-        href: 'ImplementationArchitecture',
-        level: 1
-      },
-      {
-        text: '3.1 BIT Contracts',
-        href: 'BITContracts',
-        level: 2
-      },
-      {
-        text: '3.2 Staking',
-        href: 'Staking',
-        level: 2
-      },
-      {
-        text: '3.3 BIT Token',
-        href: 'BITToken3',
-        level: 2
-      },
-      {
-        text: '3.4 Governance',
-        href: 'Governance',
-        level: 2
-      }]
+      faq: false
     }
+  },
+  mounted () {
+    this.faq = this.$route.name === 'faq'
   }
 }
 </script>
@@ -99,9 +34,10 @@ ul {
   align-self: flex-start;
   top: 6rem;
   min-width: 180px;
+  max-width: 250px;
   max-height: 70vh;
   overflow: auto;
-  font-size: 0.75rem;
+  font-size: 16px;
   margin: 0 2rem 0 0;
   opacity: 0.6;
   transition: opacity 0.3s ease;
@@ -113,7 +49,7 @@ ul {
     opacity: 1;
   }
   li {
-    padding: 0;
+    padding: 0px;
   }
 }
 li {
@@ -121,14 +57,34 @@ li {
   margin-top: 0.125rem;
   margin-bottom: 0.5em;
   a {
-      text-decoration: none;
-      color: #0E47EF;
-      white-space: pre;
-      text-overflow: ellipsis;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
+    text-decoration: none;
+    color: #0E47EF;
+    // white-space: pre;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 2px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .faq {
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      background-color: #EB8A90;
+    }
   }
 }
 </style>

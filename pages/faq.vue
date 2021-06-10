@@ -1,6 +1,5 @@
 <template lang="md">
-
-# What is BitDAO? What is its purpose?
+# [What is BitDAO? What is its purpose?](#purpose)
 
 BitDAO is a protocol governed by BIT token holders. BitDAO will use its significant financial resources to improve innovation, collaboration and growth across the DeFi space.
 
@@ -71,7 +70,49 @@ export default {
     FAQTable,
     DataDailyTrading
   },
-  layout: 'mdx'
+  layout: 'mdx',
+  data () {
+    return {
+      title: 'FAQ',
+      toc: [{
+        text: 'What is BitDAO? What is its purpose?',
+        href: 'purpose',
+        level: 1
+      }, {
+        text: 'What is a DAO and why does BitDAO use this structure? ',
+        href: 'structure',
+        level: 1
+      }, {
+        text: 'What is BIT?',
+        href: 'WhatisBIT',
+        level: 1
+      }, {
+        text: 'Who controls BitDAO?',
+        href: 'WhocontrolsBitDAO',
+        level: 1
+      }, {
+        text: 'How do I participate in BitDAO?',
+        href: 'participate',
+        level: 1
+      }, {
+        text: 'Where can I find the trading volume chart?',
+        href: 'TradingVolumeChart',
+        level: 1
+      }, {
+        text: 'Where can I find support?',
+        href: 'support',
+        level: 1
+      }, {
+        text: 'What are BitDAO\'s official channels for communication and information?',
+        href: 'channels',
+        level: 1
+      }]
+    }
+  },
+  created () {
+    this.$store.commit('docs/setTitle', this.title)
+    this.$store.commit('docs/setToc', this.toc)
+  }
 }
 </script>
 

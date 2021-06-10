@@ -141,7 +141,7 @@ export default {
 .bitflow {
   background-size: cover;
   background-blend-mode: multiply;
-  height: 800px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <Header />
-    <Video />
+    <!-- <Video /> -->
+    <Gif />
     <div class="section-container">
       <Treasury />
       <div class="treasury-section">
@@ -33,7 +34,8 @@
 <script>
 import Header from '@/components/global/Header.vue'
 import Footer from '@/components/global/Footer.vue'
-import Video from '@/components/home/Video.vue'
+// import Video from '@/components/home/Video.vue'
+import Gif from '@/components/home/Gif.vue'
 import Treasury from '@/components/home/Treasury.vue'
 import Transparent from '@/components/home/Transparent.vue'
 import Vision from '@/components/home/Vision.vue'
@@ -51,7 +53,7 @@ export default {
   components: {
     Header,
     Footer,
-    Video,
+    Gif,
     Treasury,
     Transparent,
     Vision,
