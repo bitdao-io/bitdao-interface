@@ -1,7 +1,7 @@
 <template>
   <section class="partner">
     <div class="partner-top">
-      <h1><span>Lead</span> Investors</h1>
+      <h1 v-html="$t('partners.leaders.title')" />
       <div class="partner-item-container">
         <div class="partner-item">
           <div class="partner-logo"></div>
@@ -23,7 +23,7 @@
     </div>
     <div class="partner-bottom">
       <div class="partner-bottom-left">
-        <h1><span>Advised</span> by</h1>
+        <h1 v-html="$t('partners.advisors.title')" />
         <div class="partner-item-container">
           <div class="partner-item">
             <div class="partner-logo">
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="partner-bottom-right">
-        <h1><span>Partnered</span> with</h1>
+        <h1 v-html="$t('partners.Participants.title')" />
         <div class="partner-item-container">
           <div class="partner-item">
             <div class="partner-logo">
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="investors">
-      <h1>Investors</h1>
+      <h1>{{ $t('investors') }}</h1>
       <p>Sharmaine Edison, Jerlene Kottwitz, Lorriane Ensley, Toshiko Sorg, Conchita Ervin, Ora Calmes, Erlene Haugh, Bess Lumpkin, Janina Hopp, Karina Vandermeulen, Dion Wimberly, Kecia Facey</p>
     </div>
   </section>

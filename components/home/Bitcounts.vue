@@ -1,12 +1,10 @@
 <template>
   <section ref="container" class="bitcounts-container">
     <div class="bitcounts">
-      <h1 ref="title" class="title">
-        Every <span class="bit_text">BIT</span> COUNTS
-      </h1>
+      <h1 ref="title" class="title" v-html="$t('counts.title')" />
       <div ref="subtitle" class="subtitle">
-        <p>BIT holders own BitDAO</p>
-        <p>BIT holders control the treasury</p>
+        <p>{{ $t('counts.subtitle[0]') }}</p>
+        <p>{{ $t('counts.subtitle[1]') }}</p>
       </div>
       <div ref="features" class="features">
         <div ref="feature1" class="feature feature-1">
@@ -14,7 +12,7 @@
             <svg-icon icon-class="vote" class="counts-icon" />
           </div>
           <div class="feature_text">
-            <p>Vote to <br> deploy treasury <br> assets</p>
+            <p>{{ $t('counts.content[0]') }}</p>
           </div>
         </div>
         <div ref="feature2" class="feature feature-2">
@@ -22,7 +20,7 @@
             <svg-icon icon-class="game" class="counts-icon" />
           </div>
           <div class="feature_text">
-            <p>Vote to update <br>  the protcol</p>
+            <p>{{ $t('counts.content[1]') }}</p>
           </div>
         </div>
         <div ref="feature3" class="feature feature-3">
@@ -30,7 +28,7 @@
             <svg-icon icon-class="chain" class="counts-icon" />
           </div>
           <div class="feature_text">
-            <p>Successful <br> proposals are <br> automatically <br> executed on-chain</p>
+            <p>{{ $t('counts.content[2]') }}</p>
           </div>
         </div>
         <div ref="feature4" class="feature feature-4">
@@ -38,7 +36,7 @@
             <svg-icon icon-class="leader" class="counts-icon" />
           </div>
           <div class="feature_text">
-            <p>Delegate votes to <br> your favourite <br> community <br> leaders</p>
+            <p>{{ $t('counts.content[3]') }}</p>
           </div>
         </div>
       </div>

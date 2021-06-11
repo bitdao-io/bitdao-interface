@@ -64,6 +64,7 @@ General discussion regarding BitDAO: [Telegram https://t.me/BitDAO_Official](htt
 <script>
 import FAQTable from '@/components/mdx/FaqTable.vue'
 import DataDailyTrading from '@/components/mdx/DataDailyTrading.vue'
+const BASE_URL = 'http://www.public-test-1.bitdao.io'
 
 export default {
   components: {
@@ -110,8 +111,17 @@ export default {
     }
   },
   created () {
+    this.getData()
     this.$store.commit('docs/setTitle', this.title)
     this.$store.commit('docs/setToc', this.toc)
+  },
+  methods: {
+    getData () {
+      console.log('getData')
+      this.$axios.$get(`${BASE_URL}/api/service/volume-24h`).then((res) => {
+        console.log(res)
+      })
+    }
   }
 }
 </script>

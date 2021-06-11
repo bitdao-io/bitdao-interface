@@ -3,28 +3,26 @@
     <div class="growth">
       <div class="growth-left">
         <div ref="selector" class="select-bg" />
-        <h1 class="title">
-          <span>Growing the</span> BitDAO Ecosystem
-        </h1>
+        <h1 class="title" v-html="$t('growth.title')" />
         <div ref="growth1" class="growth-left_item">
           <img src="@/assets/image/growth/support-bg.svg" alt="support" class="growth-left_icon">
           <div class="growth-left_text">
-            <h1>Bybit Support</h1>
-            <p>Bybit is the first partner of BitDAO, contributing 2.5bps of futures trading volume to BitDAO’s treasury.</p>
+            <h1>{{ $t('growth.content[0].title') }}</h1>
+            <p>{{ $t('growth.content[0].desc') }}</p>
           </div>
         </div>
         <div ref="growth2" class="growth-left_item">
           <img src="@/assets/image/growth/partner-bg.svg" alt="support" class="growth-left_icon">
           <div class="growth-left_text">
-            <h1>Partnerships</h1>
-            <p>Token swap with DeFi protocols and CeFi projects and expand the BitDAO ecosystem. Accumulate a collection of the best DeFi assets.</p>
+            <h1>{{ $t('growth.content[1].title') }}</h1>
+            <p>{{ $t('growth.content[1].desc') }}</p>
           </div>
         </div>
         <div ref="growth3" class="growth-left_item">
           <img src="@/assets/image/growth/doc-bg.svg" alt="support" class="growth-left_icon">
           <div class="growth-left_text">
-            <h1>Building Protocols</h1>
-            <p>Launch innovative products on the BitDAO protocol. Integrate with the industry’s leading protocols.</p>
+            <h1>{{ $t('growth.content[2].title') }}</h1>
+            <p>{{ $t('growth.content[2].desc') }}</p>
           </div>
         </div>
       </div>

@@ -3,10 +3,10 @@
     <div class="footer-container">
       <div class="title-desc">
         <h1>BitDAO</h1>
-        <p>BitDAO is an on-chain protocol governed by BIT token holders</p>
+        <p>{{ $t('BitDAODesc') }}</p>
       </div>
       <div class="social">
-        <h2>SOCIAL</h2>
+        <h2>{{ $t('social') }}</h2>
         <div class="link-container">
           <a
             href="https://twitter.com/BitDAO_Official"
@@ -51,17 +51,17 @@
         </div>
       </div>
       <div class="social">
-        <h2>PROTOTCOL</h2>
+        <h2>{{ $t('protocol') }}</h2>
         <div class="link-container">
-          <a>About Us</a>
-          <a>API Docs</a>
+          <a>{{ $t('About Us') }}</a>
+          <a>{{ $t('API Docs') }}</a>
           <a
             href="/docs/governance"
             data-buried="'click','footer','governance'"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Governance
+            {{ $t('Governance') }}
           </a>
           <a
             href="/docs/litepaper"
@@ -69,13 +69,13 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            Lite Paper
+            {{ $t('Litepaper') }}
           </a>
-          <a>Vote</a>
+          <a>{{ $t('vote') }}</a>
         </div>
       </div>
       <div class="social">
-        <h2>SUPPORT</h2>
+        <h2>{{ $t('support') }}</h2>
         <div class="link-container">
           <a
             href="/faq"
@@ -83,9 +83,9 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            FAQ
+            {{ $t('FAQ') }}
           </a>
-          <a>Careers</a>
+          <a>{{ $t('Careers') }}</a>
         </div>
       </div>
     </div>

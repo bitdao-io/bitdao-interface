@@ -7,7 +7,7 @@
             <img src="@/assets/image/bitflow/flow-icon1-net.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            BitDAO Protocol Contributions<br> (eg. future DEX)
+            {{ $t('flow[0][0]') }}
           </p>
         </div>
         <div class="bitflow-item bitflow-item-2">
@@ -15,7 +15,7 @@
             <img src="@/assets/image/bitflow/flow-icon2-partner.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Partner<br> Contributions
+            {{ $t('flow[0][1]') }}
           </p>
         </div>
         <div class="bitflow-item bitflow-item-3">
@@ -23,7 +23,7 @@
             <img src="@/assets/image/bitflow/flow-icon3-growth.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Partner Token<br> Growth
+            {{ $t('flow[0][2]') }}
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@
             <img src="@/assets/image/bitflow/flow-icon4-voting.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Voting
+            {{ $t('flow[1][0]') }}
           </p>
         </div>
         <div class="arrow-line arrow-line-1">
@@ -48,7 +48,7 @@
             <img src="@/assets/image/bitflow/flow-icon5-pool.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            On-chain<br> Capital Pool
+            {{ $t('flow[1][1]') }}
           </p>
         </div>
         <div />
@@ -57,7 +57,7 @@
             <img src="@/assets/image/bitflow/flow-icon6-governance.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            BitDAO<br> Governance
+            {{ $t('flow[1][2]') }}
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@
             <img src="@/assets/image/bitflow/flow-icon7-protocol.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Protocol<br> Upgrades
+            {{ $t('flow[2][0]') }}
           </p>
         </div>
         <div class="bitflow-item bitflow-item-2">
@@ -75,7 +75,7 @@
             <img src="@/assets/image/bitflow/flow-icon8-grants.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Grants
+            {{ $t('flow[2][1]') }}
           </p>
         </div>
         <div class="bitflow-item bitflow-item-3">
@@ -83,7 +83,7 @@
             <img src="@/assets/image/bitflow/flow-icon9-token.svg" alt="">
           </div>
           <p class="bitflow-item__text">
-            Token
+            {{ $t('flow[2][2]') }}
           </p>
         </div>
       </div>

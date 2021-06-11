@@ -1,7 +1,7 @@
 <template>
   <section ref="container" class="transparent-container">
     <div class="transparent">
-      <h1>Transparent, Collaborative, Transformative</h1>
+      <h1>{{ $t('Transparent, Collaborative, Transformative') }}</h1>
       <div class="transparent-bg2">
         <img src="@/assets/image/transparent/bg2.svg" alt="">
       </div>

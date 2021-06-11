@@ -10,39 +10,39 @@
           data-buried="'click','header','litepaper'"
           rel="noopener noreferrer"
         >
-          Lite Paper
+          {{ $t('Litepaper') }}
         </a>
         <a
           href="/docs/governance"
           data-buried="'click','header','governance'"
           rel="noopener noreferrer"
         >
-          Governance
+          {{ $t('Governance') }}
         </a>
         <a
           href="https://discourse-test.bitdao.io/"
           data-buried="'click','header','forum'"
           rel="noopener noreferrer"
         >
-          Forum
+          {{ $t('Forum') }}
         </a>
         <a
           href="/faq"
           data-buried="'click','header','faq'"
           rel="noopener noreferrer"
         >
-          FAQ
+          {{ $t('FAQ') }}
         </a>
-        <LangSelector />
+        <Lang />
       </div>
     </div>
   </header>
 </template>
 <script>
-import LangSelector from './LangSelector'
+import Lang from './Lang.vue'
 export default {
   components: {
-    LangSelector
+    Lang
   }
 }
 </script>

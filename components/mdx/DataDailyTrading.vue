@@ -9,6 +9,27 @@
 </template>
 
 <script>
+// const BASE_URL = 'http://www.public-test-1.bitdao.io'
+// export default {
+//   data () {
+//     return {
+//     }
+//   },
+//   created () {
+//     this.getData()
+//   },
+//   methods: {
+//     getData () {
+//       console.log('getData')
+//       this.$axios.$get(`${BASE_URL}/api/service/volume-24h`).then((res) => {
+//         console.log(res)
+//       })
+//     }
+//   }
+// }
+</script>
+
+<script>
 import { GChart } from 'vue-google-charts'
 export default {
   components: {

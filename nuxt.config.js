@@ -1,4 +1,5 @@
 import path from 'path'
+import i18n from './locales'
 
 function resolve (dir) {
   return path.join(__dirname, dir)
@@ -47,8 +48,10 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-i18n'
   ],
+  i18n,
   markdownit: {
     preset: 'default',
     linkify: true,

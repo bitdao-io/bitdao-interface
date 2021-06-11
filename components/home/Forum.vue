@@ -1,7 +1,7 @@
 <template>
   <section ref="container" class="forum-container">
-    <p>We are calling on the community to define and build our vision together.</p>
-    <p>Participate on our forum and submit proposals.</p>
+    <p>{{ $t('participate.p1') }}</p>
+    <p>{{ $t('participate.p2') }}</p>
     <a
       ref="button"
       href="https://discourse-test.bitdao.io/"
@@ -10,7 +10,7 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span class="bit-button_text">PARTICIPATE NOW</span>
+      <span class="bit-button_text">{{ $t('participate.button') }}</span>
       <svg-icon icon-class="arrow-right" />
     </a>
     <div ref="trapezoid" class="trapezoid" />

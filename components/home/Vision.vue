@@ -2,16 +2,16 @@
   <section ref="container" class="vision-container">
     <div ref="visionInner" class="vision-inner">
       <div ref="vision" class="vision">
-        <h1>Vision</h1>
-        <p>BitDAO’s vision is open finance and a decentralized token economy.</p>
+        <h1>{{ $t('vision.title') }}</h1>
+        <p>{{ $t('vision.content') }}</p>
       </div>
       <div ref="innovation" class="innovation">
-        <h1>Accelerate Innovation and Growth</h1>
-        <p>BitDAO aims to use significant financial and talent resources to accelerate innovation and growth across the DeFi space.</p>
+        <h1>{{ $t('innovation.title') }}</h1>
+        <p>{{ $t('innovation.content') }}</p>
       </div>
       <div ref="collaboration" class="collaboration">
-        <h1>Collaboration</h1>
-        <p>BitDAO will collaborate with emerging and existing DeFi protocols and teams — through grants, token swaps, and R&D support. BitDAO will build its own protocols. We seek talented developers, community managers and other contributors to join us.</p>
+        <h1>{{ $t('collaboration.title') }}</h1>
+        <p>{{ $t('collaboration.content') }}</p>
       </div>
     </div>
   </section>
