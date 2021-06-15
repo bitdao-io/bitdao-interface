@@ -14,7 +14,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/media/twitter.png" alt="twitter">
+        <img src="@/assets/image/social-media/twitter.svg" alt="twitter">
       </a>
       <a
         href="https://discord.gg/jTBC4BKnj7"
@@ -23,7 +23,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/media/discord.svg" alt="discord">
+        <img src="@/assets/image/social-media/discord.svg" alt="discord">
       </a>
       <a
         href="https://t.me/BitDAO_Official"
@@ -32,7 +32,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/media/telegram.png" alt="telegram">
+        <img src="@/assets/image/social-media/telegram.svg" alt="telegram">
       </a>
       <a
         href="https://medium.com/bitdao"
@@ -41,7 +41,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/media/medium.png" alt="medium">
+        <img src="@/assets/image/social-media/medium.svg" alt="medium">
       </a>
       <a
         href="https://github.com/BitDAOProtocol"
@@ -50,7 +50,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/media/github.svg" alt="github">
+        <img src="@/assets/image/social-media/github.svg" alt="github">
       </a>
     </div>
     <div class="circle-bg" />
@@ -129,13 +129,13 @@ export default {
     white-space: nowrap;
     .media-logo {
       position: relative;
-      padding: 10px;
+      // padding: 10px;
       width: 42px;
       height: 42px;
       box-sizing: border-box;
       border-radius: 50%;
-      background: linear-gradient(180deg, #EB8A90 35.98%, #F9C2CA 146.97%);
-      box-shadow: 0px 2px 4px rgba(235, 138, 144, 0.28);
+      // background: linear-gradient(180deg, #EB8A90 35.98%, #F9C2CA 146.97%);
+      // box-shadow: 0px 2px 4px rgba(235, 138, 144, 0.28);
       img {
         width: 100%;
         height: auto;
