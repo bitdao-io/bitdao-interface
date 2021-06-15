@@ -1,142 +1,169 @@
 <template>
   <div class="container">
-    <Header />
-    <!-- <Video /> -->
-    <Gif />
-    <div class="section-container">
-      <Treasury />
-      <div class="treasury-section">
-        <Transparent />
-      </div>
-      <div class="vision-section">
-        <Vision />
-      </div>
-      <div class="counts-section">
-        <BitCounts />
-      </div>
-      <div class="forum-section">
-        <Forum />
-      </div>
-      <div class="growth-section">
-        <Growth />
-      </div>
-      <div class="flow-section">
-        <BitFlow />
-      </div>
-      <div class="partner-section">
-        <Partner />
-      </div>
+    <div class="logo">
+      <img src="@/assets/image/logo.svg" alt="">
     </div>
-    <Footer />
+    <p class="comingsoon">
+      coming soon
+    </p>
+    <div class="media">
+      <a
+        href="https://twitter.com/BitDAO_Official"
+        data-buried="'click','footer','twitter'"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="media-logo"
+      >
+        <img src="@/assets/image/media/twitter.png" alt="twitter">
+      </a>
+      <a
+        href="https://discord.gg/ybNZCKPA"
+        data-buried="'click','footer','discord'"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="media-logo"
+      >
+        <img src="@/assets/image/media/discord.svg" alt="discord">
+      </a>
+      <a
+        href="https://t.me/BitDAO_Official"
+        data-buried="'click','footer','telegram'"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="media-logo"
+      >
+        <img src="@/assets/image/media/telegram.png" alt="telegram">
+      </a>
+      <a
+        href="https://medium.com/bitdao"
+        data-buried="'click','footer','medium'"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="media-logo"
+      >
+        <img src="@/assets/image/media/medium.png" alt="medium">
+      </a>
+      <a
+        href="https://github.com/BitDAOProtocol"
+        data-buried="'click','footer','github'"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="media-logo"
+      >
+        <img src="@/assets/image/media/github.svg" alt="github">
+      </a>
+    </div>
+    <div class="circle-bg" />
   </div>
 </template>
 
 <script>
-import Header from '@/components/global/Header.vue'
-import Footer from '@/components/global/Footer.vue'
-// import Video from '@/components/home/Video.vue'
-import Gif from '@/components/home/Gif.vue'
-import Treasury from '@/components/home/Treasury.vue'
-import Transparent from '@/components/home/Transparent.vue'
-import Vision from '@/components/home/Vision.vue'
-import BitCounts from '@/components/home/Bitcounts.vue'
-import Forum from '@/components/home/Forum.vue'
-import Growth from '@/components/home/Growth.vue'
-import BitFlow from '@/components/home/Bitflow.vue'
-import Partner from '@/components/home/Partner.vue'
-// import Blank from '@/components/home/Blank.vue'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-if (process.client) { gsap.registerPlugin(ScrollTrigger) }
-
 export default {
-  components: {
-    Header,
-    Footer,
-    Gif,
-    Treasury,
-    Transparent,
-    Vision,
-    BitCounts,
-    Forum,
-    Growth,
-    BitFlow,
-    Partner
-    // Blank
+  head: {
+    titleTemplate: 'BitDAO',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' },
+      { hid: 'description', name: 'description', content: 'Meta description' }
+    ]
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.treasury-section {
-  background: linear-gradient(180deg, #E4E8F4 0%, #EAEAF5 100%);
-  padding: 200px 0;
-}
-.vision-section {
-  background: linear-gradient(#EAEAF5,#FDEFF6);
-  padding-bottom: 200px;
-}
-.counts-section {
-  background: linear-gradient(180deg, #FDEFF6 80%, #BEDDEF);
-  padding: 200px 0;
-}
-.forum-section {
-  background: linear-gradient(180deg,#BEDDEF, #76CFF5);
-  padding: 100px 0;
-}
-.growth-section {
-  background: linear-gradient(180deg, #76CFF5 0%, #43A3C6 100%);
-  padding: 100px 0;
-}
-.flow-section {
-  background: linear-gradient(180deg,#43A3C6, #F6EDF6 10%, #F6EDF6 50%, #F6EDF6 90%, #77CFF5);
-  padding: 200px 0;
-}
-.partner-section {
-  background: linear-gradient(180deg, #77CFF5 0%, #1CADDF 100%);
-  padding: 200px 0;
-}
-</style>
-<style lang="scss">
 .container {
-  overflow-x: hidden;
-}
-.section-container {
-  // background: linear-gradient(179.92deg, #D9E5F3 0.07%, #FDEFF6 25.84%, #BEDDEF 42.18%, #76CFF5 57.8%, #43A3C6 64.27%, #F6EDF6 71.82%, rgba(247, 238, 246, 0.61) 82.8%, #77CFF5 88.87%, #1CADDF 104.81%);
-  // background-color: #76CFF5;
-}
+  background: #fff;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  .logo {
+    z-index: 20;
+    text-align: center;
+    background: rgba(256, 256, 256, 0.5);
+    box-shadow: 10px 10px 100px 0px #fff;
+    img {
+      width: 600px;
+    }
+  }
+  .comingsoon {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: 50px;
+    text-indent: 50px;
+    text-transform: uppercase;
+    color: #0E47EF;
+    margin-bottom: 100px;
+    padding: 20px;
+    z-index: 20;
+    display: inline-block;
+  }
+  .media {
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 80px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 20px;
+    .media-logo {
+      position: relative;
+      padding: 10px;
+      width: 42px;
+      height: 42px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #EB8A90 35.98%, #F9C2CA 146.97%);
+      box-shadow: 0px 2px 4px rgba(235, 138, 144, 0.28);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .circle-bg {
+    z-index: 10;
+    position: absolute;
+    width: 150vh;
+    height: 150vh;
+    top: -105vh;
+    border-radius: 50%;
 
-// .title {
-//   font-family:
-//     'Quicksand',
-//     'Source Sans Pro',
-//     -apple-system,
-//     BlinkMacSystemFont,
-//     'Segoe UI',
-//     Roboto,
-//     'Helvetica Neue',
-//     Arial,
-//     sans-serif;
-//   display: block;
-//   font-weight: 300;
-//   font-size: 100px;
-//   color: #35495e;
-//   letter-spacing: 1px;
-// }
-
-.bit-button {
-  display: block;
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  width: 234px;
-  color: #0E47EF;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  font-weight: 700;
-  .bit-button_text {
-    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: -30px 35px 25px 50px rgba(249, 194, 202, 0.25);
+    transform: rotate(136deg);
+  }
+}
+@media screen and (max-width: 980px) {
+  .container {
+    .comingsoon {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+    .comingsoon {
+      letter-spacing: 2rem;
+      text-indent: 0;
+      padding-left: 50px;
+    }
+    .media {
+      flex-wrap: wrap;
+    }
   }
 }
 </style>
