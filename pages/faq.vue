@@ -111,7 +111,7 @@ export default {
     }
   },
   created () {
-    this.getData()
+    // this.getData()
     this.$store.commit('docs/setTitle', this.title)
     this.$store.commit('docs/setToc', this.toc)
   },
