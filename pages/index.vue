@@ -4,7 +4,7 @@
       <img src="@/assets/image/logo.svg" alt="">
     </div>
     <p class="comingsoon">
-      coming soon
+      <span>coming</span> <span>soon</span>
     </p>
     <div class="media">
       <a
@@ -98,11 +98,23 @@ export default {
     letter-spacing: 50px;
     text-indent: 50px;
     text-transform: uppercase;
-    color: #0E47EF;
+    color: #EB8A90;
     margin-bottom: 100px;
-    padding: 20px;
+    padding: 20px 0;
     z-index: 20;
     display: inline-block;
+    span:first-child {
+      background: linear-gradient(to right, #EB8A90, #F9C2CA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    span:last-child {
+      background: linear-gradient(to right, #2D82B7, #5CC7F2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
   }
   .media {
     z-index: 20;
@@ -114,6 +126,7 @@ export default {
     max-width: 400px;
     width: 100%;
     padding: 0 20px;
+    white-space: nowrap;
     .media-logo {
       position: relative;
       padding: 10px;
@@ -145,7 +158,10 @@ export default {
 @media screen and (max-width: 980px) {
   .container {
     .comingsoon {
-      font-size: 2.5rem;
+      width: 100%;
+      font-size: 5vw;
+      letter-spacing: 5vw;
+      text-indent: 5vw;
     }
   }
 }
@@ -157,9 +173,10 @@ export default {
       }
     }
     .comingsoon {
-      letter-spacing: 2rem;
-      text-indent: 0;
-      padding-left: 50px;
+      // letter-spacing: 2rem;
+      // text-indent: 0;
+      // padding-left: 50px;
+      // font-size: 16px;
     }
     .media {
       flex-wrap: wrap;
