@@ -1,6 +1,6 @@
-# BitDAO-v2
+# BitDAO
 
-## Build Setup
+## BitDAO
 
 ```bash
 # install dependencies
