@@ -90,7 +90,7 @@ html{
 
 body{
 	font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Roboto", "Arial", sans-serif!important;
-	min-width: 1280px;
+	/* min-width: 1280px; */
 
 }
 
