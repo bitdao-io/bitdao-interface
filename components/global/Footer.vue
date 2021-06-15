@@ -17,7 +17,7 @@
             Twitter
           </a>
           <a
-            href="https://discord.gg/ybNZCKPA"
+            href="https://discord.com/invite/jTBC4BKnj7"
             data-buried="'click','footer','discord'"
             rel="noopener noreferrer"
             target="_blank"
