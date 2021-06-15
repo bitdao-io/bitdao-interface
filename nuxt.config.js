@@ -117,6 +117,11 @@ export default {
     //     }
     //   }
     // },
+    // postcss: [
+    //   require('postcss-px2rem')({
+    //     remUnit: 15
+    //   })
+    // ],
     extend (config, { isDev, isClient }) {
       if (isClient) {
         config.module.rules.forEach((rule) => { // 移除默认处理svg的配置
