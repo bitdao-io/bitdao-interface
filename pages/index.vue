@@ -53,6 +53,23 @@
         <img src="@/assets/image/social-media/github.svg" alt="github">
       </a>
     </div>
+    <div class="partner">
+      <img src="@/assets/image/partner-logo/peter.svg" alt="">
+      <img src="@/assets/image/partner-logo/foun.svg" alt="">
+      <img src="@/assets/image/partner-logo/pan.svg" alt="">
+      <img src="@/assets/image/partner-logo/dragon.svg" alt="">
+      <img src="@/assets/image/partner-logo/bybit.svg" alt="">
+      <img src="@/assets/image/partner-logo/alan.svg" alt="">
+      <img src="@/assets/image/partner-logo/sushi.svg" alt="">
+      <img src="@/assets/image/partner-logo/jump.svg" alt="">
+      <img src="@/assets/image/partner-logo/spar.svg" alt="">
+      <img src="@/assets/image/partner-logo/kain.svg" alt="">
+      <img src="@/assets/image/partner-logo/fen.svg" alt="">
+      <img src="@/assets/image/partner-logo/cam.svg" alt="">
+      <img src="@/assets/image/partner-logo/mgnr.svg" alt="">
+      <img src="@/assets/image/partner-logo/tembusu.svg" alt="">
+      <img src="@/assets/image/partner-logo/coinhako.svg" alt="">
+    </div>
     <div class="circle-bg" />
   </div>
 </template>
@@ -122,7 +139,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 80px;
+    top: 80px;
     max-width: 400px;
     width: 100%;
     padding: 0 20px;
@@ -154,6 +171,11 @@ export default {
     box-shadow: -30px 35px 25px 50px rgba(249, 194, 202, 0.25);
     transform: rotate(136deg);
   }
+  .partner {
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+  }
 }
 @media screen and (max-width: 980px) {
   .container {
@@ -180,6 +202,10 @@ export default {
     }
     .media {
       flex-wrap: wrap;
+      top: 40px;
+    }
+    .partner {
+      bottom: 40px;
     }
   }
 }
