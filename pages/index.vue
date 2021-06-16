@@ -90,7 +90,8 @@ export default {
 <style lang="scss" scoped>
 .container {
   background: #fff;
-  min-height: 100vh;
+  min-height: 800px;
+  height: 100vh;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -164,6 +165,8 @@ export default {
     position: absolute;
     width: 150vh;
     height: 150vh;
+    min-height: 800px;
+    min-width: 800px;
     top: -105vh;
     border-radius: 50%;
 
@@ -189,6 +192,8 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .container {
+    height: 100vh;
+    min-height: 550px;
     .logo {
       img {
         width: 100%;
