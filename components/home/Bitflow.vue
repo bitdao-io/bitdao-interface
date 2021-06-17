@@ -6,25 +6,19 @@
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon1-net.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[0][0]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[0][0]')" />
         </div>
         <div class="bitflow-item bitflow-item-2">
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon2-partner.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[0][1]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[0][1]')" />
         </div>
         <div class="bitflow-item bitflow-item-3">
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon3-growth.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[0][2]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[0][2]')" />
         </div>
       </div>
       <div ref="flow2" class="flow flow2">
@@ -32,9 +26,7 @@
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon4-voting.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[1][0]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[1][0]')" />
         </div>
         <div class="arrow-line arrow-line-1">
           <svg-icon icon-class="arrow-line" class="arrow-line__icon" />
@@ -47,18 +39,14 @@
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon5-pool.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[1][1]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[1][1]')" />
         </div>
         <div />
         <div class="bitflow-item bitflow-item-3">
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon6-governance.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[1][2]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[1][2]')" />
         </div>
       </div>
       <div ref="flow3" class="flow flow3">
@@ -66,25 +54,19 @@
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon7-protocol.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[2][0]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[2][0]')" />
         </div>
         <div class="bitflow-item bitflow-item-2">
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon8-grants.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[2][1]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[2][1]')" />
         </div>
         <div class="bitflow-item bitflow-item-3">
           <div class="flow-icon-container">
             <img src="@/assets/image/bitflow/flow-icon9-token.svg" alt="">
           </div>
-          <p class="bitflow-item__text">
-            {{ $t('flow[2][2]') }}
-          </p>
+          <p class="bitflow-item__text" v-html="$t('flow[2][2]')" />
         </div>
       </div>
       <div ref="dashed" class="dashed-circle" />

@@ -20,7 +20,7 @@
         "content": "BitDAO will collaborate with emerging and existing DeFi protocols and teams — through grants, token swaps, and R&D support. BitDAO will build its own protocols. We seek talented developers, community managers and other contributors to join us."
     },
     "counts": {
-        "title": "Every <span class='bit_text'>BIT</span> COUNTS",
+        "title": "Every <span class='black'>BIT</span> COUNTS",
         "subtitle": [
             "BIT holders own BitDAO",
             "BIT holders control the treasury"
@@ -38,7 +38,7 @@
         "button": "PARTICIPATE NOW"
     },
     "growth": {
-        "title": "<span>Growing the</span> BitDAO Ecosystem",
+        "title": "<span class='black'>Growing the</span> BitDAO Ecosystem",
         "content": [{
             "title": "BYBIT SUPPORT",
             "desc": "Bybit is the first partner of BitDAO, contributing 2.5bps of futures trading volume to the BitDAO treasury."
