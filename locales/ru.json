@@ -1,3 +1,81 @@
 {
-    "FAQ": "FAQ1"
+    "Litepaper": "Litepaper",
+    "Forum": "Обсуждение",
+    "Governance": "Governance",
+    "FAQ": "FAQ",
+    "THE TREASURY": "THE TREASURY",
+    "Annually *Est.": "Annually *Est.",
+    "Find Out More": "Find Out More",
+    "Transparent, Collaborative, Transformative": "Прозрачность. Коллаборация. Свобода.",
+    
+    "vision": {
+        "title": "Vision",
+        "content": "Миссия BitDAO - децентрализованные финансы и токен-экономика."
+    },
+    "innovation": {
+        "title": "Accelerate Innovation and Growth",
+        "content": "BitDAO стремится использовать инвестиционные и R&D ресурсы для развития инноваций и роста DeFi."
+    },
+    "collaboration": {
+        "title": "Collaboration",
+        "content": "BitDAO будет сотрудничать с иными существующими и будущими протоколами и проектами DeFi посредством грантов, обмена токенами и ресурсами R&D. BitDAO построит свой собственый протокол. Мы привлекаем талантливых инженеров, разработчиков и комьюнити-лидеров для коллаборации. "
+    },
+    "counts": {
+        "title": "Every <span class='black'>BIT</span> COUNTS",
+        "subtitle": [
+            "Держатели BIT владеют BitDAO и контролируют фонд.",
+            "BIT holders control the treasury"
+        ],
+        "content": [
+            "Голосуй - для влияния на активы фонда.",
+            "Голосуй - для обновления протокола  BitDAO. ",
+            "Успешные предложения автоматически исполняются on-chain.",
+            "Голосуй - выбирая лучшего комьюнити-лидера."
+        ]
+    },
+    "participate": {
+        "p1": "Каждый в комьюнити может влиять на будущее экосистемы.",
+        "p2": "Участвуй в обсуждении и делись предложениями.",
+        "button": "PARTICIPATE NOW"
+    },
+    "growth": {
+        "title": "ЭКОСИСТЕМА BitDAO",
+        "content": [{
+            "title": "УЧАСТИЕ BYBIT",
+            "desc": "Bybit - первый партнер BitDAO, заложивший 2.5bps от объема фьючерсной торговли маркетплейса в проект BitDAO."
+        },{
+            "title": "ПАРТНЕРСТВО",
+            "desc": "Обмен токенами по протоколам DeFi и по проектам CeFi с целью дальнейшего развития экосистемы BitDAO. Стань коллекционером лучших активов DeFi."
+        },{
+            "title": "ИСПОЛЬЗОВАНИЕ ПРОТОКОЛА",
+            "desc": "Запуск инновационых проектов на основе протокола BitDAO.Интеграция с ведущими протоколами в индустрии."
+        }]
+    },
+    "flow": [
+        ["Участие проекта BitDAO<br> (например, в Futures DEX)", "Участие<br> партнеров", "Рост партнерских<br> токенов"],
+        ["Выборы и<br> голосование", "BitDAO<br> Treasury", "BitDAO<br> УПРАВЛЕНИЕ"],
+        ["Обновление<br> протоколов", "Гранты", "Обмен<br> токенами"]
+    ],
+    "partners": {
+        "leaders": {
+            "title": "Lead <span class='black'>Investors</span>"
+        },
+        "advisors": {
+            "title": "Advised <span class='black'>by</span>"
+        },
+        "Participants": {
+            "title": "Partnered <span class='black'>with</span>"
+        },
+        "investors": {
+            "title": "<span class='black'>Investors</span>"
+        }
+    },
+    "social": "КОМЬЮНИТИ",
+    "protocol": "ПРОТОКОЛ",
+    "support": "ПОДДЕРЖКА",
+    "vote": "Голосование",
+    "About Us": "About Us",
+    "API Docs": "API Docs",
+    "Careers": "Careers",
+    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
 }

@@ -170,6 +170,7 @@ export default {
         color: #fff;
         line-height: 26px;
         font-size: 20px;
+        width: 200px;
       }
     }
   }

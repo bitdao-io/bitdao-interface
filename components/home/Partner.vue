@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="investors">
-      <h1>{{ $t('investors') }}</h1>
+      <h1 v-html="$t('partners.investors.title')" />
       <p>Sharmaine Edison, Jerlene Kottwitz, Lorriane Ensley, Toshiko Sorg, Conchita Ervin, Ora Calmes, Erlene Haugh, Bess Lumpkin, Janina Hopp, Karina Vandermeulen, Dion Wimberly, Kecia Facey</p>
     </div>
   </section>
@@ -78,11 +78,8 @@
   h1 {
     font-size: 32px;
     font-weight: 700;
-    color: #1E212C;
+    color: #0E47EF;
     margin-bottom: 45px;
-    span {
-      color: #0E47EF;
-    }
   }
   p {
     font-size: 24px;

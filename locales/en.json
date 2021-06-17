@@ -26,10 +26,10 @@
             "BIT holders control the treasury"
         ],
         "content": [
-            "Vote to\n deploy treasury\n assets",
-            "Vote to upgrade\n the BitDAO protocol",
-            "Successful\n proposals are\n automatically\n executed on-chain",
-            "Delegate votes to \nyour favorite \ncommunity \nleader"
+            "Vote to deploy treasury assets",
+            "Vote to upgrade the BitDAO protocol",
+            "Successful proposals are automatically executed on-chain",
+            "Delegate votes to your favorite community leader"
         ]
     },
     "participate": {
@@ -51,24 +51,24 @@
         }]
     },
     "flow": [
-        ["BitDAO Protocol Contributions<br> (eg. future DEX)",
+        ["BitDAO Product Contributions<br> (eg. Futures DEX)",
             "Partner<br> Contributions",
             "Partner Token<br> Growth"],
-        ["Voting", "On-chain<br> Capital Pool", "BitDAO<br> Governance"],
-        ["Protocol<br> Upgrades", "Grants", "Token"]
+        ["Proposal and<br> Voting", "BitDAO<br> Treasury", "BitDAO<br> Governance"],
+        ["Protocol<br> Upgrades", "Grants", "Token Swaps"]
     ],
     "partners": {
         "leaders": {
-            "title": "<span>Lead</span> Investors"
+            "title": "Lead <span class='black'>Investors</span>"
         },
         "advisors": {
-            "title": "<span>Advised</span> by"
+            "title": "Advised <span class='black'>by</span>"
         },
         "Participants": {
-            "title": "<span>Partnered</span> with"
+            "title": "Partnered <span class='black'>with</span>"
         },
         "investors": {
-            "title": "Investors"
+            "title": "<span class='black'>Investors</span>"
         }
     },
     "social": "SOCIAL",

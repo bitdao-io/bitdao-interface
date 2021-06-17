@@ -1,3 +1,80 @@
 {
-    "FAQ": "FAQ1"
+    "Litepaper": "ライトペーパー",
+    "Forum": "フォーラム",
+    "Governance": "Governance",
+    "FAQ": "FAQ",
+    "THE TREASURY": "THE TREASURY",
+    "Annually *Est.": "Annually *Est.",
+    "Find Out More": "Find Out More",
+    "Transparent, Collaborative, Transformative": "民主・協調・変革",
+    "vision": {
+        "title": "Vision",
+        "content": "BitDAOの理念は、民主的な金融サービスと分散型のトークン経済の実現にあります。"
+    },
+    "innovation": {
+        "title": "Accelerate Innovation and Growth",
+        "content": "BitDAOは、幅広い分野の人材が参加し、多額の資産を活用することで、分散型金融（DeFi）の変革と成長を加速させることを目指しています。"
+    },
+    "collaboration": {
+        "title": "Collaboration",
+        "content": "BitDAOは、新規及び既存のDeFiプロトコルや参加者と協力し、助成金、トークンスワップ、研究開発支援などを通して、独自のプロトコルを構築していきます。我々は、開発やコミュニティ管理などの分野で協力していただける有能な人材を募集しています。"
+    },
+    "counts": {
+        "title": "すべての<span class='black'>BIT</span>が等しく権利を有します",
+        "subtitle": [
+            "BIT保有者がBitDAOの所有者であり、運用資産を管理します",
+            "BIT保有者がBitDAOの所有者であり、運用資産を管理します"
+        ],
+        "content": [
+            "運用資産の活用方法を決定する権利",
+            "BitDAOプロトコルをアップグレードする権利",
+            "支持されたプロトコルはオンチェーン上で自動的に実行",
+            "権利はコミュニティ内のリーダーに委任が可能"
+        ]
+    },
+    "participate": {
+        "p1": "我々の理念を定義し明確化することを、コミュニティに呼びかけています。",
+        "p2": "そのために、フォーラムに参加してご自身のアイディアを提案してください。",
+        "button": "PARTICIPATE NOW"
+    },
+    "growth": {
+        "title": "BitDAOエコシステムの発展・成長に向けて",
+        "content": [{
+            "title": "Bybitによるサポート",
+            "desc": "BybitはBitDAOにとって最初のパートナーです。先物取引高の2.5bpsに相当する資産を融資しています。"
+        },{
+            "title": "パートナーシップ",
+            "desc": "DeFiプロトコルによるトークンスワップと、CeFi（中央集権型金融）プロジェクトによって、BitDAOのエコシステムは拡大していきます。最適なDeFi資産を蓄積していきます。"
+        },{
+            "title": "プロトコルの構築",
+            "desc": "BitDAOプロトコル上で革新的なプロダクトを立ち上げます。今後業界を率いるプロトコルとなるでしょう。"
+        }]
+    },
+    "flow": [
+        ["BitDAOによるプロダクトの特徴<br>（例： 先物DEXなど）", "パートナーの貢献", "パートナートークンの成長"],
+        ["提案と投票", "BitDAO<br>が保有する資産", "BitDAO<br>による統治"],
+        ["Protocol<br> Upgrades", "助成金", "トークンスワップ"]
+    ],
+    "partners": {
+        "leaders": {
+            "title": "Lead <span class='black'>Investors</span>"
+        },
+        "advisors": {
+            "title": "Advised <span class='black'>by</span>"
+        },
+        "Participants": {
+            "title": "Partnered <span class='black'>with</span>"
+        },
+        "investors": {
+            "title": "<span class='black'>Investors</span>"
+        }
+    },
+    "social": "SNS",
+    "protocol": "プロトコル",
+    "support": "サポート",
+    "vote": "投票",
+    "About Us": "About Us",
+    "API Docs": "API Docs",
+    "Careers": "Careers",
+    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
 }

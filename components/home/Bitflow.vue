@@ -145,15 +145,18 @@ export default {
     z-index: 10;
   }
   .bitflow-item-1 {
+    width: 200px;
     top: 20px;
   }
   .bitflow-item-2 {
+    width: 70px;
     left: 50px;
-    bottom: 40px;
+    top: 130px;
   }
   .bitflow-item-3 {
+    width: 70px;
     right: 50px;
-    bottom: 40px;
+    top: 130px;
   }
   .arrow-line-1 {
     right: 70px;
