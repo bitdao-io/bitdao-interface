@@ -14,7 +14,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/social-media/twitter.svg" alt="twitter">
+        <img data-buried="'click','footer','twitter'" src="@/assets/image/social-media/twitter.svg" alt="twitter">
       </a>
       <a
         href="https://discord.gg/jTBC4BKnj7"
@@ -23,7 +23,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/social-media/discord.svg" alt="discord">
+        <img data-buried="'click','footer','discord'" src="@/assets/image/social-media/discord.svg" alt="discord">
       </a>
       <a
         href="https://t.me/BitDAO_Official"
@@ -32,7 +32,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/social-media/telegram.svg" alt="telegram">
+        <img data-buried="'click','footer','telegram'" src="@/assets/image/social-media/telegram.svg" alt="telegram">
       </a>
       <a
         href="https://medium.com/bitdao"
@@ -41,7 +41,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/social-media/medium.svg" alt="medium">
+        <img data-buried="'click','footer','medium'" src="@/assets/image/social-media/medium.svg" alt="medium">
       </a>
       <a
         href="https://github.com/BitDAOProtocol"
@@ -50,7 +50,7 @@
         target="_blank"
         class="media-logo"
       >
-        <img src="@/assets/image/social-media/github.svg" alt="github">
+        <img data-buried="'click','footer','github'" src="@/assets/image/social-media/github.svg" alt="github">
       </a>
     </div>
     <div class="partner">

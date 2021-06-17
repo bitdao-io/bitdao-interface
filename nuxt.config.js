@@ -49,8 +49,13 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    '@nuxtjs/gtm',
   ],
+  gtm: {
+    enabled: true,
+    id: 'G-9K9NSNF0QY'
+  },
   i18n,
   markdownit: {
     preset: 'default',
