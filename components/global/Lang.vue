@@ -8,7 +8,8 @@
         @click="isOptionsExpanded = !isOptionsExpanded"
         @blur="isOptionsExpanded = false"
       >
-        <svg-icon :icon-class="`lang-${$i18n.locale}`" class="lang-icon" />
+        <!-- <svg-icon :icon-class="`lang-${$i18n.locale}`" class="lang-icon" /> -->
+        <img :src="icons[$i18n.locale]" :alt="$i18n.locale" class="lang-img">
         <span>{{ $i18n.locale.toUpperCase() }}</span>
         <svg-icon icon-class="arrow-down" :class="['dropdown-icon', isOptionsExpanded ? 'rotate-180' : 'rotate-0']" />
       </button>
@@ -23,9 +24,11 @@
             v-for="(option, index) in options"
             :key="index"
             class="dropdown-li"
-            @mousedown.prevent="setOption(option)"
+            :data-buried="`'click','language','${option.key}'`"
+            @click="setOption(option)"
           >
-            <svg-icon :icon-class="`lang-${option.key}`" class="lang-icon" />
+            <img :src="icons[option.key]" :alt="option.value" class="lang-img">
+            <!-- <svg-icon :icon-class="`lang-${option.key}`" class="lang-icon" /> -->
             {{ option.value }}
           </li>
         </ul>
@@ -64,7 +67,14 @@ export default {
           key: 'es',
           value: 'ES'
         }
-      ]
+      ],
+      icons: {
+        en: require('@/assets/image/lang/lang-en.svg'),
+        jp: require('@/assets/image/lang/lang-jp.svg'),
+        kr: require('@/assets/image/lang/lang-kr.svg'),
+        ru: require('@/assets/image/lang/lang-ru.svg'),
+        es: require('@/assets/image/lang/lang-es.svg')
+      }
     }
   },
   methods: {
@@ -84,6 +94,10 @@ export default {
 <style lang="scss" scoped>
 .lang-icon {
   font-size: 2rem;
+  margin-right: 10px;
+}
+.lang-img {
+  width: 30px;
   margin-right: 10px;
 }
 
@@ -137,7 +151,7 @@ export default {
     .dropdown-ul {
       position: absolute;
       left: -24px;
-      bottom: 10px;
+      bottom: -6px;
       z-index: 1;
       transform: translate(0, 105%);
       background: #FFFFFF;
@@ -149,7 +163,7 @@ export default {
       text-align: center;
       overflow: hidden;
       .dropdown-li {
-        padding: 5px 10px;
+        padding: 10px;
         transition: background-color 100ms ease, color 100ms ease;
         cursor: pointer;
         display: flex;
