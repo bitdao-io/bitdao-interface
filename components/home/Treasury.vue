@@ -7,7 +7,7 @@
     <a
       href="/faq"
       class="bit-button"
-      data-buried="'click','home','find-out-more'"
+      data-buried="'click','banner_treasury_findmore',''"
       rel="noopener noreferrer"
       target="_blank"
     >

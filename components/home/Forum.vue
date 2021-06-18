@@ -6,7 +6,7 @@
       ref="button"
       href="https://discourse-test.bitdao.io/"
       class="bit-button"
-      data-buried="'click','home','participate now'"
+      data-buried="'click','banner_community_participatenow',''"
       rel="noopener noreferrer"
       target="_blank"
     >

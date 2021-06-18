@@ -24,7 +24,7 @@
             v-for="(option, index) in options"
             :key="index"
             class="dropdown-li"
-            :data-buried="`'click','language','${option.key}'`"
+            :data-buried="`'click','header_lang','lang=${option.key}'`"
             @click="setOption(option)"
           >
             <img :src="icons[option.key]" :alt="option.value" class="lang-img">
