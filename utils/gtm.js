@@ -16,7 +16,7 @@ if(typeof window !== "undefined"){
  * @param {string} eventCategory
  * @param {string} eventLabel
  */
-const pushEvent = (eventAction, eventCategory, eventLabel) => {
+const pushEvent = (eventAction, eventCategory, eventLabel='') => {
   if(typeof window !== "undefined"){
     window.dataLayer.push({ event: "GAEvent", eventAction, eventCategory, eventLabel });
   }

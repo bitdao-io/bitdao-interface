@@ -24,7 +24,7 @@
             v-for="(option, index) in options"
             :key="index"
             class="dropdown-li"
-            :data-buried="`'click','header_lang','lang=${option.key}'`"
+            :data-buried="`click,header_lang,lang=${option.key}`"
             @click="setOption(option)"
           >
             <img :src="icons[option.key]" :alt="option.value" class="lang-img">
@@ -171,6 +171,9 @@ export default {
         justify-content: center;
         &:hover {
           background-color: #D7E1FF;
+        }
+        img {
+          pointer-events: none;
         }
       }
     }

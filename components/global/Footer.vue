@@ -10,7 +10,7 @@
         <div class="link-container">
           <a
             href="https://twitter.com/BitDAO_Official"
-            data-buried="'click','footer_social','social_type=twitter'"
+            data-buried="click,footer_social,social_type=twitter"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -18,7 +18,7 @@
           </a>
           <a
             href="https://discord.gg/jTBC4BKnj7"
-            data-buried="'click','footer_social','social_type=discord'"
+            data-buried="click,footer_social,social_type=discord"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -26,7 +26,7 @@
           </a>
           <a
             href="https://t.me/BitDAO_Official"
-            data-buried="'click','footer_social','social_type=telegram'"
+            data-buried="click,footer_social,social_type=telegram"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -34,7 +34,7 @@
           </a>
           <a
             href="https://github.com/BitDAOProtocol"
-            data-buried="'click','footer_social','social_type=github'"
+            data-buried="click,footer_social,social_type=github"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -42,7 +42,7 @@
           </a>
           <a
             href="https://medium.com/bitdao"
-            data-buried="'click','footer_social','social_type=medium'"
+            data-buried="click,footer_social,social_type=medium"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -55,19 +55,19 @@
         <div class="link-container">
           <!-- <a
             href="/docs/api"
-            data-buried="'click','footer_protocol','protocal_type=about_us'"
+            data-buried="click,footer_protocol,protocal_type=about_us"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('About Us') }}</a>
           <a
             href="/docs/api"
-            data-buried="'click','footer_protocol','protocal_type=api'"
+            data-buried="click,footer_protocol,protocal_type=api"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('API Docs') }}</a> -->
           <a
             href="/docs/governance"
-            data-buried="'click','footer_protocol','protocal_type=governance'"
+            data-buried="click,footer_protocol,protocal_type=governance"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -75,7 +75,7 @@
           </a>
           <a
             href="/docs/litepaper"
-            data-buried="'click','footer_protocol','protocal_type=lite_paper'"
+            data-buried="click,footer_protocol,protocal_type=lite_paper"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -83,7 +83,7 @@
           </a>
           <!-- <a
             href="/vote"
-            data-buried="'click','footer_protocol','protocal_type=vote'"
+            data-buried="click,footer_protocol,protocal_type=vote"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('vote') }}</a> -->
@@ -94,7 +94,7 @@
         <div class="link-container">
           <a
             href="/faq"
-            data-buried="'click','footer_support','support_type=faq'"
+            data-buried="click,footer_support,support_type=faq"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -102,7 +102,7 @@
           </a>
           <!-- <a
             href="/careers"
-            data-buried="'click','footer_support','support_type=careers'"
+            data-buried="click,footer_support,support_type=careers"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('Careers') }}</a> -->

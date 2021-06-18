@@ -7,28 +7,28 @@
       <div class="header__right">
         <a
           href="/docs/litepaper"
-          data-buried="'click','header_litepaper',''"
+          data-buried="click,header_litepaper"
           rel="noopener noreferrer"
         >
           {{ $t('Litepaper') }}
         </a>
         <a
           href="/docs/governance"
-          data-buried="'click','header_governance',''"
+          data-buried="click,header_governance"
           rel="noopener noreferrer"
         >
           {{ $t('Governance') }}
         </a>
         <a
           href="https://discourse-test.bitdao.io/"
-          data-buried="'click','header_forum',''"
+          data-buried="click,header_forum"
           rel="noopener noreferrer"
         >
           {{ $t('Forum') }}
         </a>
         <a
           href="/faq"
-          data-buried="'click','header_faq',''"
+          data-buried="'click,header_faq"
           rel="noopener noreferrer"
         >
           {{ $t('FAQ') }}

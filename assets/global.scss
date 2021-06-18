@@ -1,5 +1,10 @@
 h1 {
-    .black {
-      color: #000;
-    }
+  .black {
+    color: #000;
+  }
+}
+.bit-button {
+  span, svg {
+    pointer-events: none;
+  }
 }
