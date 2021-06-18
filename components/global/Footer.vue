@@ -53,8 +53,18 @@
       <div class="social">
         <h2>{{ $t('protocol') }}</h2>
         <div class="link-container">
-          <a>{{ $t('About Us') }}</a>
-          <a>{{ $t('API Docs') }}</a>
+          <a
+            href="/docs/api"
+            data-buried="'click','footer','aboutus'"
+            rel="noopener noreferrer"
+            target="_blank"
+          >{{ $t('About Us') }}</a>
+          <a
+            href="/docs/api"
+            data-buried="'click','footer','api'"
+            rel="noopener noreferrer"
+            target="_blank"
+          >{{ $t('API Docs') }}</a>
           <a
             href="/docs/governance"
             data-buried="'click','footer','governance'"
@@ -71,7 +81,12 @@
           >
             {{ $t('Litepaper') }}
           </a>
-          <a>{{ $t('vote') }}</a>
+          <a
+            href="/vote"
+            data-buried="'click','footer','vote'"
+            rel="noopener noreferrer"
+            target="_blank"
+          >{{ $t('vote') }}</a>
         </div>
       </div>
       <div class="social">
@@ -85,7 +100,12 @@
           >
             {{ $t('FAQ') }}
           </a>
-          <a>{{ $t('Careers') }}</a>
+          <a
+            href="/careers"
+            data-buried="'click','footer','careers'"
+            rel="noopener noreferrer"
+            target="_blank"
+          >{{ $t('Careers') }}</a>
         </div>
       </div>
     </div>
