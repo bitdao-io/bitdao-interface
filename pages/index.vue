@@ -89,11 +89,11 @@ export default {
   padding: 100px 0;
 }
 .flow-section {
-  background: linear-gradient(180deg,#43A3C6, #F6EDF6 10%, #F6EDF6 50%, #F6EDF6 90%, #77CFF5);
+  background: linear-gradient(180deg,#43A3C6, #F6EDF6 10%, #F6EDF6 50%, #F6EDF6 70%, #ffffff);
   padding: 200px 0;
 }
 .partner-section {
-  background: linear-gradient(180deg, #77CFF5 0%, #1CADDF 100%);
+  background: #ffffff;
   padding: 200px 0;
 }
 </style>
