@@ -1,9 +1,28 @@
 <template>
   <section class="treasury">
-    <h1>TREASURY PROTOCOL</h1>
-    <p>$ 1,000,000,000+ </p>
-    <!-- <p>{{ animatedNumber }}</p> -->
-    <h2>ANNUALLY *EST.</h2>
+    <div class="treasury-charts">
+      <div class="chart-box">
+        <h2 class="title">
+          Current Treasury Balance
+        </h2>
+        <h2 class="total-balance">
+          $1,000,000
+        </h2>
+        <CurrentBalance />
+        <p class="tips">
+          Estimated $1,000,000,000 +contribution from BitDAO partners per annum
+        </p>
+      </div>
+      <div class="chart-box2">
+        <h2 class="title">
+          Pledged (*Yet to be injected)
+        </h2>
+        <h2 class="total-balance">
+          $1,000,000
+        </h2>
+        <PledgedBalance />
+      </div>
+    </div>
     <a
       href="/faq"
       class="bit-button"
@@ -18,23 +37,20 @@
 </template>
 
 <script>
-// import { gsap } from 'gsap'
+import CurrentBalance from './CurrentBalance.vue'
+import PledgedBalance from './PledgedBalance.vue'
 
-// export default {
-//   data () {
-//     return {
-//       tweenedNumber: 0
-//     }
-//   },
-//   computed: {
-//     animatedNumber () {
-//       return this.tweenedNumber.toFixed(0)
-//     }
-//   },
-//   mounted () {
-//     gsap.to(this.$data, { duration: 5, tweenedNumber: 100000 })
-//   }
-// }
+export default {
+  components: {
+    CurrentBalance,
+    PledgedBalance
+  },
+  data () {
+    return {
+      tweenedNumber: 0
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +62,9 @@
   flex-direction: column;
   height: 600px;
   padding-top: 200px;
+  .treasury-charts {
+    display: flex;
+  }
   h1 {
     font-size: 24px;
     font-weight: 700;
@@ -57,10 +76,52 @@
     margin-bottom: 0;
     font-weight: 700;
   }
-  h2 {
-    font-size: 24px;
-    margin-top: 40px;
-    font-weight: 700;
+  .chart-box {
+    background: #FFFFFF;
+    box-shadow: 0px 208.675px 166.94px rgba(15, 72, 239, 0.07), 0px 26.1294px 20.9036px rgba(15, 72, 239, 0.035), 0px 5.77458px 4.61966px rgba(15, 72, 239, 0.1);
+    border-radius: 30px;
+    color: #2658EF;
+    padding: 20px 40px;
+    width: 380px;
+    margin-right: 40px;
+    .title {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    .total-balance {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .tips {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .chart-box2 {
+    background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+    box-shadow: 0px 208.675px 166.94px rgba(15, 72, 239, 0.07), 0px 26.1294px 20.9036px rgba(15, 72, 239, 0.035), 0px 5.77458px 4.61966px rgba(15, 72, 239, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 40px;
+    width: 380px;
+    .title {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    .total-balance {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .tips {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 </style>

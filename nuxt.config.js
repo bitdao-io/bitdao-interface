@@ -25,13 +25,14 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/layout.css',
-    '~/assets/global.scss',
+    '~/assets/global.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/vue_plugins.js',
-    { src: '~plugins/ga.js', mode: 'client' }
+    { src: '~plugins/ga.js', mode: 'client' },
+    { src: '@/plugins/element-ui', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +52,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
-    '@nuxtjs/gtm',
+    '@nuxtjs/gtm'
   ],
   gtm: {
     enabled: true,
@@ -93,6 +94,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      plugins: [
+        ['component',
+          {
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk'
+          }
+        ]
+      ]
+    },
     // transpile: ['ant-design-vue'],
     // babel: {
     //   plugins: [
