@@ -16,11 +16,12 @@
         <el-table-column
           prop="value"
           label="Value in USD($)"
-          width="180"
+          width="240"
         />
         <el-table-column
           prop="date"
           label="Injection Date"
+          width="200"
         />
         <el-table-column
           prop="hash"
@@ -82,7 +83,7 @@ export default {
     line-height: 31px;
     color: #0E47EF;
     background: linear-gradient(180deg, #FFF7F8 28.13%, #FFFFFF 54.17%);
-    padding: 30px 20px;
+    padding: 30px 40px;
     width: 1000px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -90,6 +91,8 @@ export default {
   }
   .c-table {
     width: 1000px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
   .c-pagination {
     float: right;
@@ -109,6 +112,14 @@ export default {
     border: 1px solid #0E47EF;
     background-color: #fff;
     color: #0E47EF;
+  }
+  .el-table th>.cell, .el-table .cell {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #121212;
+  }
+  .el-table td, .el-table th {
+    padding: 30px 0;
   }
 }
 </style>

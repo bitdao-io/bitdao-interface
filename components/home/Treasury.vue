@@ -15,7 +15,7 @@
       </div>
       <div class="chart-box2">
         <h2 class="title">
-          Pledged (*Yet to be injected)
+          Pledged (*Yet To Be Contributed)
         </h2>
         <h2 class="total-balance">
           $1,000,000
