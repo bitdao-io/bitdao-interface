@@ -73,6 +73,9 @@
       <img ref="arrow1" src="@/assets/image/bitflow/arrow.svg" alt="to right" class="arrow1">
       <img ref="arrow2" src="@/assets/image/bitflow/arrow.svg" alt="to down" class="arrow2">
       <img ref="arrow3" src="@/assets/image/bitflow/arrow.svg" alt="to up" class="arrow3">
+      <span class="flow-desc flow-desc1">{{ $t('flowOrder[0]') }}</span>
+      <span class="flow-desc flow-desc2">{{ $t('flowOrder[1]') }}</span>
+      <span class="flow-desc flow-desc3" v-html="$t('flowOrder[2]')" />
     </div>
   </section>
 </template>
@@ -102,17 +105,17 @@ export default {
       }
     })
     // 0 120 240
-    tl.add(TweenMax.to(flow1, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'first')
+    tl.add(TweenMax.to(flow1, 1, { scale: 1.3, backgroundColor: '#fff', color: '#000' }), 'first')
       .add(TweenMax.to(flow1, 1.5, { }), 'first')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 120 }), 'second')
       .add(TweenMax.to(flow1, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'second')
-      .add(TweenMax.to(flow2, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'second')
+      .add(TweenMax.to(flow2, 1, { scale: 1.3, backgroundColor: '#fff', color: '#000' }), 'second')
       .add(TweenMax.to(flow2, 1.5, { }), 'second')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 240 }), 'third')
       .add(TweenMax.to(flow2, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'third')
-      .add(TweenMax.to(flow3, 1, { scale: 1.4, backgroundColor: '#fff', color: '#000' }), 'third')
+      .add(TweenMax.to(flow3, 1, { scale: 1.3, backgroundColor: '#fff', color: '#000' }), 'third')
       .add(TweenMax.to(flow3, 1.5, { }), 'third')
     // tl.add(TweenMax.to(flow3, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'forth')
   }
@@ -130,13 +133,13 @@ export default {
   position: relative;
   .bitflow-inner {
     position: absolute;
-    width: 508px;
-    height: 508px;
+    width: 600px;
+    height: 600px;
   }
   .dashed-circle {
     position: absolute;
-    width: 508px;
-    height: 508px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     border: 5px dashed #0E47EF;
     box-sizing: border-box;
@@ -151,21 +154,21 @@ export default {
   .bitflow-item-2 {
     width: 70px;
     left: 50px;
-    top: 130px;
+    top: 150px;
   }
   .bitflow-item-3 {
     width: 70px;
     right: 50px;
-    top: 130px;
+    top: 150px;
   }
   .arrow-line-1 {
-    right: 70px;
-    top: 80px;
+    right: 80px;
+    top: 90px;
   }
   .arrow-line-2 {
-    left: 120px;
-    bottom: 80px;
-    transform: rotate(120deg);
+    left: 80px;
+    top: 90px;
+    transform: rotate(235deg);
   }
   .arrow-line {
     position: absolute;
@@ -183,11 +186,12 @@ export default {
     flex-direction: column;
     position: absolute;
     .bitflow-item__text {
-      font-size: 12px;
+      font-size: 14px;
       text-align: center;
       font-weight: 700;
       margin-top: 10px;
       line-height: 18px;
+      min-width: 100px;
     }
   }
   .flow-icon-container {
@@ -214,8 +218,8 @@ export default {
   }
   .flow {
     position: absolute;
-    width: 270px;
-    height: 270px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     background: #0E47EF;
     display: flex;
@@ -245,22 +249,49 @@ export default {
   .arrow1 {
     position: absolute;
     top: -10px;
-    left: 50%;
+    left: 280px;
     z-index: 11;
   }
   .arrow2 {
     position: absolute;
-    bottom: 100px;
-    right: 38px;
+    bottom: 120px;
+    right: 45px;
     transform: rotate(120deg); // 0 120 240
     z-index: 11;
   }
   .arrow3 {
     position: absolute;
-    bottom: 100px;
-    left: 38px;
+    bottom: 120px;
+    left: 45px;
     transform: rotate(-126deg); // 0 120 240
     z-index: 11;
+  }
+  .flow-desc {
+    font-size: 20px;
+    color: #0E47EF;
+    font-weight: 700;
+    display: block;
+  }
+  .flow-desc1 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 12;
+  }
+  .flow-desc2 {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    transform: translate(80%, 0);
+    z-index: 12;
+  }
+  .flow-desc3 {
+    position: absolute;
+    bottom: 120px;
+    left: 0px;
+    transform: translate(-80%, 0);
+    z-index: 12;
   }
 }
 </style>

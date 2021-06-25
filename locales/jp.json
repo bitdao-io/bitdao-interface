@@ -52,8 +52,13 @@
     },
     "flow": [
         ["BitDAOによるプロダクトの特徴<br>（例： 先物DEXなど）", "パートナーの貢献", "パートナートークンの成長"],
-        ["提案と投票", "BitDAO<br>が保有する資産", "BitDAO<br>による統治"],
+        ["2. 提案<br>と投票", "BitDAO<br>が保有する資産", "BitDAO<br>による統治"],
         ["Protocol<br> Upgrades", "助成金", "トークンスワップ"]
+    ],
+    "flowOrder": [
+        "1. 出資",
+        "3. 実行",
+        "エコシステムの<br>成長"
     ],
     "partners": {
         "leaders": {

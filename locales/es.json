@@ -52,8 +52,13 @@
     },
     "flow": [
         ["Contribuciones de BitDAO,<br> p. Ej. Futuros DEX", "Contribuciones<br> de socios", "Crecimiento<br> del token"],
-        ["Propuestas y<br> votación", "Tesorería de BitDAO", "Gobernancia de BitDAO"],
+        ["2. Propuestas<br> y votación", "Tesorería de BitDAO", "Gobernancia de BitDAO"],
         ["Protocol<br> Upgrades", "Subsidios", "Intercambios"]
+    ],
+    "flowOrder": [
+        "1. Contribuciones",
+        "3. Ejecución",
+        "Crecimiento del<br> ecosistema"
     ],
     "partners": {
         "leaders": {

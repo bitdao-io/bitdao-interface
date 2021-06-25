@@ -23,14 +23,14 @@
             <p>{{ $t('counts.content[1]') }}</p>
           </div>
         </div>
-        <div ref="feature3" class="feature feature-3">
+        <!-- <div ref="feature3" class="feature feature-3">
           <div class="feature_logo">
             <svg-icon icon-class="chain" class="counts-icon" />
           </div>
           <div class="feature_text">
             <p>{{ $t('counts.content[2]') }}</p>
           </div>
-        </div>
+        </div> -->
         <div ref="feature4" class="feature feature-4">
           <div class="feature_logo">
             <svg-icon icon-class="leader" class="counts-icon" />
@@ -50,7 +50,7 @@ import { gsap, TweenMax } from 'gsap'
 export default {
   mounted () {
     // eslint-disable-next-line no-unused-vars
-    const { container, title, subtitle, features, feature1, feature2, feature3, feature4 } = this.$refs
+    const { container, title, subtitle, features, feature1, feature2, feature4 } = this.$refs
     // gsap.to(box, { rotation: 27, x: 100, duration: 1 })
     const tl = gsap.timeline({
     // yes, we can add it to an entire timeline!
@@ -76,7 +76,7 @@ export default {
 
       .add(TweenMax.from(feature1, 1, { x: -650 }), 'third')
       .add(TweenMax.from(feature2, 1, { y: 1350 }), 'third')
-      .add(TweenMax.from(feature3, 1, { x: 100 }), 'third')
+      // .add(TweenMax.from(feature3, 1, { x: 100 }), 'third')
       .add(TweenMax.from(feature4, 1, { x: 750 }), 'third')
   }
 }
@@ -136,7 +136,7 @@ export default {
       transform: translate(-450px, 700px);
     }
     .feature-2 {
-      transform: translate(-150px, 700px);
+      transform: translate(0, 700px);
     }
     .feature-3 {
       transform: translate(150px, 700px);

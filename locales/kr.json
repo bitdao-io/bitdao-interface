@@ -52,8 +52,13 @@
     },
     "flow": [
         ["BitDAO 상품 기여도<br> (예: DEX 선물) ", "파트너 협업", "파트너 토큰 성장"],
-        ["기획 및 투표", "BitDAO<br> 운용자산", "BitDAO<br> 거버넌스 "],
+        ["2. 기획<br> 및 투표", "BitDAO<br> 운용자산", "BitDAO<br> 거버넌스 "],
         ["Protocol<br> Upgrades", "보조금", "토큰 스왑"]
+    ],
+    "flowOrder": [
+        "1. 기여",
+        "3. 실행",
+        "생태계 <br>성장"
     ],
     "partners": {
         "leaders": {

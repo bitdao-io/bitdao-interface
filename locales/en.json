@@ -54,8 +54,13 @@
         ["BitDAO Product Contributions<br> (eg. Futures DEX)",
             "Partner<br> Contributions",
             "Partner Token<br> Growth"],
-        ["Proposal and<br> Voting", "BitDAO<br> Treasury", "BitDAO<br> Governance"],
+        ["2. Proposal<br> and Voting", "BitDAO<br> Treasury", "BitDAO<br> Governance"],
         ["Protocol<br> Upgrades", "Grants", "Token Swaps"]
+    ],
+    "flowOrder": [
+        "1. Contribution",
+        "3. Execution",
+        "Ecosystem <br>Growth"
     ],
     "partners": {
         "leaders": {
