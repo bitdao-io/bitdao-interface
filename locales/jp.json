@@ -1,22 +1,27 @@
 {
     "Litepaper": "ライトペーパー",
     "Forum": "フォーラム",
-    "Governance": "Governance",
-    "FAQ": "FAQ",
+    "Governance": "ガバナンス",
+    "FAQ": "よくある質問",
     "THE TREASURY": "THE TREASURY",
     "Annually *Est.": "Annually *Est.",
-    "Find Out More": "Find Out More",
+    "Find Out More": "詳細はこちら",
     "Transparent, Collaborative, Transformative": "民主・協調・変革",
+    "treasury": {
+        "current": "現在の運用資産額",
+        "tips": "BitDAOパートナーより年間100万ドル相当以上の融資を想定",
+        "pledged": "担保資産 (*近日調達予定)"
+    },
     "vision": {
-        "title": "Vision",
+        "title": "ビジョン",
         "content": "BitDAOの理念は、民主的な金融サービスと分散型のトークン経済の実現にあります。"
     },
     "innovation": {
-        "title": "Accelerate Innovation and Growth",
+        "title": "イノベーションと成長の加速",
         "content": "BitDAOは、幅広い分野の人材が参加し、多額の資産を活用することで、分散型金融（DeFi）の変革と成長を加速させることを目指しています。"
     },
     "collaboration": {
-        "title": "Collaboration",
+        "title": "共同運用",
         "content": "BitDAOは、新規及び既存のDeFiプロトコルや参加者と協力し、助成金、トークンスワップ、研究開発支援などを通して、独自のプロトコルを構築していきます。我々は、開発やコミュニティ管理などの分野で協力していただける有能な人材を募集しています。"
     },
     "counts": {
@@ -35,10 +40,10 @@
     "participate": {
         "p1": "我々の理念を定義し明確化することを、コミュニティに呼びかけています。",
         "p2": "そのために、フォーラムに参加してご自身のアイディアを提案してください。",
-        "button": "PARTICIPATE NOW"
+        "button": "今すぐ参加"
     },
     "growth": {
-        "title": "BitDAOエコシステムの発展・成長に向けて",
+        "title": "<span class='black'>BitDAOエコシステム</span>の発展・成長に向けて",
         "content": [{
             "title": "Bybitによるサポート",
             "desc": "BybitはBitDAOにとって最初のパートナーです。先物取引高の2.5bpsに相当する資産を融資しています。"
@@ -60,20 +65,7 @@
         "3. 実行",
         "エコシステムの<br>成長"
     ],
-    "partners": {
-        "leaders": {
-            "title": "Lead <span class='black'>Investors</span>"
-        },
-        "advisors": {
-            "title": "Advised <span class='black'>by</span>"
-        },
-        "Participants": {
-            "title": "Partnered <span class='black'>with</span>"
-        },
-        "investors": {
-            "title": "<span class='black'>Investors</span>"
-        }
-    },
+    "partners": "パートナー",
     "social": "SNS",
     "protocol": "プロトコル",
     "support": "サポート",

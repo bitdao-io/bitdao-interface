@@ -7,6 +7,11 @@
     "Annually *Est.": "Annually *Est.",
     "Find Out More": "Find Out More",
     "Transparent, Collaborative, Transformative": "Transparent, Collaborative, Transformative",
+    "treasury": {
+        "current": "Current Treasury Balance",
+        "tips": "Estimated $1,000,000,000+ contribution from BitDAO partners per annum",
+        "pledged": "Pledged (*Yet to be contributed)"
+    },
     "vision": {
         "title": "Vision",
         "content": "BitDAO’s vision is open finance and a decentralized token economy."
@@ -62,20 +67,7 @@
         "3. Execution",
         "Ecosystem <br>Growth"
     ],
-    "partners": {
-        "leaders": {
-            "title": "Lead <span class='black'>Investors</span>"
-        },
-        "advisors": {
-            "title": "Advised <span class='black'>by</span>"
-        },
-        "Participants": {
-            "title": "Partnered <span class='black'>with</span>"
-        },
-        "investors": {
-            "title": "<span class='black'>Investors</span>"
-        }
-    },
+    "partners": "Partners",
     "social": "SOCIAL",
     "protocol": "PROTOCOL",
     "support": "SUPPORT",

@@ -3,19 +3,19 @@
     <div class="treasury-charts">
       <div class="chart-box">
         <h2 class="title">
-          Current Treasury Balance
+          {{ $t('treasury.current') }}
         </h2>
         <h2 class="total-balance">
           $1,000,000
         </h2>
         <CurrentBalance />
         <p class="tips">
-          Estimated $1,000,000,000 +contribution from BitDAO partners per annum
+          {{ $t('treasury.tips') }}
         </p>
       </div>
       <div class="chart-box2">
         <h2 class="title">
-          Pledged (*Yet To Be Contributed)
+          {{ $t('treasury.pledged') }}
         </h2>
         <h2 class="total-balance">
           $1,000,000
@@ -30,7 +30,7 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span class="bit-button_text">FIND OUT MORE</span>
+      <span class="bit-button_text">{{ $t('Find Out More') }}</span>
       <svg-icon icon-class="arrow-right" />
     </a>
   </section>

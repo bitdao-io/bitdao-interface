@@ -5,9 +5,13 @@
     "FAQ": "FAQ",
     "THE TREASURY": "THE TREASURY",
     "Annually *Est.": "Annually *Est.",
-    "Find Out More": "Find Out More",
+    "Find Out More": "Подробнее",
     "Transparent, Collaborative, Transformative": "Прозрачность. Коллаборация. Свобода.",
-    
+    "treasury": {
+        "current": "Баланс активов на настоящее время",
+        "tips": "$1 000 000 000+ примерная ежегодная сумма вкладов от партнеров BitDAO",
+        "pledged": "Внесено (*будет внесено)"
+    },
     "vision": {
         "title": "Vision",
         "content": "Миссия BitDAO - децентрализованные финансы и токен-экономика."
@@ -39,7 +43,7 @@
         "button": "PARTICIPATE NOW"
     },
     "growth": {
-        "title": "ЭКОСИСТЕМА BitDAO",
+        "title": "<span class='black'>ЭКОСИСТЕМА</span> BitDAO",
         "content": [{
             "title": "УЧАСТИЕ BYBIT",
             "desc": "Bybit - первый партнер BitDAO, заложивший 2.5bps от объема фьючерсной торговли маркетплейса в проект BitDAO."
@@ -61,20 +65,7 @@
         "3. Исполнени",
         "Рост <br>экосистемы"
     ],
-    "partners": {
-        "leaders": {
-            "title": "Lead <span class='black'>Investors</span>"
-        },
-        "advisors": {
-            "title": "Advised <span class='black'>by</span>"
-        },
-        "Participants": {
-            "title": "Partnered <span class='black'>with</span>"
-        },
-        "investors": {
-            "title": "<span class='black'>Investors</span>"
-        }
-    },
+    "partners": "ПАРТНЕРЫ",
     "social": "КОМЬЮНИТИ",
     "protocol": "ПРОТОКОЛ",
     "support": "ПОДДЕРЖКА",

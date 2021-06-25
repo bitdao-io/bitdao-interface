@@ -1,22 +1,27 @@
 {
     "Litepaper": "Litepaper",
     "Forum": "Foro",
-    "Governance": "Governance",
+    "Governance": "Gobernancia",
     "FAQ": "Preguntas Frecuentes",
     "THE TREASURY": "TESORERÍA",
     "Annually *Est.": "Anualmente * Est.",
     "Find Out More": "Saber más",
     "Transparent, Collaborative, Transformative": "Transparente, colaborativo, transformador",
+    "treasury": {
+        "current": "Saldo actual de la tesorería",
+        "tips": "Contribución anual de aproximadamente $1,000,000,000 + de los socios de BitDAO",
+        "pledged": "Prometido (*Por ser contribuidos)"
+    },
     "vision": {
-        "title": "Vision",
+        "title": "Visión",
         "content": "La visión de BitDAO son las finanzas abiertas y una economía descentralizada."
     },
     "innovation": {
-        "title": "Accelerate Innovation and Growth",
+        "title": "Acelerar la innovación y el crecimiento",
         "content": "BitDAO tiene como objetivo utilizar importantes recursos financieros e I + D para acelerar la innovación y el crecimiento en todo el espacio DeFi."
     },
     "collaboration": {
-        "title": "Collaboration",
+        "title": "Colaboración",
         "content": "BitDAO colaborará con equipos y protocolos DeFi existentes y emergentes, a través de subvenciones, intercambios de tokens y soporte de I + D. BitDAO construirá sus propios protocolos. Buscamos desarrolladores talentosos, administradores de la comunidad y otros colaboradores para que se unan a nosotros."
     },
     "counts": {
@@ -35,10 +40,10 @@
     "participate": {
         "p1": "Hacemos un llamado a la comunidad para definir y construir nuestra visión juntos.",
         "p2": "Participa en nuestro foro y envía propuestas.",
-        "button": "PARTICIPATE NOW"
+        "button": "PARTICIPAR AHORA"
     },
     "growth": {
-        "title": "Crecimiento del ecosistema de BitDAO",
+        "title": "<span class='black'>Crecimiento del</span> ecosistema de BitDAO",
         "content": [{
             "title": "APOYO DE BYBIT",
             "desc": "Bybit es el primer socio de BitDAO, contribuyendo con 2.5bps de volumen de negociación de futuros a la tesorería de BitDAO."
@@ -60,20 +65,7 @@
         "3. Ejecución",
         "Crecimiento del<br> ecosistema"
     ],
-    "partners": {
-        "leaders": {
-            "title": "Lead <span class='black'>Investors</span>"
-        },
-        "advisors": {
-            "title": "Advised <span class='black'>by</span>"
-        },
-        "Participants": {
-            "title": "Partnered <span class='black'>with</span>"
-        },
-        "investors": {
-            "title": "<span class='black'>Investors</span>"
-        }
-    },
+    "partners": "Colaboradores",
     "social": "COMUNIDAD",
     "protocol": "PROTOCOLO",
     "support": "SOPORTE",
