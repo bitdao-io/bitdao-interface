@@ -3,43 +3,45 @@
     <div class="c-table-title">
       Realized Contribution by Bybit
     </div>
-    <el-table
-      :data="tableData"
-      class="c-table"
-    >
-      <el-table-column
-        prop="symbol"
-        label="Asset"
-        width="180"
-      />
-      <el-table-column
-        prop="value"
-        label="Value in USD($)"
-        width="180"
-      />
-      <el-table-column
-        prop="date"
-        label="Injection Date"
-      />
-      <el-table-column
-        prop="hash"
-        label="Tx Hash"
+    <client-only>
+      <el-table
+        :data="tableData"
+        class="c-table"
       >
-        <template slot-scope="scope">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            :href="`https://etherscan.io/tx/${scope.row.hash}`"
-          >{{ scope.row.hash }}</a>
-        </template>
-      </el-table-column>
-    </el-table>
-    <el-pagination
-      class="c-pagination"
-      background
-      layout="prev, pager, next"
-      :total="100"
-    />
+        <el-table-column
+          prop="symbol"
+          label="Asset"
+          width="180"
+        />
+        <el-table-column
+          prop="value"
+          label="Value in USD($)"
+          width="180"
+        />
+        <el-table-column
+          prop="date"
+          label="Injection Date"
+        />
+        <el-table-column
+          prop="hash"
+          label="Tx Hash"
+        >
+          <template slot-scope="scope">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              :href="`https://etherscan.io/tx/${scope.row.hash}`"
+            >{{ scope.row.hash }}</a>
+          </template>
+        </el-table-column>
+      </el-table>
+      <el-pagination
+        class="c-pagination"
+        background
+        layout="prev, pager, next"
+        :total="100"
+      />
+    </client-only>
   </div>
 </template>
 
