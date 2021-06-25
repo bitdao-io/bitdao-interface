@@ -26,10 +26,7 @@
     },
     "counts": {
         "title": "Every <span class='black'>BIT</span> COUNTS",
-        "subtitle": [
-            "Держатели BIT владеют BitDAO и контролируют фонд.",
-            "BIT holders control the treasury"
-        ],
+        "subtitle": "Держатели BIT владеют BitDAO и контролируют фонд.",
         "content": [
             "Голосуй - для влияния на активы фонда.",
             "Голосуй - для обновления протокола  BitDAO. ",

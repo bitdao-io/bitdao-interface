@@ -26,10 +26,7 @@
     },
     "counts": {
         "title": "Cada <span class='black'>BIT</span> cuenta",
-        "subtitle": [
-            "Los que poseen BIT son los dueños de",
-            "BitDAO y controlan la tesorería"
-        ],
+        "subtitle": "Los que poseen BIT son los dueños de BitDAO y controlan la tesorería",
         "content": [
             "Vota para utilizar los activos de la tesorería",
             "Vota para actualizar el protocolo BitDAO",

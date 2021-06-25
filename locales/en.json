@@ -26,10 +26,7 @@
     },
     "counts": {
         "title": "Every <span class='black'>BIT</span> COUNTS",
-        "subtitle": [
-            "BIT holders own BitDAO",
-            "BIT holders control the treasury"
-        ],
+        "subtitle": "BIT holders own BitDAO and the control of the treasury",
         "content": [
             "Vote to deploy treasury assets",
             "Vote to upgrade the BitDAO protocol",

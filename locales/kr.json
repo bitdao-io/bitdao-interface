@@ -26,10 +26,7 @@
     },
     "counts": {
         "title": "모든 <span class='black'>BIT</span>의 권리는 동등합니다.",
-        "subtitle": [
-            "BIT 보유자는 BitDAO를 소유하며 운용자산을 관리합니다.",
-            "BIT holders control the treasury"
-        ],
+        "subtitle": "BIT 보유자는 BitDAO를 소유하며 운용자산을 관리합니다.",
         "content": [
             "운용자산의 활용방법을 결정할 투표 권리",
             "BitDAO 프로토콜을 업그레이드할 투표 권리",

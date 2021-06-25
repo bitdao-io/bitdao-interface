@@ -26,10 +26,7 @@
     },
     "counts": {
         "title": "すべての<span class='black'>BIT</span>が等しく権利を有します",
-        "subtitle": [
-            "BIT保有者がBitDAOの所有者であり、運用資産を管理します",
-            "BIT保有者がBitDAOの所有者であり、運用資産を管理します"
-        ],
+        "subtitle": "BIT保有者がBitDAOを所有し、運用資産を管理します。",
         "content": [
             "運用資産の活用方法を決定する権利",
             "BitDAOプロトコルをアップグレードする権利",

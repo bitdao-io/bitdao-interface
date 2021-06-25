@@ -3,8 +3,7 @@
     <div class="bitcounts">
       <h1 ref="title" class="title" v-html="$t('counts.title')" />
       <div ref="subtitle" class="subtitle">
-        <p>{{ $t('counts.subtitle[0]') }}</p>
-        <p>{{ $t('counts.subtitle[1]') }}</p>
+        <p>{{ $t('counts.subtitle') }}</p>
       </div>
       <div ref="features" class="features">
         <div ref="feature1" class="feature feature-1">
