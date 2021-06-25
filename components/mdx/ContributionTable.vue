@@ -24,7 +24,15 @@
       <el-table-column
         prop="hash"
         label="Tx Hash"
-      />
+      >
+        <template slot-scope="scope">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            :href="`https://etherscan.io/tx/${scope.row.hash}`"
+          >{{ scope.row.hash }}</a>
+        </template>
+      </el-table-column>
     </el-table>
     <el-pagination
       class="c-pagination"

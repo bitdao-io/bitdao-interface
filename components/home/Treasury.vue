@@ -24,7 +24,7 @@
       </div>
     </div>
     <a
-      href="/faq"
+      href="/treasury"
       class="bit-button"
       data-buried="click,banner_treasury_findmore"
       rel="noopener noreferrer"
