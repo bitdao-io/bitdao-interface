@@ -84,10 +84,12 @@ export default {
 
 <style lang="scss" scoped>
 .trading-chart-container {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 550px;
   margin-bottom: 100px;
   .title {
+    margin-left: 10px;
     h1, p {
       font-size: 14px;
       font-weight: 500;
@@ -96,7 +98,7 @@ export default {
   }
   .trading-chart {
     height: 500px;
-    width: 1000px;
+    width: 100%;
   }
 }
 </style>

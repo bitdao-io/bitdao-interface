@@ -35,14 +35,17 @@
         </a>
         <Lang />
       </div>
+      <Buger class="buger" />
     </div>
   </header>
 </template>
 <script>
 import Lang from './Lang.vue'
+import Buger from './Buger.vue'
 export default {
   components: {
-    Lang
+    Lang,
+    Buger
   }
 }
 </script>
@@ -52,7 +55,7 @@ header {
   background: #fff;
   color: #353535;
   width: 100%;
-  height: 52px;
+  padding: 1.5rem 2rem;
   a {
     &:hover {
       color: #0E47EF;
@@ -61,7 +64,6 @@ header {
   .header-container {
     width: 100%;
     height: 100%;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,6 +79,22 @@ header {
         font-weight: 700;
         margin-right: 50px;
       }
+    }
+  }
+  .buger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+  header {
+    .header-container {
+      .header__right {
+        display: none;
+      }
+    }
+    .buger {
+      display: block;
     }
   }
 }

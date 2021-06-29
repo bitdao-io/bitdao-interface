@@ -11,17 +11,14 @@
         <el-table-column
           prop="symbol"
           label="Asset"
-          width="180"
         />
         <el-table-column
           prop="value"
           label="Value in USD($)"
-          width="240"
         />
         <el-table-column
           prop="date"
           label="Injection Date"
-          width="200"
         />
         <el-table-column
           prop="hash"
@@ -84,13 +81,15 @@ export default {
     color: #0E47EF;
     background: linear-gradient(180deg, #FFF7F8 28.13%, #FFFFFF 54.17%);
     padding: 30px 40px;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom: 1px solid #EBEEF5;
   }
   .c-table {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
@@ -120,6 +119,18 @@ export default {
   }
   .el-table td, .el-table th {
     padding: 30px 0;
+  }
+}
+@media screen and (max-width: 800px){
+  .c-table-container {
+    .c-table-title {
+      padding: 20px 10px;
+    }
+  }
+  /deep/ {
+    .el-table th>.cell, .el-table .cell {
+      padding: 0 10px;
+    }
   }
 }
 </style>

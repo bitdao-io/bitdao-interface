@@ -11,6 +11,7 @@
       <DataDailyTrading />
     </div>
     <Footer />
+    <Sidebar />
   </div>
 </template>
 
@@ -37,10 +38,13 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 0;
   }
   .title-table {
     margin-bottom: 100px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
   }
   .treasury-title {
     font-size: 48px;

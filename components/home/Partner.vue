@@ -5,28 +5,30 @@
       <img src="@/assets/image/partner/peter.svg" alt="">
       <img src="@/assets/image/partner/founders.svg" alt="">
       <img src="@/assets/image/partner/pantera.svg" alt="">
+      <img src="@/assets/image/partner/alan.svg" alt="">
       <img src="@/assets/image/partner/dragonfly.svg" alt="">
       <img src="@/assets/image/partner/bybit.svg" alt="">
-      <img src="@/assets/image/partner/alan.svg" alt="">
       <img src="@/assets/image/partner/kain.svg" alt="">
+      <img src="@/assets/image/partner/coinhako.svg" alt="">
       <img src="@/assets/image/partner/fenbushi.svg" alt="">
+      <img src="@/assets/image/partner/spartan.svg" alt="">
       <img src="@/assets/image/partner/jump.svg" alt="">
-      <img src="@/assets/image/partner/peak.svg" alt="">
       <img src="@/assets/image/partner/cambium.svg" alt="">
       <img src="@/assets/image/partner/tembusu.svg" alt="">
+
+      <img src="@/assets/image/partner/ngc.svg" alt="">
       <img src="@/assets/image/partner/longhash.svg" alt="">
-      <img src="@/assets/image/partner/iangels.svg" alt="">
+      <img src="@/assets/image/partner/sushi.svg" alt="">
       <img src="@/assets/image/partner/alphanonce.svg" alt="">
-      <img src="@/assets/image/partner/coinhako.svg" alt="">
-      <img src="@/assets/image/partner/mgnr.svg" alt="">
+      <img src="@/assets/image/partner/iangels.svg" alt="">
       <img src="@/assets/image/partner/uva.svg" alt="">
+
+      <img src="@/assets/image/partner/fin.svg" alt="">
       <img src="@/assets/image/partner/la.svg" alt="">
       <img src="@/assets/image/partner/amber.svg" alt="">
-      <img src="@/assets/image/partner/sushi.svg" alt="">
-      <img src="@/assets/image/partner/pantera.svg" alt="">
-      <img src="@/assets/image/partner/spartan.svg" alt="">
+      <img src="@/assets/image/partner/peak.svg" alt="">
       <img src="@/assets/image/partner/preangel.svg" alt="">
-      <img src="@/assets/image/partner/fin.svg" alt="">
+      <img src="@/assets/image/partner/mgnr.svg" alt="">
     </div>
   </section>
 </template>
@@ -38,20 +40,22 @@
   justify-content: center;
   position: relative;
   flex-direction: column;
+  margin-bottom: 5rem;
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: #0E47EF;
     margin-bottom: 45px;
   }
   .partner-logos {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     img {
-      height: 80px;
+      height: 4.5rem;
+      margin-left: 1rem;
     }
   }
   table {
@@ -67,6 +71,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .partner {
+    padding: 20px;
+    .partner-logos {
+      justify-content: space-around;
     }
   }
 }

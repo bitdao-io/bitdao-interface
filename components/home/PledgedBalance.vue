@@ -1,57 +1,81 @@
 <template>
   <div class="chart">
-    <GChart
-      type="PieChart"
-      :data="chartData"
-      :options="chartOptions"
-      class="pie-chart"
-    />
+    <el-table
+      :data="tableData"
+      style="width: 100%"
+    >
+      <el-table-column
+        prop="period"
+        label="Period"
+      />
+      <el-table-column
+        prop="average"
+        label="Daily Average"
+      />
+      <el-table-column
+        prop="annual"
+        label="Annualized"
+      />
+    </el-table>
   </div>
 </template>
 
 <script>
-import { GChart } from 'vue-google-charts'
 export default {
-  components: {
-    GChart
-  },
   data () {
     return {
-      chartData: [
-        ['Coin', 'Coin per Day'],
-        ['ETH', 38000],
-        ['USDC', 19000],
-        ['USDT', 19000]
-      ],
-      chartOptions: {
-        title: '',
-        legend: 'none',
-        pieHole: 0.3,
-        pieSliceText: 'label',
-        backgroundColor: 'transparent',
-        colors: ['#fff', '#FAC2CB', '#5CC7F1'],
-        fontName: 'Space Grotesk',
-        slices: {
-          0: {
-            color: '#fff',
-            textStyle: {
-              color: '#2659F1'
-            }
-          }
-        }
-      }
+      tableData: [{
+        period: 'Yesterday',
+        average: '$2.5M',
+        annual: '$912M'
+      }, {
+        period: 'Last 7 days',
+        average: '$2.5M',
+        annual: '$912M'
+      }, {
+        period: 'Last 30 days',
+        average: '$2.5M',
+        annual: '$912M'
+      }, {
+        period: 'Last 90 days',
+        average: '$2.5M',
+        annual: '$912M'
+      }]
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// .chart {
-//   width: 800px;
-//   background: transparent;
-// }
-.pie-chart {
-  width: 300px;
+.chart {
   height: 300px;
+}
+/deep/ {
+  .el-table th, .el-table tr, .el-table, .el-table__expanded-cell {
+    background-color: transparent;
+  }
+  .el-table, .el-table thead {
+    color: #FFFFFF;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid rgba(96, 135, 247, 0.5);
+  }
+  .el-table--border::after, .el-table--group::after, .el-table::before {
+    display: none;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .el-table .cell {
+    padding-left: 20px;
+  }
+  .el-table th>.cell {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 380px){
+  .chart {
+    height: auto;
+  }
 }
 </style>

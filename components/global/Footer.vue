@@ -118,8 +118,9 @@ footer {
   color: #2D82B7;
   margin: auto;
   .footer-container{
-    width: 1000px;
-    padding: 100px 0 200px;
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 5rem 0;
     margin: auto;
     display: flex;
     align-items: flex-start;
@@ -132,8 +133,14 @@ footer {
       font-weight: 700;
       line-height: 22px;
     }
+    .social {
+      margin-top: 2rem;
+      margin-right: 2rem;
+    }
     .title-desc {
       width: 280px;
+      margin-top: 2rem;
+      margin-right: 2rem;
       h1 {
         font-size: 42px;
         font-weight: 700;
@@ -153,6 +160,15 @@ footer {
         font-size: 14px;
         font-weight: 400;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  footer {
+    .footer-container {
+      padding: 2rem;
+      flex-wrap: wrap;
     }
   }
 }

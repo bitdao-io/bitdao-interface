@@ -1,0 +1,377 @@
+<template>
+  <section class="bitflow">
+    <h1 class="title">Growing the <span>BitDAO Ecosystem.</span></h1>
+    <div class="flow-pc">
+      <div class="left">
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon1.svg" alt="">
+          <p>Partner Contributions</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon2.svg" alt="">
+          <p>Partner Token Growth</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon3.svg" alt="">
+          <p>BitDAO Protocol Contributions</p>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="middle-icon">
+          <img src="@/assets/image/flow/icon7.svg" alt="">
+          <p>BitDAO TREASURY</p>
+        </div>
+        <div class="middle-link">
+          <img src="@/assets/image/flow/link.svg" alt="">
+        </div>
+        <div class="middle-icon">
+          <img src="@/assets/image/flow/icon8.svg" alt="">
+          <p>BitDAO GOVERNANCE</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <div class="flow-icon">
+            <img src="@/assets/image/flow/icon4.svg" alt="">
+            <p>Grants</p>
+          </div>
+          <div class="flow-icon">
+            <img src="@/assets/image/flow/icon5.svg" alt="">
+            <p>Token Swaps</p>
+          </div>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon6.svg" alt="">
+          <p>Protocol Upgrades</p>
+          <p class="p-eg">e.g. New BitDAO products and partner integrations</p>
+        </div>
+      </div>
+      <div class="arrow-right1">
+        <img src="@/assets/image/flow/arrow-right1.svg" alt="">
+      </div>
+      <div class="arrow-right2">
+        <img src="@/assets/image/flow/arrow-right2.svg" alt="">
+      </div>
+      <div class="arrow-left">
+        <img src="@/assets/image/flow/arrow-left.svg" alt="">
+      </div>
+    </div>
+    <div class="flow-mobile">
+      <div class="top">
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon1.svg" alt="">
+          <p>Partner Contributions</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon2.svg" alt="">
+          <p>Partner Token Growth</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon3.svg" alt="">
+          <p>BitDAO Protocol Contributions</p>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="middle-left">
+          <div>
+            <img src="@/assets/image/flow/mobile/arrow-down1.svg" alt="">
+          </div>
+          <div class="middle-icon-container">
+            <div class="middle-icon">
+              <img src="@/assets/image/flow/icon7.svg" alt="">
+              <p>BitDAO TREASURY</p>
+            </div>
+            <div class="middle-link">
+              <img src="@/assets/image/flow/mobile/link.svg" alt="">
+            </div>
+            <div class="middle-icon">
+              <img src="@/assets/image/flow/icon8.svg" alt="">
+              <p>BitDAO GOVERNANCE</p>
+            </div>
+          </div>
+          <div>
+            <img src="@/assets/image/flow/mobile/arrow-down2.svg" alt="">
+          </div>
+        </div>
+        <div class="middle-right">
+          <img src="@/assets/image/flow/mobile/arrow-up.svg" alt="">
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon4.svg" alt="">
+          <p>Grants</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon6.svg" alt="">
+          <p>Protocol Upgrades</p>
+          <p class="p-eg">e.g. New BitDAO products and partner integrations</p>
+        </div>
+        <div class="flow-icon">
+          <img src="@/assets/image/flow/icon5.svg" alt="">
+          <p>Token Swaps</p>
+        </div>
+      </div>
+    </div>
+    <p class="flow-subtitle">We are calling on the community to define and build our vision together.<br>Participate in our forum and governance process.</p>
+    <div class="flow-button">
+      <a
+        href="https://discourse-test.bitdao.io/"
+        class="bit-button"
+        data-buried="click,banner_community_EnterForum"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span class="bit-button_text">Enter Forum</span>
+      </a>
+
+      <a
+        href="/governance"
+        class="bit-button bit-button-blue"
+        data-buried="click,banner_governance_CurrentGovernance"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span class="bit-button_text">Current Governance</span>
+      </a>
+    </div>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.bitflow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  padding: 20px;
+  .title {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    span {
+      color: #2659F1;
+    }
+  }
+  .flow-pc {
+    position: relative;
+    height: 640px;
+    width: 1100px;
+    .left, .right {
+      background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+      border-radius: 30px;
+      padding: 40px 20px;
+    }
+    .left {
+      position: absolute;
+      left: 0;
+      width: 200px;
+      height: 640px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .middle {
+      position: absolute;
+      left: 430px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .middle-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        height: 154px;
+        width: 154px;
+        border: 4px solid #0E47EF;
+        p {
+          width: 80%;
+          font-size: 14;
+          font-weight: 700;
+          margin-top: 10px;
+        }
+      }
+      .middle-link {
+        text-align: center;
+        margin: 40px 0;
+      }
+    }
+    .right {
+      position: absolute;
+      left: 800px;
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .right-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+    .arrow-right1 {
+      position: absolute;
+      left: 215px;
+      top: 43px;
+      img {
+        height: 56px;
+      }
+    }
+    .arrow-right2 {
+      position: absolute;
+      left: 595px;
+      top: 43px;
+      img {
+        height: 56px;
+      }
+    }
+    .arrow-left {
+      position: absolute;
+      bottom: 30px;
+      left: 220px;
+      img {
+        height:235px;
+      }
+    }
+  }
+  .flow-icon {
+    color: #fff;
+    text-align: center;
+    img {
+      margin-bottom: 10px;
+      height: 50px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .p-eg {
+      margin-top: 10px;
+    }
+  }
+  .flow-mobile {
+    display: none;
+    .top, .bottom {
+      background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+      border-radius: 30px;
+      padding: 40px 20px;
+      display: flex;
+    }
+    .flow-icon {
+      width: 33%;
+      img {
+        width: 33%;
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 10px 50px;
+      .middle-left {
+        .middle-icon-container {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          margin-left: -60px;
+        }
+        .middle-icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+          border: 4px solid #0E47EF;
+          img {
+            width: 40%;
+          }
+          p {
+            width: 80%;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+        .middle-link {
+          text-align: center;
+          margin: 40px 0;
+          img {
+            width: 80px;
+          }
+        }
+      }
+      .middle-right {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .flow-subtitle {
+    margin: 4rem 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .flow-button {
+    display: flex;
+    align-items: center;
+    a:last-child {
+      margin: 0 0 0 20px;
+    }
+  }
+}
+@media screen and (max-width: 1000px){
+  .bitflow {
+    .flow-pc {
+      display: none;
+    }
+    .flow-mobile {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .bitflow {
+    .flow-pc {
+      display: none;
+    }
+    .flow-mobile {
+      .middle {
+        margin: 10px 40px;
+        .middle-left {
+          .middle-icon-container {
+            margin-left: -60px;
+          }
+          .middle-icon {
+            height: 25vw;
+            width: 25vw;
+          }
+          .middle-link {
+            text-align: center;
+            margin: 10vw 0;
+            img {
+              width: 15vw;
+            }
+          }
+        }
+      }
+    }
+    .flow-button {
+      display: flex;
+      flex-direction: column;
+      a:last-child {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}
+</style>
