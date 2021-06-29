@@ -1,22 +1,24 @@
 <template>
   <div class="chart">
-    <el-table
-      :data="tableData"
-      style="width: 100%"
-    >
-      <el-table-column
-        prop="period"
-        label="Period"
-      />
-      <el-table-column
-        prop="average"
-        label="Daily Average"
-      />
-      <el-table-column
-        prop="annual"
-        label="Annualized"
-      />
-    </el-table>
+    <client-only>
+      <el-table
+        :data="tableData"
+        style="width: 100%"
+      >
+        <el-table-column
+          prop="period"
+          label="Period"
+        />
+        <el-table-column
+          prop="average"
+          label="Daily Average"
+        />
+        <el-table-column
+          prop="annual"
+          label="Annualized"
+        />
+      </el-table>
+    </client-only>
   </div>
 </template>
 
