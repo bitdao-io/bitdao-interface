@@ -9,16 +9,16 @@
         class="c-table"
       >
         <el-table-column
+          prop="date"
+          label="Date"
+        />
+        <el-table-column
           prop="asset"
           label="Asset"
         />
         <el-table-column
           prop="valueUsd"
-          label="Value in USD($)"
-        />
-        <el-table-column
-          prop="date"
-          label="Injection Date"
+          label="Units"
         />
         <el-table-column
           prop="txHash"
