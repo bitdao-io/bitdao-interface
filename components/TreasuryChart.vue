@@ -66,17 +66,22 @@ export default {
   methods: {
     async getData () {
       this.loading = true
-      const data = await this.$axios.$get('/api/service/balance')
-      this.loading = false
-      if (data.success === true) {
-        const chartData = []
-        if (!data.body) { this.chartNoData = true } else { this.chartNoData = false }
-        const { ethCount, usdtCount, usdcCount, usdTotal } = data.body || {}
-        chartData.push(['ETH', ethCount])
-        chartData.push(['USDC', usdcCount])
-        chartData.push(['USDT', usdtCount])
-        this.chartData = [...this.chartData, ...chartData]
-        this.usdTotal = usdTotal || 0
+      try {
+        const data = await this.$axios.$get('/api/service/balance')
+        this.loading = false
+        if (data.success === true) {
+          const chartData = []
+          if (!data.body) { this.chartNoData = true } else { this.chartNoData = false }
+          const { ethCount, usdtCount, usdcCount, usdTotal } = data.body || {}
+          chartData.push(['ETH', ethCount])
+          chartData.push(['USDC', usdcCount])
+          chartData.push(['USDT', usdtCount])
+          this.chartData = [...this.chartData, ...chartData]
+          this.usdTotal = usdTotal || 0
+        }
+      } catch (error) {
+        this.loading = false
+        this.chartNoData = true
       }
     }
   }
