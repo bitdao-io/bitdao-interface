@@ -59,6 +59,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
@@ -94,7 +95,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    // proxy: true
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -167,6 +170,12 @@ export default {
           }
         })
       }
+    }
+  },
+  proxy: {
+    '/api': {
+      target: 'http://www.public-test-1.bitdao.io',
+      changeOrigin: true
     }
   }
 }

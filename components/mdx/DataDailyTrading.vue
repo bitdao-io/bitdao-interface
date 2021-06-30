@@ -78,6 +78,16 @@ export default {
         }
       }
     }
+  },
+  mounted () {
+    this.getData()
+  },
+  methods: {
+    async getData () {
+      const data = await this.$axios.$get('/api/service/chart-30d')
+      // if (data.success === true) {}
+      console.log(data)
+    }
   }
 }
 </script>

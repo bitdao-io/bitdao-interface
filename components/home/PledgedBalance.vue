@@ -42,7 +42,21 @@ export default {
         period: 'Last 90 days',
         average: '$2.5M',
         annual: '$912M'
-      }]
+      }],
+      loading: true
+    }
+  },
+  mounted () {
+    this.getChart90d()
+  },
+  methods: {
+    async getChart90d () {
+      this.loading = true
+      const data = await this.$axios.$get('/api/service/chart-90d')
+      this.loading = false
+      if (data.success === true) {
+        console.log(data)
+      }
     }
   }
 }

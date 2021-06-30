@@ -5,15 +5,15 @@
     </div>
     <client-only>
       <el-table
-        :data="tableData"
+        :data="list"
         class="c-table"
       >
         <el-table-column
-          prop="symbol"
+          prop="asset"
           label="Asset"
         />
         <el-table-column
-          prop="value"
+          prop="valueUsd"
           label="Value in USD($)"
         />
         <el-table-column
@@ -21,19 +21,21 @@
           label="Injection Date"
         />
         <el-table-column
-          prop="hash"
+          prop="txHash"
           label="Tx Hash"
         >
           <template slot-scope="scope">
             <a
               rel="noopener noreferrer"
               target="_blank"
-              :href="`https://etherscan.io/tx/${scope.row.hash}`"
-            >{{ scope.row.hash }}</a>
+              :href="`https://etherscan.io/tx/${scope.row.txHash}`"
+            >{{ scope.row.txHash }}</a>
           </template>
         </el-table-column>
       </el-table>
       <el-pagination
+        :pager-count="5"
+        :hide-on-single-page="true"
         class="c-pagination"
         background
         layout="prev, pager, next"
@@ -47,27 +49,27 @@
 export default {
   data () {
     return {
-      tableData: [{
-        symbol: 'ETH',
-        value: '$101,147.19',
-        date: '2021/07/01',
-        hash: '0x47a7ba4ce8e0a6d1d64faec092add546020717697ed7443b44ef1ee9222fa570'
-      }, {
-        symbol: 'USDT',
-        value: '$266,936.40',
-        date: '2021/07/01',
-        hash: '0x47a7ba4ce8e0a6d1d64faec092add546020717697ed7443b44ef1ee9222fa570'
-      }, {
-        symbol: 'USDC',
-        value: '$460,855.58',
-        date: '2021/07/01',
-        hash: '0x47a7ba4ce8e0a6d1d64faec092add546020717697ed7443b44ef1ee9222fa570'
-      }, {
-        symbol: 'ETH',
-        value: '$101,147.19',
-        date: '2021/07/01',
-        hash: '0x47a7ba4ce8e0a6d1d64faec092add546020717697ed7443b44ef1ee9222fa570'
-      }]
+      tableData: [],
+      list: [],
+      loading: true,
+      pageIndex: 1,
+      pageSize: 10,
+      total: 1
+    }
+  },
+  mounted () {
+    this.getHistory()
+  },
+  methods: {
+    async getHistory () {
+      this.loading = true
+      const data = await this.$axios.$get(`/api/service/inject/history?page=${this.pageIndex}&size=${this.pageSize}`)
+      this.loading = false
+      if (data.success === true) {
+        const { list, total } = data.body
+        this.list = list
+        this.total = total
+      }
     }
   }
 }

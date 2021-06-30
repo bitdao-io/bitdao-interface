@@ -30,6 +30,7 @@
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/markdownit": "^2.0.0",
+    "@nuxtjs/proxy": "^2.1.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-import": "^1.13.3",

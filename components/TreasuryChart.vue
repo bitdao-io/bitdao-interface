@@ -47,23 +47,18 @@ export default {
   components: {
     CurrentBalance,
     PledgedBalance
-  },
-  data () {
-    return {
-      tweenedNumber: 0
-    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .treasury {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(180deg, #D9E5F3, rgba(247, 238, 246, 0.6));
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 4rem;
+  padding: 4rem 4rem 10rem;
   .bit-button {
     margin-top: 4rem;
   }

@@ -33,6 +33,19 @@ export default {
         fontName: 'Space Grotesk'
       }
     }
+  },
+  mounted () {
+    this.getData()
+  },
+  methods: {
+    async getData () {
+      this.loading = true
+      const data = await this.$axios.$get('/api/service/balance')
+      this.loading = false
+      if (data.success === true) {
+        console.log(data)
+      }
+    }
   }
 }
 </script>

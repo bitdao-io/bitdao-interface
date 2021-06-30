@@ -23,6 +23,10 @@
         </div>
         <div class="middle-link">
           <img src="@/assets/image/flow/link.svg" alt="">
+          <div class="bitflow-step bitflow-step2">
+            <span class="bitflow-step-num">2</span>
+            <span>Proposal and <br>Voting</span>
+          </div>
         </div>
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon8.svg" alt="">
@@ -48,12 +52,24 @@
       </div>
       <div class="arrow-right1">
         <img src="@/assets/image/flow/arrow-right1.svg" alt="">
+        <div class="bitflow-step">
+          <span class="bitflow-step-num">1</span>
+          <span>Contributions</span>
+        </div>
       </div>
       <div class="arrow-right2">
         <img src="@/assets/image/flow/arrow-right2.svg" alt="">
+        <div class="bitflow-step">
+          <span class="bitflow-step-num">3</span>
+          <span>Execution</span>
+        </div>
       </div>
       <div class="arrow-left">
         <img src="@/assets/image/flow/arrow-left.svg" alt="">
+        <div class="bitflow-step bitflow-step4">
+          <span class="bitflow-step-num">4</span>
+          <span>Ecosystem Growth</span>
+        </div>
       </div>
     </div>
     <div class="flow-mobile">
@@ -73,28 +89,44 @@
       </div>
       <div class="middle">
         <div class="middle-left">
-          <div>
+          <div class="mobile-arrow">
             <img src="@/assets/image/flow/mobile/arrow-down1.svg" alt="">
+            <div class="bitflow-step">
+              <span class="bitflow-step-num">1</span>
+              <span>Contributions</span>
+            </div>
           </div>
           <div class="middle-icon-container">
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon7.svg" alt="">
               <p>BitDAO TREASURY</p>
             </div>
-            <div class="middle-link">
+            <div class="middle-link mobile-arrow">
               <img src="@/assets/image/flow/mobile/link.svg" alt="">
+              <div class="bitflow-step bitflow-step2">
+                <span class="bitflow-step-num">2</span>
+                <span>Proposal<br> and Voting</span>
+              </div>
             </div>
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon8.svg" alt="">
               <p>BitDAO GOVERNANCE</p>
             </div>
           </div>
-          <div>
+          <div class="mobile-arrow">
             <img src="@/assets/image/flow/mobile/arrow-down2.svg" alt="">
+            <div class="bitflow-step">
+              <span class="bitflow-step-num">3</span>
+              <span>Execution</span>
+            </div>
           </div>
         </div>
-        <div class="middle-right">
+        <div class="middle-right mobile-arrow">
           <img src="@/assets/image/flow/mobile/arrow-up.svg" alt="">
+          <div class="bitflow-step bitflow-step4">
+            <span>Ecosystem<br> Growth</span>
+            <span class="bitflow-step-num">4</span>
+          </div>
         </div>
       </div>
       <div class="bottom">
@@ -145,8 +177,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 100px 0;
-  padding: 20px;
+  padding: 2rem 20px 10rem;
+  background: linear-gradient(180deg,rgba(247, 238, 246, 0.6), #FFFFFF);
   .title {
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -239,6 +271,42 @@
         height:235px;
       }
     }
+    .bitflow-step {
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      transform: translate(-30%, -50%);
+      color: #0E47EF;
+      font-weight: 700;
+      font-size: 16px;
+      white-space:nowrap;
+      .bitflow-step-num {
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 1rem;
+      }
+    }
+    .bitflow-step4 {
+      left: 50%;
+      top: 86%;
+      transform: translate(-50%, -50%);
+    }
+    .bitflow-step2 {
+      left: 100%;
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      .bitflow-step-num {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
   }
   .flow-icon {
     color: #fff;
@@ -257,6 +325,56 @@
   }
   .flow-mobile {
     display: none;
+    .mobile-arrow {
+      position: relative;
+    }
+    .bitflow-step {
+      position: absolute;
+      left: 3px;
+      top: 50%;
+      transform: translate(0, -50%);
+      color: #0E47EF;
+      font-weight: 700;
+      font-size: 16px;
+      white-space:nowrap;
+      .bitflow-step-num {
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 1rem;
+      }
+    }
+    .bitflow-step2 {
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      .bitflow-step-num {
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+      }
+    }
+    .bitflow-step4 {
+      left: 0;
+      top: 80%;
+      transform: translate(-71%, -50%);
+      text-align: center;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .bitflow-step-num {
+        margin-right: 0;
+        margin-left: 1rem;
+      }
+    }
     .top, .bottom {
       background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
       border-radius: 30px;
@@ -329,7 +447,7 @@
     }
   }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
   .bitflow {
     .flow-pc {
       display: none;
