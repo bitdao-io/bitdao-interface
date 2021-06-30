@@ -23,25 +23,26 @@
 </template>
 
 <script>
+import numeral from 'numeral'
 export default {
   data () {
     return {
       tableData: [{
         period: 'Yesterday',
-        average: '$2.5M',
-        annual: '$912M'
+        average: '-',
+        annual: '-'
       }, {
         period: 'Last 7 days',
-        average: '$2.5M',
-        annual: '$912M'
+        average: '-',
+        annual: '-'
       }, {
         period: 'Last 30 days',
-        average: '$2.5M',
-        annual: '$912M'
+        average: '-',
+        annual: '-'
       }, {
         period: 'Last 90 days',
-        average: '$2.5M',
-        annual: '$912M'
+        average: '-',
+        annual: '-'
       }],
       loading: true
     }
@@ -55,8 +56,64 @@ export default {
       const data = await this.$axios.$get('/api/service/chart-90d')
       this.loading = false
       if (data.success === true) {
-        console.log(data)
+        this.handleData(data.body.list)
       }
+    },
+    handleData (list) {
+      const len = list.length
+      const periods = [{
+        period: 1,
+        totalUsd: 0
+      }, {
+        period: 7,
+        totalUsd: 0
+      }, {
+        period: 30,
+        totalUsd: 0
+      }, {
+        period: 90,
+        totalUsd: 0
+      }]
+      const _tableData = [{
+        period: 'Yesterday',
+        average: 0,
+        annual: 0
+      }, {
+        period: 'Last 7 days',
+        average: 0,
+        annual: 0
+      }, {
+        period: 'Last 30 days',
+        average: 0,
+        annual: 0
+      }, {
+        period: 'Last 90 days',
+        average: 0,
+        annual: 0
+      }]
+      const format = '($0.00a)'
+      for (let i = 0; i < len; i++) {
+        const item = list[i]
+        const totalUsd = item.ethAmount + item.usdcAmount + item.usdtAmount
+        periods.forEach((item) => {
+          if (i <= item.period - 1) {
+            item.totalUsd += totalUsd
+          }
+        })
+      }
+      for (let i = 0; i < periods.length; i++) {
+        const item = periods[i]
+        const dailyUsd = (item.totalUsd / item.period)
+        const annualUsd = ((item.totalUsd / item.period) * 365)
+        if (item.period > len) {
+          _tableData[i].average = '-'
+          _tableData[i].annual = '-'
+        } else {
+          _tableData[i].average = numeral(dailyUsd).format(format)
+          _tableData[i].annual = numeral(annualUsd).format(format)
+        }
+      }
+      this.tableData = _tableData
     }
   }
 }
@@ -87,6 +144,9 @@ export default {
   }
   .el-table th>.cell {
     padding-left: 20px;
+  }
+  .el-table__empty-text {
+    color: #FFFFFF;
   }
 }
 @media screen and (max-width: 380px){

@@ -6,9 +6,12 @@
           {{ $t('treasury.current') }}
         </h2>
         <h2 class="total-balance">
-          $1,000,000
+          ${{ usdTotal.toLocaleString() }}
         </h2>
-        <CurrentBalance />
+        <div v-if="chartNoData" class="no-data">
+          <div class="no-data-chart"></div>
+        </div>
+        <CurrentBalance v-else :chart-data="chartData" />
         <p class="tips">
           {{ $t('treasury.tips') }}
         </p>
@@ -47,6 +50,35 @@ export default {
   components: {
     CurrentBalance,
     PledgedBalance
+  },
+  data () {
+    return {
+      chartData: [
+        ['Coin', 'Coin per Day']
+      ],
+      usdTotal: 0,
+      chartNoData: false
+    }
+  },
+  mounted () {
+    this.getData()
+  },
+  methods: {
+    async getData () {
+      this.loading = true
+      const data = await this.$axios.$get('/api/service/balance')
+      this.loading = false
+      if (data.success === true) {
+        const chartData = []
+        if (!data.body) { this.chartNoData = true } else { this.chartNoData = false }
+        const { ethCount, usdtCount, usdcCount, usdTotal } = data.body || {}
+        chartData.push(['ETH', ethCount])
+        chartData.push(['USDC', usdcCount])
+        chartData.push(['USDT', usdtCount])
+        this.chartData = [...this.chartData, ...chartData]
+        this.usdTotal = usdTotal || 0
+      }
+    }
   }
 }
 </script>
@@ -59,6 +91,19 @@ export default {
   justify-content: center;
   flex-direction: column;
   padding: 4rem 4rem 10rem;
+  .no-data {
+    font-size: 26px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .no-data-chart {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+    }
+  }
   .bit-button {
     margin-top: 4rem;
   }

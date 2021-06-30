@@ -34,12 +34,14 @@
         </el-table-column>
       </el-table>
       <el-pagination
-        :pager-count="5"
         :hide-on-single-page="true"
+        :pager-count="5"
         class="c-pagination"
         background
         layout="prev, pager, next"
-        :total="100"
+        :total="total"
+        :page-size="pageSize"
+        @current-change="handleCurrentChange"
       />
     </client-only>
   </div>
@@ -49,21 +51,25 @@
 export default {
   data () {
     return {
-      tableData: [],
       list: [],
       loading: true,
       pageIndex: 1,
       pageSize: 10,
-      total: 1
+      total: 0
     }
   },
   mounted () {
-    this.getHistory()
+    this.pageIndex = 1
+    this.getHistory(1)
   },
   methods: {
-    async getHistory () {
+    handleCurrentChange (val) {
+      this.pageIndex = val
+      this.getHistory(val)
+    },
+    async getHistory (pageIndex) {
       this.loading = true
-      const data = await this.$axios.$get(`/api/service/inject/history?page=${this.pageIndex}&size=${this.pageSize}`)
+      const data = await this.$axios.$get(`/api/service/inject-history?page=${pageIndex}&size=${this.pageSize}`)
       this.loading = false
       if (data.success === true) {
         const { list, total } = data.body

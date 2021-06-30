@@ -21,6 +21,7 @@
     "gsap": "^3.6.1",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-div": "^1.1.0",
+    "numeral": "^2.0.6",
     "nuxt": "^2.15.3",
     "nuxt-i18n": "^6.27.0",
     "vue-google-charts": "^0.3.3"

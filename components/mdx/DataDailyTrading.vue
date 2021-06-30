@@ -2,7 +2,7 @@
   <div class="trading-chart-container">
     <div class="title">
       <h1>Daily Contribution by Bybit</h1>
-      <p>Total Contribution in USD Equivalent: $******</p>
+      <p>Total Contribution in USD Equivalent: ${{ usdTotal }}</p>
     </div>
     <GChart
       type="ColumnChart"
@@ -22,16 +22,9 @@ export default {
   data () {
     return {
       chartData: [
-        ['Date', 'ETH', 'USDT', 'USDC'],
-        ['2021-07-01', 1000, 400, 200],
-        ['2021-07-02', 1170, 460, 250],
-        ['2021-07-03', 660, 1120, 300],
-        ['2021-07-04', 1030, 540, 350],
-        ['2021-07-04', 1030, 540, 350],
-        ['2021-07-04', 1030, 540, 350],
-        ['2021-07-04', 1030, 540, 350],
-        ['2021-07-04', 1030, 540, 350]
+        ['Date', 'ETH', 'USDT', 'USDC']
       ],
+      usdTotal: 0,
       chartOptions: {
         chartArea: { width: '85%', height: '80%' },
         backgroundColor: 'transparent',
@@ -84,9 +77,20 @@ export default {
   },
   methods: {
     async getData () {
-      const data = await this.$axios.$get('/api/service/chart-30d')
-      // if (data.success === true) {}
-      console.log(data)
+      const charts = await this.$axios.$get('/api/service/chart-30d')
+      if (charts.success === true) {
+        const chartData = []
+        const { list = [] } = charts.body
+        list.forEach((item) => {
+          const { date, ethAmount, usdtAmount, usdcAmount } = item
+          chartData.push([date, ethAmount, usdtAmount, usdcAmount])
+        })
+        this.chartData = [...this.chartData, ...chartData]
+      }
+      const balance = await this.$axios.$get('/api/service/balance')
+      if (balance.success === true) {
+        this.usdTotal = balance.body.usdTotal || 0
+      }
     }
   }
 }
@@ -101,7 +105,7 @@ export default {
   .title {
     margin-left: 10px;
     h1, p {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500;
       color: #0E47EF;
     }

@@ -15,14 +15,16 @@ export default {
   components: {
     GChart
   },
+  props: {
+    chartData: {
+      type: Array,
+      default: () => {
+        return [['Coin', 'Coin per Day']]
+      }
+    }
+  },
   data () {
     return {
-      chartData: [
-        ['Coin', 'Coin per Day'],
-        ['ETH', 38000],
-        ['USDC', 19000],
-        ['USDT', 19000]
-      ],
       chartOptions: {
         title: '',
         legend: 'none',
@@ -31,19 +33,6 @@ export default {
         backgroundColor: 'transparent',
         colors: ['#2659F1', '#FAC2CB', '#5CC7F1'],
         fontName: 'Space Grotesk'
-      }
-    }
-  },
-  mounted () {
-    this.getData()
-  },
-  methods: {
-    async getData () {
-      this.loading = true
-      const data = await this.$axios.$get('/api/service/balance')
-      this.loading = false
-      if (data.success === true) {
-        console.log(data)
       }
     }
   }

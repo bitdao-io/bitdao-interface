@@ -1,6 +1,6 @@
 <template>
   <section class="bitflow">
-    <h1 class="title">Growing the <span>BitDAO Ecosystem.</span></h1>
+    <h1 class="title">Growing the <span>BitDAO Ecosystem</span></h1>
     <div class="flow-pc">
       <div class="left">
         <div class="flow-icon">
