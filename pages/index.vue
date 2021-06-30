@@ -26,6 +26,9 @@ export default {
     HomeLogo,
     TreasuryChart,
     FlowChart
+  },
+  head: {
+    title: 'BitDAO | Home'
   }
 }
 </script>

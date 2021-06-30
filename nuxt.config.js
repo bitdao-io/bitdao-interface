@@ -15,7 +15,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'BitDAO' }
+      { hid: 'title', name: 'title', content: 'BitDAO' },
+      { hid: 'description', name: 'description', content: 'Supporting open finance and a decentralized tokenized economy.' },
+      { name: 'og:title', content: 'BitDAO' },
+      { name: 'og:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://bitdao.io/' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: 'https://bitdao.io/' },
+      { name: 'twitter:title', content: 'BitDAO' },
+      { name: 'twitter:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
+      { name: 'twitter:creator', content: '@BitDAO_Official' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

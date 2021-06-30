@@ -160,7 +160,7 @@
     width: 1100px;
     .left, .right {
       background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
-      border-radius: 30px;
+      border-radius: 16px;
       padding: 40px 20px;
     }
     .left {

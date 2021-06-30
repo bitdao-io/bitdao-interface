@@ -26,6 +26,9 @@ export default {
     Footer,
     DataDailyTrading,
     ContributionTable
+  },
+  head: {
+    title: 'BitDAO | Analytics'
   }
 }
 </script>
