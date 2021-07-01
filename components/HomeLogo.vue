@@ -4,7 +4,7 @@
       <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
       <h1 class="title"><span>Every</span> Bit <span>Counts</span></h1>
       <h2 class="subtitle">
-        Help allocate the world's largest DAO-directed treasury, partner with leading protocols, and build the future of finance.
+        Allocate the world's largest DAO-directed treasury, partner with leading protocols, and build the future of finance.
       </h2>
       <a
         href="https://docs.bitdao.io/"

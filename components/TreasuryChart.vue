@@ -8,10 +8,11 @@
         <h2 class="total-balance">
           ${{ usdTotal.toLocaleString() }}
         </h2>
-        <div v-if="chartNoData" class="no-data">
+        <!-- <div v-if="chartNoData" class="no-data">
           <div class="no-data-chart"></div>
         </div>
-        <CurrentBalance v-else :chart-data="chartData" />
+        <CurrentBalance v-else :chart-data="chartData" /> -->
+        <CurrentBalance :chart-data="barChart" />
         <!-- <p class="tips">
           {{ $t('treasury.tips') }}
         </p> -->
@@ -64,7 +65,7 @@
 </template>
 
 <script>
-import CurrentBalance from './home/CurrentBalance.vue'
+import CurrentBalance from './CurrentBalance.vue'
 import PledgedBalance from './home/PledgedBalance.vue'
 
 export default {
@@ -78,7 +79,14 @@ export default {
         ['Coin', 'Coin per Day']
       ],
       usdTotal: 0,
-      chartNoData: false
+      chartNoData: false,
+      barChart: {
+        ethCount: 0,
+        usdtCount: 0,
+        usdcCount: 0,
+        usdTotal: 0,
+        ethPrice: 0
+      }
     }
   },
   mounted () {
@@ -94,6 +102,7 @@ export default {
           const chartData = []
           if (!data.body) { this.chartNoData = true } else { this.chartNoData = false }
           const { ethCount, usdtCount, usdcCount, usdTotal, ethPrice } = data.body || {}
+          this.barChart = data.body || {}
           chartData.push(['ETH', ethCount * ethPrice])
           chartData.push(['USDC', usdcCount])
           chartData.push(['USDT', usdtCount])
