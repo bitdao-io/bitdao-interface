@@ -25,11 +25,13 @@
           label="Tx Hash"
         >
           <template slot-scope="scope">
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              :href="`https://etherscan.io/tx/${scope.row.txHash}`"
-            >{{ scope.row.txHash }}</a>
+            <span class="hash-tag">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                :href="`https://etherscan.io/tx/${scope.row.txHash}`"
+              >{{ scope.row.txHash }}</a>
+            </span>
           </template>
         </el-table-column>
       </el-table>
@@ -104,6 +106,12 @@ export default {
   .c-pagination {
     float: right;
     margin-top: 20px;
+  }
+  .hash-tag {
+    a {
+      white-space: nowrap;
+      color: #0E47EF;
+    }
   }
 }
 /deep/ {

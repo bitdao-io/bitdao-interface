@@ -139,14 +139,28 @@ export default {
   .el-table--enable-row-hover .el-table__body tr:hover>td {
     background-color: rgba(0,0,0,0.1);
   }
-  .el-table .cell {
-    padding-left: 20px;
-  }
-  .el-table th>.cell {
-    padding-left: 20px;
+  .el-table {
+    th:first-child>.cell {
+      padding-left: 20px;
+    }
+    th:not(:first-child)>.cell{
+      text-align: center;
+    }
   }
   .el-table__empty-text {
     color: #FFFFFF;
+  }
+  .el-table__row {
+    td:first-child {
+      .cell {
+        padding-left: 20px;
+      }
+    }
+    td:not(:first-child) {
+      .cell {
+        text-align: center;
+      }
+    }
   }
 }
 @media screen and (max-width: 380px){

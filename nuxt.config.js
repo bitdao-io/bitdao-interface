@@ -59,7 +59,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // '@nuxtjs/proxy',
+    '@nuxtjs/proxy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
@@ -172,11 +172,11 @@ export default {
         })
       }
     }
+  },
+  proxy: {
+    '/api': {
+      target: 'http://www.public-test-1.bitdao.io',
+      changeOrigin: true
+    }
   }
-  // proxy: {
-  //   '/api': {
-  //     target: 'http://www.public-test-1.bitdao.io',
-  //     changeOrigin: true
-  //   }
-  // }
 }

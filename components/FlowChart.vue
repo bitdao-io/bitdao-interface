@@ -164,7 +164,7 @@
         rel="noopener noreferrer"
         target="_blank"
       >
-        <span class="bit-button_text">Current Governance</span>
+        <span class="bit-button_text">Governance</span>
       </a>
     </div>
   </section>
@@ -223,9 +223,9 @@
         border: 4px solid #0E47EF;
         p {
           width: 80%;
-          font-size: 14;
+          font-size: 14px;
           font-weight: 700;
-          margin-top: 10px;
+          margin-top: 5px;
         }
       }
       .middle-link {
@@ -457,14 +457,21 @@
     }
   }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
   .bitflow {
-    .flow-pc {
-      display: none;
+    .title {
+      text-align: center;
+      margin-bottom: 3rem;
+      span {
+        display: block;
+      }
     }
     .flow-mobile {
+      .top, .bottom {
+        padding: 20px 10px;
+      }
       .middle {
-        margin: 10px 40px;
+        margin: 10px 30px;
         .middle-left {
           .middle-icon-container {
             margin-left: -60px;
@@ -472,6 +479,11 @@
           .middle-icon {
             height: 25vw;
             width: 25vw;
+            p {
+              text-align: center;
+              transform: scale(0.8);
+              font-size: 3vw;
+            }
           }
           .middle-link {
             text-align: center;

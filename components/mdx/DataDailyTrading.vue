@@ -38,6 +38,7 @@ export default {
           }
         },
         hAxis: {
+          minValue: 0,
           title: 'Date',
           titleTextStyle: {
             color: '#ccc',
@@ -67,7 +68,8 @@ export default {
           },
           minorGridlines: {
             color: 'transparent'
-          }
+          },
+          minValue: 0
         }
       }
     }
@@ -76,20 +78,35 @@ export default {
     this.getData()
   },
   methods: {
+    handleEmptyCharts () {
+      const emptyArr = ['', 0, 0, 0]
+      this.chartData = [...this.chartData, emptyArr]
+      this.chartOptions.vAxis.maxValue = 10000
+    },
     async getData () {
-      const charts = await this.$axios.$get('/api/service/chart-30d')
-      if (charts.success === true) {
-        const chartData = []
-        const { list = [] } = charts.body
-        list.forEach((item) => {
-          const { date, ethAmount, usdtAmount, usdcAmount } = item
-          chartData.push([date, ethAmount, usdtAmount, usdcAmount])
-        })
-        this.chartData = [...this.chartData, ...chartData]
-      }
-      const balance = await this.$axios.$get('/api/service/balance')
-      if (balance.success === true) {
-        this.usdTotal = balance.body.usdTotal || 0
+      try {
+        const charts = await this.$axios.$get('/api/service/chart-30d')
+        if (charts.success === true) {
+          const chartData = []
+          const { list = [] } = charts.body
+          if (list && list.length > 0) {
+            list.forEach((item) => {
+              const { date, ethAmount, usdtAmount, usdcAmount } = item
+              chartData.push([date, ethAmount, usdtAmount, usdcAmount])
+            })
+            this.chartData = [...this.chartData, ...chartData]
+          } else {
+            this.handleEmptyCharts()
+          }
+        } else {
+          this.handleEmptyCharts()
+        }
+        const balance = await this.$axios.$get('/api/service/balance')
+        if (balance.success === true) {
+          this.usdTotal = balance.body.usdTotal || 0
+        }
+      } catch (error) {
+        this.handleEmptyCharts()
       }
     }
   }
@@ -108,6 +125,7 @@ export default {
       font-size: 16px;
       font-weight: 500;
       color: #0E47EF;
+      line-height: 30px;
     }
   }
   .trading-chart {
