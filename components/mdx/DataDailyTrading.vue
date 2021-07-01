@@ -81,7 +81,7 @@ export default {
     handleEmptyCharts () {
       const emptyArr = ['', 0, 0, 0]
       this.chartData = [...this.chartData, emptyArr]
-      this.chartOptions.vAxis.maxValue = 10000
+      this.chartOptions.vAxis.maxValue = 10000000000
     },
     async getData () {
       try {
@@ -101,9 +101,9 @@ export default {
         } else {
           this.handleEmptyCharts()
         }
-        const balance = await this.$axios.$get('/api/service/balance')
+        const balance = await this.$axios.$get('/api/service/pledge-sum')
         if (balance.success === true) {
-          this.usdTotal = balance.body.usdTotal || 0
+          this.usdTotal = balance.body.sumUsd || 0
         }
       } catch (error) {
         this.handleEmptyCharts()
