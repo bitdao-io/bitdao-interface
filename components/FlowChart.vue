@@ -182,9 +182,8 @@
   .title {
     font-size: 2rem;
     margin-bottom: 4rem;
-    span {
-      color: #2659F1;
-    }
+    font-weight: 700;
+    color: #2659F1;
   }
   .flow-pc {
     position: relative;
@@ -467,6 +466,9 @@
       }
     }
     .flow-mobile {
+      .bitflow-step {
+        font-size: 14px;
+      }
       .top, .bottom {
         padding: 20px 10px;
       }

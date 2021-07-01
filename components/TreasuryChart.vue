@@ -15,21 +15,43 @@
         <p class="tips">
           {{ $t('treasury.tips') }}
         </p>
+        <div class="box-button-container">
+          <a
+            href="https://etherscan.io/address/0x78605Df79524164911C144801f41e9811B7DB73D"
+            class="bit-button bit-button-blue"
+            data-buried="click,banner_treasury_findmore"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="bit-button_text">See Treasury</span>
+          </a>
+        </div>
       </div>
       <div class="chart-box2">
         <h2 class="title">
           Partner Contributions
         </h2>
         <p class="subtitle">
-          *Pledged and Actual Contributions
+          *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
         </p>
         <PledgedBalance />
         <p class="tips">
           2.5bps Bybit daily trading volume pledge calculated via CoinGecko API
         </p>
+        <div class="box-button-container">
+          <a
+            href="/treasury"
+            class="bit-button"
+            data-buried="click,banner_treasury_see_analytics"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="bit-button_text">See Analytics</span>
+          </a>
+        </div>
       </div>
     </div>
-    <a
+    <!-- <a
       href="/treasury"
       class="bit-button"
       data-buried="click,banner_treasury_findmore"
@@ -38,7 +60,7 @@
     >
       <span class="bit-button_text">{{ $t('Find Out More') }}</span>
       <svg-icon icon-class="arrow-right" />
-    </a>
+    </a> -->
   </section>
 </template>
 
@@ -72,8 +94,8 @@ export default {
         if (data.success === true) {
           const chartData = []
           if (!data.body) { this.chartNoData = true } else { this.chartNoData = false }
-          const { ethCount, usdtCount, usdcCount, usdTotal } = data.body || {}
-          chartData.push(['ETH', ethCount])
+          const { ethCount, usdtCount, usdcCount, usdTotal, ethPrice } = data.body || {}
+          chartData.push(['ETH', ethCount * ethPrice])
           chartData.push(['USDC', usdcCount])
           chartData.push(['USDT', usdtCount])
           this.chartData = [...this.chartData, ...chartData]
@@ -109,8 +131,11 @@ export default {
       background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
     }
   }
-  .bit-button {
-    margin-top: 4rem;
+  .box-button-container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .treasury-charts {
     display: flex;
@@ -138,7 +163,7 @@ export default {
     text-align: center;
     .title {
       font-weight: normal;
-      font-size: 18px;
+      font-size: 24px;
       line-height: 38px;
       margin-bottom: 20px;
     }
@@ -169,7 +194,7 @@ export default {
       font-size: 14px;
       color: #fff;
       font-weight: 500;
-      margin: 10px 0 50px;
+      margin: 10px 10px 32px;
     }
     .total-balance {
       font-size: 50px;
@@ -202,9 +227,14 @@ export default {
   .treasury .treasury-charts {
     .chart-box, .chart-box2 {
       padding: 20px 0;
-      width: 300px;
+      width: 90vw;
+      .chart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .subtitle {
-        margin: 10px 0;
+        margin: 10px;
       }
     }
   }

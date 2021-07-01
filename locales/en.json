@@ -8,7 +8,7 @@
     "Find Out More": "Find Out More",
     "Transparent, Collaborative, Transformative": "Transparent, Collaborative, Transformative",
     "treasury": {
-        "current": "Current Treasury Balance",
+        "current": "Treasury Balance",
         "tips": "Estimated $1,000,000,000+ contribution from BitDAO partners per annum",
         "pledged": "Pledged (*Yet to be contributed)"
     },
@@ -72,5 +72,5 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
+    "BitDAODesc": "Supporting open finance and a decentralized token economy"
 }

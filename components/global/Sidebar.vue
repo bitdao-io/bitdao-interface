@@ -11,6 +11,7 @@
             href="https://docs.bitdao.io/"
             data-buried="click,header_litepaper"
             rel="noopener noreferrer"
+            target="_blank"
           >
             {{ $t('Litepaper') }}
           </a>
@@ -18,6 +19,7 @@
             href="https://snapshot.org/#/bitdao.eth"
             data-buried="click,header_governance"
             rel="noopener noreferrer"
+            target="_blank"
           >
             {{ $t('Governance') }}
           </a>
@@ -25,6 +27,7 @@
             href="https://discourse-test.bitdao.io/"
             data-buried="click,header_forum"
             rel="noopener noreferrer"
+            target="_blank"
           >
             {{ $t('Forum') }}
           </a>
@@ -32,6 +35,7 @@
             href="https://docs.bitdao.io/additional-documents/faq"
             data-buried="'click,header_faq"
             rel="noopener noreferrer"
+            target="_blank"
           >
             {{ $t('FAQ') }}
           </a>

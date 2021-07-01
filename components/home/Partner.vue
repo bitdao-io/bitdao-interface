@@ -90,7 +90,6 @@
 @media screen and (max-width: 700px){
   .partner {
     .partner-logos .partner-item {
-      width: 50%;
       img {
         width: 100%;
       }

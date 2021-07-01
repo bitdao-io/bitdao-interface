@@ -2,7 +2,7 @@
   <footer>
     <div class="footer-container">
       <div class="title-desc">
-        <h1>BitDAO</h1>
+        <img class="footer-logo" src="@/assets/image/logo.svg" alt="LOGO">
         <p>{{ $t('BitDAODesc') }}</p>
       </div>
       <div class="social">
@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="social">
-        <h2>{{ $t('protocol') }}</h2>
+        <h2>GOVERNANCE</h2>
         <div class="link-container">
           <!-- <a
             href="/docs/api"
@@ -66,13 +66,32 @@
             target="_blank"
           >{{ $t('API Docs') }}</a> -->
           <a
-            href="https://snapshot.org/#/bitdao.eth"
+            href="https://discourse-test.bitdao.io/"
+            data-buried="click,footer_forum"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {{ $t('Forum') }}
+          </a>
+          <!-- <a
+            href="/governance"
             data-buried="click,footer_protocol,protocal_type=governance"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {{ $t('Governance') }}
-          </a>
+            Delegate
+          </a> -->
+          <a
+            href="https://snapshot.org/#/bitdao.eth"
+            data-buried="click,footer_protocol,protocal_type=vote"
+            rel="noopener noreferrer"
+            target="_blank"
+          >{{ $t('vote') }}</a>
+        </div>
+      </div>
+      <div class="social">
+        <h2>DOCUMENT</h2>
+        <div class="link-container">
           <a
             href="https://docs.bitdao.io/"
             data-buried="click,footer_protocol,protocal_type=lite_paper"
@@ -81,17 +100,6 @@
           >
             {{ $t('Litepaper') }}
           </a>
-          <!-- <a
-            href="/vote"
-            data-buried="click,footer_protocol,protocal_type=vote"
-            rel="noopener noreferrer"
-            target="_blank"
-          >{{ $t('vote') }}</a> -->
-        </div>
-      </div>
-      <div class="social">
-        <h2>{{ $t('support') }}</h2>
-        <div class="link-container">
           <a
             href="https://docs.bitdao.io/additional-documents/faq"
             data-buried="click,footer_support,support_type=faq"
@@ -117,6 +125,10 @@ footer {
   background: linear-gradient(180deg, #ECF8FF 0%, rgba(255, 255, 255, 0) 100%);
   color: #2D82B7;
   margin: auto;
+  .footer-logo {
+    height: 80px;
+    margin-left: -15px;
+  }
   .footer-container{
     max-width: 1000px;
     box-sizing: border-box;
