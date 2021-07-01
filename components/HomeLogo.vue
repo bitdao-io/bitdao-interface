@@ -7,8 +7,8 @@
         Help allocate the world's largest DAO-directed treasury, partner with world-leading protocols, and build the future of finance.
       </h2>
       <a
-        href="/faq"
-        data-buried="'click,home_faq"
+        href="https://docs.bitdao.io/"
+        data-buried="'click,home,learn_more"
         rel="noopener noreferrer"
         class="bit-button bit-button-blue"
         target="_blank"

@@ -6,14 +6,14 @@
       </a>
       <div class="header__right">
         <a
-          href="/docs/litepaper"
+          href="https://docs.bitdao.io/"
           data-buried="click,header_litepaper"
           rel="noopener noreferrer"
         >
           {{ $t('Litepaper') }}
         </a>
         <a
-          href="/docs/governance"
+          href="https://snapshot.org/#/bitdao.eth"
           data-buried="click,header_governance"
           rel="noopener noreferrer"
         >
@@ -27,7 +27,7 @@
           {{ $t('Forum') }}
         </a>
         <a
-          href="/faq"
+          href="https://docs.bitdao.io/additional-documents/faq"
           data-buried="'click,header_faq"
           rel="noopener noreferrer"
         >

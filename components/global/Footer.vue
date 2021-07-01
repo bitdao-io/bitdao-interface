@@ -66,7 +66,7 @@
             target="_blank"
           >{{ $t('API Docs') }}</a> -->
           <a
-            href="/docs/governance"
+            href="https://snapshot.org/#/bitdao.eth"
             data-buried="click,footer_protocol,protocal_type=governance"
             rel="noopener noreferrer"
             target="_blank"
@@ -74,7 +74,7 @@
             {{ $t('Governance') }}
           </a>
           <a
-            href="/docs/litepaper"
+            href="https://docs.bitdao.io/"
             data-buried="click,footer_protocol,protocal_type=lite_paper"
             rel="noopener noreferrer"
             target="_blank"
@@ -93,7 +93,7 @@
         <h2>{{ $t('support') }}</h2>
         <div class="link-container">
           <a
-            href="/faq"
+            href="https://docs.bitdao.io/additional-documents/faq"
             data-buried="click,footer_support,support_type=faq"
             rel="noopener noreferrer"
             target="_blank"

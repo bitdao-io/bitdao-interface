@@ -158,7 +158,7 @@
       </a>
 
       <a
-        href="/governance"
+        href="https://snapshot.org/#/bitdao.eth"
         class="bit-button bit-button-blue"
         data-buried="click,banner_governance_CurrentGovernance"
         rel="noopener noreferrer"
