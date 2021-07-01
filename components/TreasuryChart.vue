@@ -40,7 +40,7 @@
         </p>
         <div class="box-button-container">
           <a
-            href="/treasury"
+            href="/analytics"
             class="bit-button"
             data-buried="click,banner_treasury_see_analytics"
             rel="noopener noreferrer"
@@ -52,7 +52,7 @@
       </div>
     </div>
     <!-- <a
-      href="/treasury"
+      href="/analytics"
       class="bit-button"
       data-buried="click,banner_treasury_findmore"
       rel="noopener noreferrer"

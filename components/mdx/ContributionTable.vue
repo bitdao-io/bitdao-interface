@@ -1,7 +1,7 @@
 <template>
   <div class="c-table-container">
     <div class="c-table-title">
-      Realized Contribution by Bybit
+      Contribution by BitDAO Partners
     </div>
     <client-only>
       <el-table

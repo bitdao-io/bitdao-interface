@@ -1,8 +1,8 @@
 <template>
   <div class="trading-chart-container">
     <div class="title">
-      <h1>Daily Contribution by Bybit</h1>
-      <p>Total Contribution in USD Equivalent: ${{ usdTotal }}</p>
+      <h1>Daily Contribution by BitDAO Partners (Including Pledged and Actual)</h1>
+      <p>Total Contribution in USD Equivalent (Including Pledged and Actual): ${{ usdTotal }}</p>
     </div>
     <GChart
       type="ColumnChart"
