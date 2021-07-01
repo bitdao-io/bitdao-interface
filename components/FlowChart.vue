@@ -150,7 +150,7 @@
       <a
         href="https://discourse-test.bitdao.io/"
         class="bit-button"
-        data-buried="click,banner_community_EnterForum"
+        data-buried="click,banner_enterforum"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -160,7 +160,7 @@
       <a
         href="https://snapshot.org/#/bitdao.eth"
         class="bit-button bit-button-blue"
-        data-buried="click,banner_governance_CurrentGovernance"
+        data-buried="click,banner_currentgovernance"
         rel="noopener noreferrer"
         target="_blank"
       >

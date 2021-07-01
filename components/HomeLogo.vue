@@ -8,7 +8,7 @@
       </h2>
       <a
         href="https://docs.bitdao.io/"
-        data-buried="'click,home,learn_more"
+        data-buried="'click,banner_learnmore"
         rel="noopener noreferrer"
         class="bit-button bit-button-blue"
         target="_blank"

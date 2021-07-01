@@ -19,7 +19,7 @@
           <a
             href="https://etherscan.io/address/0x78605Df79524164911C144801f41e9811B7DB73D"
             class="bit-button bit-button-blue"
-            data-buried="click,banner_treasury_findmore"
+            data-buried="click,banner_treasury_seetreasury"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -38,15 +38,15 @@
           *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
         </p>
         <div class="box-button-container">
-          <a
+          <!-- <a
             href="/analytics"
             class="bit-button"
-            data-buried="click,banner_treasury_see_analytics"
+            data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span class="bit-button_text">See Analytics</span>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>

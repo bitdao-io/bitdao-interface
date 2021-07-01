@@ -67,7 +67,7 @@
           >{{ $t('API Docs') }}</a> -->
           <a
             href="https://discourse-test.bitdao.io/"
-            data-buried="click,footer_forum"
+            data-buried="click,footer_protocol,protocal_type=forum"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -75,7 +75,7 @@
           </a>
           <a
             href="#"
-            data-buried="click,footer_protocol,protocal_type=governance"
+            data-buried="click,footer_protocol,protocal_type=delegate"
             rel="noopener noreferrer"
           >
             Delegate
@@ -93,7 +93,7 @@
         <div class="link-container">
           <a
             href="https://docs.bitdao.io/"
-            data-buried="click,footer_protocol,protocal_type=lite_paper"
+            data-buried="click,footer_documents,document_type=lite_paper"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -101,7 +101,7 @@
           </a>
           <a
             href="https://docs.bitdao.io/additional-documents/faq"
-            data-buried="click,footer_support,support_type=faq"
+            data-buried="click,footer_documents,document_type=faq"
             rel="noopener noreferrer"
             target="_blank"
           >
