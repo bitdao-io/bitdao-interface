@@ -14,7 +14,7 @@
     },
     "vision": {
         "title": "Vision",
-        "content": "BitDAO’s vision is open finance and a decentralized token economy."
+        "content": "BitDAO’s vision is open finance and a decentralized tokenized economy."
     },
     "innovation": {
         "title": "Accelerate Innovation and Growth",
@@ -72,5 +72,5 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "Supporting open finance and a decentralized token economy"
+    "BitDAODesc": "Supporting open finance and a decentralized tokenized economy"
 }

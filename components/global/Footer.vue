@@ -73,14 +73,13 @@
           >
             {{ $t('Forum') }}
           </a>
-          <!-- <a
-            href="/governance"
+          <a
+            href="#"
             data-buried="click,footer_protocol,protocal_type=governance"
             rel="noopener noreferrer"
-            target="_blank"
           >
             Delegate
-          </a> -->
+          </a>
           <a
             href="https://snapshot.org/#/bitdao.eth"
             data-buried="click,footer_protocol,protocal_type=vote"
@@ -90,7 +89,7 @@
         </div>
       </div>
       <div class="social">
-        <h2>DOCUMENT</h2>
+        <h2>DOCUMENTS</h2>
         <div class="link-container">
           <a
             href="https://docs.bitdao.io/"

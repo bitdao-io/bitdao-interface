@@ -12,9 +12,9 @@
           <div class="no-data-chart"></div>
         </div>
         <CurrentBalance v-else :chart-data="chartData" />
-        <p class="tips">
+        <!-- <p class="tips">
           {{ $t('treasury.tips') }}
-        </p>
+        </p> -->
         <div class="box-button-container">
           <a
             href="https://etherscan.io/address/0x78605Df79524164911C144801f41e9811B7DB73D"
@@ -32,11 +32,10 @@
           Partner Contributions
         </h2>
         <p class="subtitle">
-          *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
         </p>
         <PledgedBalance />
         <p class="tips">
-          2.5bps Bybit daily trading volume pledge calculated via CoinGecko API
+          *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
         </p>
         <div class="box-button-container">
           <a
