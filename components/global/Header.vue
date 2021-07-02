@@ -2,7 +2,7 @@
   <header>
     <div class="header-container">
       <a href="/" class="header__left">
-        BitDAO
+        <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
       </a>
       <div class="header__right">
         <a
@@ -74,6 +74,9 @@ header {
     .header__left {
       font-size: 22px;
       font-weight: 700;
+      .logo {
+        width: 120px;
+      }
     }
     .header__right {
       display: flex;
