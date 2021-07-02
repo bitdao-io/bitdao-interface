@@ -97,4 +97,12 @@ export default {
     }
   }
 }
+/deep/ {
+  .el-progress-bar {
+    padding-right: 0;
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+}
 </style>
