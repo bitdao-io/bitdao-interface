@@ -55,19 +55,19 @@
         <div class="link-container">
           <!-- <a
             href="/docs/api"
-            data-buried="click,footer_protocol,protocal_type=about_us"
+            data-buried="click,footer_governance,governance_type=about_us"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('About Us') }}</a>
           <a
             href="/docs/api"
-            data-buried="click,footer_protocol,protocal_type=api"
+            data-buried="click,footer_governance,governance_type=api"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('API Docs') }}</a> -->
           <a
             href="https://discourse.bitdao.io/"
-            data-buried="click,footer_protocol,protocal_type=forum"
+            data-buried="click,footer_governance,governance_type=forum"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -76,14 +76,14 @@
           <a
             class="isDisabled"
             href=""
-            data-buried="click,footer_protocol,protocal_type=delegate"
+            data-buried="click,footer_governance,governance_type=delegate"
             rel="noopener noreferrer"
           >
             Delegate
           </a>
           <a
             href="https://snapshot.org/#/bitdao.eth"
-            data-buried="click,footer_protocol,protocal_type=vote"
+            data-buried="click,footer_governance,governance_type=vote"
             rel="noopener noreferrer"
             target="_blank"
           >{{ $t('vote') }}</a>
