@@ -1,7 +1,7 @@
 <template>
   <section class="bitflow">
     <h1 class="title">
-      <span>GROWING</span> THE <span>BitDAO ECOSYSTEM</span>
+      <span>GROWING</span> the <span>BitDAO ECOSYSTEM</span>
     </h1>
     <div class="flow-pc">
       <div class="left">
