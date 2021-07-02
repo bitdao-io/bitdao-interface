@@ -1,7 +1,7 @@
 <template>
   <section class="bitflow">
     <h1 class="title">
-      <span>Growing</span> the <span>BitDAO Ecosystem</span>
+      <span>GROWING</span> THE <span>BitDAO ECOSYSTEM</span>
     </h1>
     <div class="flow-pc">
       <div class="left">
@@ -180,11 +180,10 @@
   align-items: center;
   justify-content: center;
   padding: 2rem 20px 10rem;
-  background: linear-gradient(180deg,rgba(247, 238, 246, 0.6), #FFFFFF);
+  // background: linear-gradient(180deg,rgba(247, 238, 246, 0.6), #FFFFFF);
   .title {
     font-size: 3rem;
     margin-bottom: 4rem;
-    text-transform: uppercase;
     span:first-child {
       color: #F9C3CB;
     }

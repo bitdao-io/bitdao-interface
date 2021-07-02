@@ -120,7 +120,7 @@ export default {
 
 <style lang="scss" scoped>
 .treasury {
-  background: linear-gradient(180deg, #D9E5F3, rgba(247, 238, 246, 0.6));
+  // background: linear-gradient(180deg, #D9E5F3, rgba(247, 238, 246, 0.6));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,7 +176,7 @@ export default {
       margin-bottom: 20px;
     }
     .total-balance {
-      font-size: 50px;
+      font-size: 2.6rem;
       margin-bottom: 40px;
     }
     .tips {
