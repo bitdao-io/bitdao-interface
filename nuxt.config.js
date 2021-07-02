@@ -21,11 +21,13 @@ export default {
       { name: 'og:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: 'https://bitdao.io/' },
+      { name: 'og:image', content: 'https://www.bitdao.io/twitter-card.jpg' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:url', content: 'https://bitdao.io/' },
       { name: 'twitter:title', content: 'BitDAO' },
       { name: 'twitter:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
-      { name: 'twitter:creator', content: '@BitDAO_Official' }
+      { name: 'twitter:creator', content: '@BitDAO_Official' },
+      { name: 'twitter:image', content: 'https://www.bitdao.io/twitter-card.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

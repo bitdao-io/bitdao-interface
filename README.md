@@ -1,6 +1,6 @@
 # BitDAO
 
-## BitDAO
+BitDAO
 
 ```bash
 # install dependencies
