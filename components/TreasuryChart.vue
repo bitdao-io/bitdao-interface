@@ -177,7 +177,7 @@ export default {
     }
     .total-balance {
       font-size: 2.6rem;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     .tips {
       font-weight: normal;
