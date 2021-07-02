@@ -75,7 +75,7 @@ header {
       font-size: 22px;
       font-weight: 700;
       .logo {
-        width: 120px;
+        width: 100px;
       }
     }
     .header__right {
