@@ -13,7 +13,7 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            {{ $t('Litepaper') }}
+            Docs
           </a>
           <a
             href="https://snapshot.org/#/bitdao.eth"
@@ -31,14 +31,14 @@
           >
             {{ $t('Forum') }}
           </a>
-          <a
+          <!-- <a
             href="https://docs.bitdao.io/additional-documents/faq"
             data-buried="'click,header_faq"
             rel="noopener noreferrer"
             target="_blank"
           >
             {{ $t('FAQ') }}
-          </a>
+          </a> -->
           <Lang class="lang-c" />
         </div>
         <slot />
