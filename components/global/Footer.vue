@@ -66,7 +66,7 @@
             target="_blank"
           >{{ $t('API Docs') }}</a> -->
           <a
-            href="https://discourse-test.bitdao.io/"
+            href="https://discourse.bitdao.io/"
             data-buried="click,footer_protocol,protocal_type=forum"
             rel="noopener noreferrer"
             target="_blank"
@@ -74,7 +74,8 @@
             {{ $t('Forum') }}
           </a>
           <a
-            href="#"
+            class="isDisabled"
+            href=""
             data-buried="click,footer_protocol,protocal_type=delegate"
             rel="noopener noreferrer"
           >

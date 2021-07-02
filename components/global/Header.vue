@@ -22,7 +22,7 @@
           {{ $t('Governance') }}
         </a>
         <a
-          href="https://discourse-test.bitdao.io/"
+          href="https://discourse.bitdao.io/"
           data-buried="click,header_forum"
           rel="noopener noreferrer"
           target="_blank"

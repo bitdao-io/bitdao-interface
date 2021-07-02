@@ -3,21 +3,21 @@
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>ETH</span>
-        <span>{{ ethInUsd }}</span>
+        <span>${{ ethInUsd.toLocaleString() }}</span>
       </div>
       <el-progress :show-text="false" color="#2659F1" :stroke-width="18" :percentage="ethPrecent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>USDT</span>
-        <span>{{ usdtInUsd }}</span>
+        <span>${{ usdtInUsd.toLocaleString() }}</span>
       </div>
       <el-progress :show-text="false" color="#F9C3CB" :stroke-width="18" :percentage="usdtPrecent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>USDC</span>
-        <span>{{ usdcInUsd }}</span>
+        <span>${{ usdcInUsd.toLocaleString() }}</span>
       </div>
       <el-progress :show-text="false" color="#5CC7F1" :stroke-width="18" :percentage="usdcPrecent" />
     </div>
@@ -25,9 +25,6 @@
 </template>
 
 <script>
-import numeral from 'numeral'
-const format = '($0.00a)'
-
 export default {
   props: {
     chartData: {
@@ -43,14 +40,10 @@ export default {
       }
     }
   },
-  data () {
-    return {
-    }
-  },
   computed: {
     ethInUsd () {
-      const { ethCount = 0, ethPrice = 0 } = this.chartData
-      return numeral(ethCount * ethPrice).format(format)
+      const { ethCount = 100, ethPrice = 1000 } = this.chartData
+      return parseInt(ethCount * ethPrice)
     },
     ethPrecent () {
       const { ethCount = 0, ethPrice = 0, usdTotal = 0 } = this.chartData
@@ -59,7 +52,7 @@ export default {
     },
     usdtInUsd () {
       const { usdtCount } = this.chartData
-      return numeral(usdtCount).format(format)
+      return parseInt(usdtCount)
     },
     usdtPrecent () {
       const { usdtCount = 0, usdTotal = 0 } = this.chartData
@@ -68,7 +61,7 @@ export default {
     },
     usdcInUsd () {
       const { usdcCount } = this.chartData
-      return numeral(usdcCount).format(format)
+      return parseInt(usdcCount)
     },
     usdcPrecent () {
       const { usdcCount = 0, usdTotal = 0 } = this.chartData

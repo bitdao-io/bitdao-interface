@@ -148,7 +148,7 @@
     <p class="flow-subtitle">We are calling on the community to define and build our vision together.<br>Participate in our forum and governance process.</p>
     <div class="flow-button">
       <a
-        href="https://discourse-test.bitdao.io/"
+        href="https://discourse.bitdao.io/"
         class="bit-button"
         data-buried="click,banner_enterforum"
         rel="noopener noreferrer"

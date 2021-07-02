@@ -121,7 +121,7 @@ export default {
 
 <style lang="scss" scoped>
 .chart {
-  height: 300px;
+  height: 280px;
 }
 /deep/ {
   .el-table th, .el-table tr, .el-table, .el-table__expanded-cell {

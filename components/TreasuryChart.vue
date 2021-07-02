@@ -39,15 +39,15 @@
           *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
         </p>
         <div class="box-button-container">
-          <!-- <a
+          <a
             href="/analytics"
-            class="bit-button"
+            class="bit-button isDisabled"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span class="bit-button_text">See Analytics</span>
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
@@ -177,6 +177,7 @@ export default {
     }
     .total-balance {
       font-size: 50px;
+      margin-bottom: 40px;
     }
     .tips {
       font-weight: normal;

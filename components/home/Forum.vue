@@ -4,7 +4,7 @@
     <p>{{ $t('participate.p2') }}</p>
     <a
       ref="button"
-      href="https://discourse-test.bitdao.io/"
+      href="https://discourse.bitdao.io/"
       class="bit-button"
       data-buried="click,banner_community_participatenow"
       rel="noopener noreferrer"
