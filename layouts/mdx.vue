@@ -50,7 +50,7 @@ export default {
   margin: auto;
   h1.docs-title {
     font-size: 48px;
-    color: #0E47EF;
+    color: #3CA3D6;
     font-weight: 700;
     margin-bottom: 4rem;
     .icon {

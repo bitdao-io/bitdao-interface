@@ -71,7 +71,7 @@ export default {
     margin-bottom: 20px;
   }
   p {
-    color: #0E47EF;
+    color: #3CA3D6;
     font-size: 96px;
     margin-bottom: 0;
     font-weight: 700;
@@ -80,7 +80,7 @@ export default {
     background: #FFFFFF;
     box-shadow: 0px 208.675px 166.94px rgba(15, 72, 239, 0.07), 0px 26.1294px 20.9036px rgba(15, 72, 239, 0.035), 0px 5.77458px 4.61966px rgba(15, 72, 239, 0.1);
     border-radius: 30px;
-    color: #2658EF;
+    color: #3CA3D6;
     padding: 20px 40px;
     width: 380px;
     margin-right: 40px;
@@ -101,7 +101,7 @@ export default {
     }
   }
   .chart-box2 {
-    background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+    background: linear-gradient(180deg, #3CA3D6 0%, #6288F7 100%);
     box-shadow: 0px 208.675px 166.94px rgba(15, 72, 239, 0.07), 0px 26.1294px 20.9036px rgba(15, 72, 239, 0.035), 0px 5.77458px 4.61966px rgba(15, 72, 239, 0.1);
     border-radius: 30px;
     color: #fff;

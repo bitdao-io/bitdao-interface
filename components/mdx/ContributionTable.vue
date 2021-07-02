@@ -88,7 +88,7 @@ export default {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
-    color: #0E47EF;
+    color: #3CA3D6;
     background: linear-gradient(180deg, #FFF7F8 28.13%, #FFFFFF 54.17%);
     padding: 30px 40px;
     max-width: 1000px;
@@ -110,7 +110,7 @@ export default {
   .hash-tag {
     a {
       white-space: nowrap;
-      color: #0E47EF;
+      color: #3CA3D6;
     }
   }
 }
@@ -124,9 +124,9 @@ export default {
     background: #F7F6FD;
   }
   .el-pagination.is-background .el-pager li:not(.disabled).active {
-    border: 1px solid #0E47EF;
+    border: 1px solid #3CA3D6;
     background-color: #fff;
-    color: #0E47EF;
+    color: #3CA3D6;
   }
   .el-table th>.cell, .el-table .cell {
     padding-left: 40px;

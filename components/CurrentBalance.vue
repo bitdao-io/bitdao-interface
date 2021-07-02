@@ -5,7 +5,7 @@
         <span>ETH</span>
         <span>${{ ethInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#2659F1" :stroke-width="18" :percentage="ethPrecent" />
+      <el-progress :show-text="false" color="#3CA3D6" :stroke-width="18" :percentage="ethPrecent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
@@ -81,7 +81,7 @@ export default {
     margin: 20px 0;
     .balance-progress__text {
       padding: 5px 10px;
-      color: #2659F1;
+      color: #3CA3D6;
       font-size: 16px;
       font-weight: 700;
       display: flex;

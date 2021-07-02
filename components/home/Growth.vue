@@ -119,7 +119,7 @@ export default {
       z-index: 100;
       font-size: 42px;
       font-weight: 700;
-      color: #0E47EF;
+      color: #3CA3D6;
       margin-bottom: 100px;
       position: relative;
       span  {

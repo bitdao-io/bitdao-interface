@@ -109,15 +109,15 @@ export default {
       .add(TweenMax.to(flow1, 1.5, { }), 'first')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 120 }), 'second')
-      .add(TweenMax.to(flow1, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'second')
+      .add(TweenMax.to(flow1, 1, { scale: 1, backgroundColor: '#3CA3D6', color: '#fff' }), 'second')
       .add(TweenMax.to(flow2, 1, { scale: 1.3, backgroundColor: '#fff', color: '#000' }), 'second')
       .add(TweenMax.to(flow2, 1.5, { }), 'second')
 
     tl.add(TweenMax.to(dashed, 1, { rotate: 240 }), 'third')
-      .add(TweenMax.to(flow2, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'third')
+      .add(TweenMax.to(flow2, 1, { scale: 1, backgroundColor: '#3CA3D6', color: '#fff' }), 'third')
       .add(TweenMax.to(flow3, 1, { scale: 1.3, backgroundColor: '#fff', color: '#000' }), 'third')
       .add(TweenMax.to(flow3, 1.5, { }), 'third')
-    // tl.add(TweenMax.to(flow3, 1, { scale: 1, backgroundColor: '#0E47EF', color: '#fff' }), 'forth')
+    // tl.add(TweenMax.to(flow3, 1, { scale: 1, backgroundColor: '#3CA3D6', color: '#fff' }), 'forth')
   }
 }
 </script>
@@ -141,7 +141,7 @@ export default {
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    border: 5px dashed #0E47EF;
+    border: 5px dashed #3CA3D6;
     box-sizing: border-box;
     transform: rotate(0deg); // 0 120 240
     border-top-color: #fff;
@@ -202,7 +202,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0E47EF;
+    background-color: #3CA3D6;
     img {
       width: 70px;
       height: 70px;
@@ -221,7 +221,7 @@ export default {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: #0E47EF;
+    background: #3CA3D6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +268,7 @@ export default {
   }
   .flow-desc {
     font-size: 20px;
-    color: #0E47EF;
+    color: #3CA3D6;
     font-weight: 700;
     display: block;
   }

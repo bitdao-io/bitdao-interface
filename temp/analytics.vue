@@ -52,7 +52,7 @@ export default {
   .treasury-title {
     font-size: 48px;
     line-height: 61px;
-    color: #0E47EF;
+    color: #3CA3D6;
     font-weight: 700;
     align-self: flex-start;
     margin-bottom: 50px;

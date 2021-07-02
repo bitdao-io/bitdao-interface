@@ -58,7 +58,7 @@ li {
   margin-bottom: 0.5em;
   a {
     text-decoration: none;
-    color: #0E47EF;
+    color: #3CA3D6;
     // white-space: pre;
     text-overflow: ellipsis;
     cursor: pointer;

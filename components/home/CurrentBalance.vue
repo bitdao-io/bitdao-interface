@@ -31,7 +31,7 @@ export default {
         pieHole: 0.3,
         pieSliceText: 'label',
         backgroundColor: 'transparent',
-        colors: ['#2659F1', '#FAC2CB', '#5CC7F1'],
+        colors: ['#3CA3D6', '#FAC2CB', '#5CC7F1'],
         fontName: 'Space Grotesk'
       }
     }

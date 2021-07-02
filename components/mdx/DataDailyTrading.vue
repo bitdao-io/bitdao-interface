@@ -124,7 +124,7 @@ export default {
     h1, p {
       font-size: 16px;
       font-weight: 500;
-      color: #0E47EF;
+      color: #3CA3D6;
       line-height: 30px;
     }
   }

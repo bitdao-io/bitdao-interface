@@ -67,7 +67,7 @@ export default {
     background: url('@/assets/image/transparent/bg.svg') center center no-repeat;
     background-size: auto;
     background-blend-mode: multiply;
-    color: #0E47EF;
+    color: #3CA3D6;
     position: relative;
     width: 1450px;
     height: 800px;
@@ -117,7 +117,7 @@ export default {
     .collaboration {
       width: 492px;
       height: 276px;
-      background: #0E47EF;
+      background: #3CA3D6;
       color: #ffffff;
       padding: 40px;
       @include flex-start;

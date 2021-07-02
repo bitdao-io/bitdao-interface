@@ -62,7 +62,7 @@ header {
   padding: 1.5rem 2rem;
   a {
     &:hover {
-      color: #0E47EF;
+      color: #3CA3D6;
     }
   }
   .header-container {

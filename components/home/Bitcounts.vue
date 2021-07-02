@@ -113,7 +113,7 @@ export default {
     font-size: 90px;
     font-weight: 700;
     line-height: 73px;
-    color: #0E47EF;
+    color: #3CA3D6;
     margin-bottom: 50px;
     .bit_text {
       color: #000;
@@ -144,7 +144,7 @@ export default {
       transform: translate(450px, 700px);
     }
     .feature {
-      background: linear-gradient(180deg, #0E47EF, #0E47EF), url('@/assets/image/bitcounts/bg.svg') center center no-repeat;
+      background: linear-gradient(180deg, #3CA3D6, #3CA3D6), url('@/assets/image/bitcounts/bg.svg') center center no-repeat;
       background-size: auto;
       background-blend-mode: multiply;
       border-radius: 18px;

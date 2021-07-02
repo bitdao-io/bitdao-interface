@@ -183,14 +183,14 @@
     font-size: 2rem;
     margin-bottom: 4rem;
     font-weight: 700;
-    color: #2659F1;
+    color: #3CA3D6;
   }
   .flow-pc {
     position: relative;
     height: 640px;
     width: 1100px;
     .left, .right {
-      background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+      background: linear-gradient(180deg, #3CA3D6 0%, #6288F7 100%);
       border-radius: 16px;
       padding: 40px 20px;
     }
@@ -219,7 +219,7 @@
         border-radius: 50%;
         height: 154px;
         width: 154px;
-        border: 4px solid #0E47EF;
+        border: 4px solid #3CA3D6;
         p {
           width: 80%;
           font-size: 14px;
@@ -275,7 +275,7 @@
       left: 30%;
       top: 50%;
       transform: translate(-30%, -50%);
-      color: #0E47EF;
+      color: #3CA3D6;
       font-weight: 700;
       font-size: 16px;
       white-space:nowrap;
@@ -332,7 +332,7 @@
       left: 3px;
       top: 50%;
       transform: translate(0, -50%);
-      color: #0E47EF;
+      color: #3CA3D6;
       font-weight: 700;
       font-size: 16px;
       white-space:nowrap;
@@ -375,7 +375,7 @@
       }
     }
     .top, .bottom {
-      background: linear-gradient(180deg, #0E47EF 0%, #6288F7 100%);
+      background: linear-gradient(180deg, #3CA3D6 0%, #6288F7 100%);
       border-radius: 30px;
       padding: 40px 20px;
       display: flex;
@@ -407,7 +407,7 @@
           border-radius: 50%;
           height: 120px;
           width: 120px;
-          border: 4px solid #0E47EF;
+          border: 4px solid #3CA3D6;
           img {
             width: 40%;
           }

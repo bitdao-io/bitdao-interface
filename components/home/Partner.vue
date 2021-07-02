@@ -42,7 +42,7 @@
   h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #0E47EF;
+    color: #3CA3D6;
     margin-bottom: 45px;
   }
   .partner-logos {
