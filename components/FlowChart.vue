@@ -1,6 +1,8 @@
 <template>
   <section class="bitflow">
-    <h1 class="title">Growing the <span>BitDAO Ecosystem</span></h1>
+    <h1 class="title">
+      <span>Growing</span> the <span>BitDAO Ecosystem</span>
+    </h1>
     <div class="flow-pc">
       <div class="left">
         <div class="flow-icon">
@@ -180,10 +182,15 @@
   padding: 2rem 20px 10rem;
   background: linear-gradient(180deg,rgba(247, 238, 246, 0.6), #FFFFFF);
   .title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
-    font-weight: 700;
-    color: #3CA3D6;
+    text-transform: uppercase;
+    span:first-child {
+      color: #F9C3CB;
+    }
+    span:last-child {
+      color: #3CA3D6;
+    }
   }
   .flow-pc {
     position: relative;
@@ -456,12 +463,18 @@
     }
   }
 }
+@media screen and (max-width: 800px){
+  .bitflow h1.title {
+      font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 550px){
   .bitflow {
     .title {
       text-align: center;
       margin-bottom: 3rem;
-      span {
+      span:last-child {
         display: block;
       }
     }

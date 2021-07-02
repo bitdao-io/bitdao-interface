@@ -2,7 +2,7 @@
   <div class="home">
     <div class="home-inner">
       <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
-      <h1 class="title"><span>Every</span> Bit <span>Counts</span></h1>
+      <h1 class="title">Every <span>Bit</span> <span>Counts</span></h1>
       <h2 class="subtitle">
         Allocate the world's largest DAO-directed treasury, partner with leading protocols, and build the future of finance.
       </h2>

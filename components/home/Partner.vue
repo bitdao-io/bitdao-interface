@@ -1,6 +1,6 @@
 <template>
   <section class="partner">
-    <h1>{{ $t('partners') }}</h1>
+    <h1 class="title">{{ $t('partners') }}</h1>
     <div class="partner-logos">
       <div class="partner-item"><img src="@/assets/image/partner/peter.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/founders.svg" alt=""></div>
@@ -39,9 +39,9 @@
   position: relative;
   flex-direction: column;
   margin-bottom: 5rem;
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
+  h1.title {
+    text-transform: uppercase;
+    font-size: 3rem;
     color: #3CA3D6;
     margin-bottom: 45px;
   }
@@ -85,6 +85,11 @@
     .partner-logos .partner-item {
       width: 33.33%;
     }
+  }
+}
+@media screen and (max-width: 800px){
+  .partner  h1.title {
+      font-size: 2rem;
   }
 }
 @media screen and (max-width: 700px){
