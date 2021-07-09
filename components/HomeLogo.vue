@@ -3,9 +3,7 @@
     <div class="home-inner">
       <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
       <h1 class="title" v-html="$t('EveryBitCounts')"></h1>
-      <h2 class="subtitle">
-        {{ $t('HomeSubtitle') }}
-      </h2>
+      <h2 class="subtitle" v-html="$t('HomeSubtitle')"></h2>
       <a
         href="https://docs.bitdao.io/"
         data-buried="'click,banner_learnmore"

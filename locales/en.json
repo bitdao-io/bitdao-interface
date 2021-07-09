@@ -100,5 +100,12 @@
     "Ecosystem Growth": "Ecosystem{0} Growth",
     "growingDesc": "We are calling on the community to define and build our vision together.<br>Participate in our forum and governance process.",
     "Enter Forum": "Enter Forum",
-    "Documents": "Documents"
+    "Documents": "Documents",
+    "socialUrl": {
+        "Twitter": "https://twitter.com/BitDAO_Official",
+        "Discord": "https://discord.gg/jTBC4BKnj7",
+        "Telegram": "https://t.me/BitDAO_Official",
+        "GitHub": "https://github.com/BitDAOProtocol",
+        "Medium": "https://medium.com/bitdao"
+    }
 }

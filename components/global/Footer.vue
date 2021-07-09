@@ -9,7 +9,7 @@
         <h2>{{ $t('social') }}</h2>
         <div class="link-container">
           <a
-            href="https://twitter.com/BitDAO_Official"
+            :href="$t('socialUrl.Twitter')"
             data-buried="click,footer_social,social_type=twitter"
             rel="noopener noreferrer"
             target="_blank"
@@ -17,7 +17,7 @@
             Twitter
           </a>
           <a
-            href="https://discord.gg/jTBC4BKnj7"
+            :href="$t('socialUrl.Discord')"
             data-buried="click,footer_social,social_type=discord"
             rel="noopener noreferrer"
             target="_blank"
@@ -25,7 +25,7 @@
             Discord
           </a>
           <a
-            href="https://t.me/BitDAO_Official"
+            :href="$t('socialUrl.Telegram')"
             data-buried="click,footer_social,social_type=telegram"
             rel="noopener noreferrer"
             target="_blank"
@@ -33,7 +33,7 @@
             Telegram
           </a>
           <a
-            href="https://github.com/BitDAOProtocol"
+            :href="$t('socialUrl.GitHub')"
             data-buried="click,footer_social,social_type=github"
             rel="noopener noreferrer"
             target="_blank"
@@ -41,12 +41,21 @@
             GitHub
           </a>
           <a
-            href="https://medium.com/bitdao"
+            :href="$t('socialUrl.Medium')"
             data-buried="click,footer_social,social_type=medium"
             rel="noopener noreferrer"
             target="_blank"
           >
             Medium
+          </a>
+          <a
+            v-if="$i18n.locale === 'jp'"
+            href="https://lin.ee/thzgfUv"
+            data-buried="click,footer_social,social_type=line"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LINE
           </a>
         </div>
       </div>

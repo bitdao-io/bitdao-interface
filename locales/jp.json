@@ -98,5 +98,8 @@
     "Ecosystem Growth": "エコシステム{0}の成長",
     "growingDesc": "私たちは一緒にビジョンの実現を目指すコミュニティを求めています。<br>ぜひフォーラムとガバナンス・プロセスにご参加ください。",
     "Enter Forum": "フォーラムに参加",
-    "Documents": "資料"
+    "Documents": "資料",
+    "socialUrl": {
+        "Twitter": "https://twitter.com/BitDAO_JP"
+    }
 }

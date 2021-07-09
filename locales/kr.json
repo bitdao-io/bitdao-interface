@@ -74,12 +74,12 @@
 
     "Docs": "문서",
     "EveryBitCounts": "Every <span class='blue'>Bit</span> <span class='pink'>Counts</span>",
-    "HomeSubtitle": "세계 최대 규모의 다오 관련 자산을 관리하고 산업을 주도하는 프로토콜 파트너들과 함께하며 금융의 미래를 설계합니다. ",
+    "HomeSubtitle": "세계 최대 규모의 다오 관련 자산을 관리하고<br>산업을 주도하는 프로토콜 파트너들과 함께하며<br>금융의 미래를 설계합니다. ",
     "LearnMore": "자세히 알아보기",
     "SeeTreasury": "살펴보기",
     "SeeAnalytics": "자세히 보기",
     "PartnerContributions": "파트너 기여도",
-    "PartnerContributionsTips": "*바이비트 일일 선물 거래량의 2.5bps를 포함한 예정 및 실제 기여도입니다.",
+    "PartnerContributionsTips": "*바이비트 일일 선물 거래량의 2.5bps를 포함한<br>예정 및 실제 기여도입니다.",
     "Period": "기간",
     "Daily Average": "일 평균",
     "Annualized": "연간",
@@ -99,5 +99,8 @@
     "Ecosystem Growth": "생태계{0} 성장",
     "growingDesc": "저희는 커뮤니티와 함께 비전을 정의하고 구축하고자 합니다. <br>포럼 및 거버넌스 절차에 참여해 주시길 바랍니다.",
     "Enter Forum": "포럼 참여하기",
-    "Documents": "문서"
+    "Documents": "문서",
+    "socialUrl": {
+        "Telegram": "https://t.me/BitDAOKorea"
+    }
 }

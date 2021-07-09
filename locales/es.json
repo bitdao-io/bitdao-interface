@@ -70,7 +70,7 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "Apoyando a las finanzas y economías tokenizadas descentralizada",
+    "BitDAODesc": "Apoyando las finanzas y economías tokenizadas descentralizada",
     "Docs": "Docs",
     "EveryBitCounts": "CADA <span class='blue'>BIT</span> <span class='pink'>CUENTA</span>",
     "HomeSubtitle": "Únase a la más grande tesorería administrada por un DAO, asóciese con protocolos líderes y participe en la creación del futuro de la finanzas.",
@@ -88,7 +88,7 @@
     "BitDAO Protocol Contributions": "Contribuciones del protocolo de BitDAO",
     "Grants": "Subsidios",
     "Token Swaps": "Intercambios",
-    "Protocol Upgrades": "Actualizaciones de protocolo",
+    "Protocol Upgrades": "Actualizaciones del protocolo",
     "Protocol Upgrades eg": "e.g. nuevos productos e integraciones de BitDAO",
     "BitDAO TREASURY": "Tesorería de BitDAO",
     "BitDAO GOVERNANCE": "Gobernancia de BitDAO",
@@ -98,5 +98,9 @@
     "Ecosystem Growth": "Crecimiento{0} del ecosistema",
     "growingDesc": "Hacemos un llamado a la comunidad para definir y construir nuestra visión juntos.<br> Participa en nuestro foro y envía propuestas.",
     "Enter Forum": "PARTICIPAR AHORA",
-    "Documents": "DOCUMENTOS"
+    "Documents": "DOCUMENTOS",
+    "socialUrl": {
+        "Twitter": "https://twitter.com/bitdao_es",
+        "Telegram": "https://t.me/BitDAO_ES"
+    }
 }
