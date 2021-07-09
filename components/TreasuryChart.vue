@@ -35,7 +35,7 @@
         <p class="subtitle">
         </p>
         <PledgedBalance />
-        <p class="tips" v-if="$t('PartnerContributionsTips')"></p>
+        <p class="tips" v-html="$t('PartnerContributionsTips')"></p>
         <div class="box-button-container">
           <a
             href="/analytics"
