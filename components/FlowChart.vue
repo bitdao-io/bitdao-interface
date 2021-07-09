@@ -20,7 +20,7 @@
       <div class="middle">
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon7.svg" alt="">
-          <p>{{ $t('BitDAO TREASURY') }}</p>
+              <p v-html="$t('BitDAO TREASURY')"></p>
         </div>
         <div class="middle-link">
           <img src="@/assets/image/flow/link.svg" alt="">
@@ -31,7 +31,7 @@
         </div>
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon8.svg" alt="">
-          <p>{{ $t('BitDAO GOVERNANCE') }}</p>
+          <p v-html="$t('BitDAO GOVERNANCE')"></p>
         </div>
       </div>
       <div class="right">
@@ -100,7 +100,7 @@
           <div class="middle-icon-container">
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon7.svg" alt="">
-              <p>{{ $t('BitDAO TREASURY') }}</p>
+              <p v-html="$t('BitDAO TREASURY')"></p>
             </div>
             <div class="middle-link mobile-arrow">
               <img src="@/assets/image/flow/mobile/link.svg" alt="">
@@ -111,7 +111,7 @@
             </div>
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon8.svg" alt="">
-              <p>{{ $t('BitDAO GOVERNANCE') }}</p>
+              <p v-html="$t('BitDAO GOVERNANCE')"></p>
             </div>
           </div>
           <div class="mobile-arrow">
