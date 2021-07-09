@@ -40,7 +40,7 @@
         "button": "PARTICIPATE NOW"
     },
     "growth": {
-        "title": "<span class='black'>ЭКОСИСТЕМА</span> BitDAO",
+        "title": "<span class='pink'>Рост</span> <span class='blue'>экосистемы BitDAO</span>",
         "content": [{
             "title": "УЧАСТИЕ BYBIT",
             "desc": "Bybit - первый партнер BitDAO, заложивший 2.5bps от объема фьючерсной торговли маркетплейса в проект BitDAO."
@@ -70,5 +70,34 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
+    "BitDAODesc": "Открытые финансы и децентрализация",
+
+    "Docs": "Документы",
+    "EveryBitCounts": "Every <span class='blue'>Bit</span> <span class='pink'>Counts</span>",
+    "HomeSubtitle": "Будущее финансов, партнерства с лидирующими протоколами и крупнейший в мире DAO-управляемый фонд.",
+    "LearnMore": "Узнать больше",
+    "SeeTreasury": "Просмотреть",
+    "SeeAnalytics": "АНАЛИТИКА",
+    "PartnerContributions": "УЧАСТИЕ ПАРТНЕРОВ",
+    "PartnerContributionsTips": "*Актуальные и рассматриваемые вклады партнеров, включая 2.5bps от ежедневного торгового объема фьючерсами Bybit",
+    "Period": "Период",
+    "Daily Average": "В день",
+    "Annualized": "В год",
+    "Yesterday": "Вчера",
+    "LastDays": "За {0} днейLast",
+    "Partner Token Growth": "Рост партнерских токенов",
+    "BitDAO Protocol Contributions": "Вклады в протокол BitDAO",
+    "Grants": "Гранты",
+    "Token Swaps": "Обмен токенами",
+    "Protocol Upgrades": "Обновление протоколов",
+    "Protocol Upgrades eg": "например, Новые продукты BitDAO и интеграции партнеров",
+    "BitDAO TREASURY": "BitDAO TREASURY",
+    "BitDAO GOVERNANCE": "BitDAO УПРАВЛЕНИЕ",
+    "Contributions": "Участие",
+    "Proposal and Voting": "Выборы<br> и голосование",
+    "Execution": "Исполнение",
+    "Ecosystem Growth": "Рост {0}экосистемы",
+    "growingDesc": "Каждый в комьюнити может влиять на будущее экосистемы.<br> Участвуй в обсуждении и управлении протоколом.",
+    "Enter Forum": "Обсудить",
+    "Documents": "ДОКУМЕНТЫ"
 }

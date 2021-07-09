@@ -2,9 +2,9 @@
   <div class="home">
     <div class="home-inner">
       <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
-      <h1 class="title">Every <span>Bit</span> <span>Counts</span></h1>
+      <h1 class="title" v-html="$t('EveryBitCounts')"></h1>
       <h2 class="subtitle">
-        Allocate the world's largest DAO-directed treasury, partner with leading protocols, and build the future of finance.
+        {{ $t('HomeSubtitle') }}
       </h2>
       <a
         href="https://docs.bitdao.io/"
@@ -13,7 +13,7 @@
         class="bit-button bit-button-blue"
         target="_blank"
       >
-        <span class="bit-button_text">Learn More</span>
+        <span class="bit-button_text">{{ $t('LearnMore') }}</span>
       </a>
     </div>
   </div>

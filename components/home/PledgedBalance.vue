@@ -7,15 +7,15 @@
       >
         <el-table-column
           prop="period"
-          label="Period"
+          :label="$t('Period')"
         />
         <el-table-column
           prop="average"
-          label="Daily Average"
+          :label="$t('Daily Average')"
         />
         <el-table-column
           prop="annual"
-          label="Annualized"
+          :label="$t('Annualized')"
         />
       </el-table>
     </client-only>
@@ -28,19 +28,19 @@ export default {
   data () {
     return {
       tableData: [{
-        period: 'Yesterday',
+        period: this.$t('Yesterday'),
         average: '-',
         annual: '-'
       }, {
-        period: 'Last 7 days',
+        period: this.$t('LastDays', [7]),
         average: '-',
         annual: '-'
       }, {
-        period: 'Last 30 days',
+        period: this.$t('LastDays', [30]),
         average: '-',
         annual: '-'
       }, {
-        period: 'Last 90 days',
+        period: this.$t('LastDays', [90]),
         average: '-',
         annual: '-'
       }],
@@ -75,19 +75,19 @@ export default {
         totalUsd: 0
       }]
       const _tableData = [{
-        period: 'Yesterday',
+        period: this.$t('Yesterday'),
         average: 0,
         annual: 0
       }, {
-        period: 'Last 7 days',
+        period: this.$t('LastDays', [7]),
         average: 0,
         annual: 0
       }, {
-        period: 'Last 30 days',
+        period: this.$t('LastDays', [30]),
         average: 0,
         annual: 0
       }, {
-        period: 'Last 90 days',
+        period: this.$t('LastDays', [90]),
         average: 0,
         annual: 0
       }]

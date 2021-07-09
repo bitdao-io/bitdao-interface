@@ -3,15 +3,15 @@
     class="dropdown-container"
   >
     <div class="dropdown-inner">
-      <!-- @click="isOptionsExpanded = !isOptionsExpanded" -->
       <button
         class="dropdown-button"
+        @click="isOptionsExpanded = !isOptionsExpanded"
         @blur="isOptionsExpanded = false"
       >
         <!-- <svg-icon :icon-class="`lang-${$i18n.locale}`" class="lang-icon" /> -->
         <img :src="icons[$i18n.locale]" :alt="$i18n.locale" class="lang-img">
         <span>{{ $i18n.locale.toUpperCase() }}</span>
-        <!-- <svg-icon icon-class="arrow-down" :class="['dropdown-icon', isOptionsExpanded ? 'rotate-180' : 'rotate-0']" /> -->
+        <svg-icon icon-class="arrow-down" :class="['dropdown-icon', isOptionsExpanded ? 'rotate-180' : 'rotate-0']" />
       </button>
       <transition
         name="drop-fade"

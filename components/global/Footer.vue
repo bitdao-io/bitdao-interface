@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="social">
-        <h2>GOVERNANCE</h2>
+        <h2>{{ $t('Governance') }}</h2>
         <div class="link-container">
           <!-- <a
             href="/docs/api"
@@ -90,7 +90,7 @@
         </div>
       </div>
       <div class="social">
-        <h2>DOCUMENTS</h2>
+        <h2>{{ $t('Documents') }}</h2>
         <div class="link-container">
           <a
             href="https://docs.bitdao.io/litepaper-1/option-2-governance-phase-1"
@@ -148,6 +148,9 @@ footer {
     .social {
       margin-top: 2rem;
       margin-right: 2rem;
+      h2 {
+        text-transform: uppercase;
+      }
     }
     .title-desc {
       width: 280px;

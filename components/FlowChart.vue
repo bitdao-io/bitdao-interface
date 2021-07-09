@@ -1,76 +1,75 @@
 <template>
   <section class="bitflow">
-    <h1 class="title">
-      <span>GROWING</span> the <span>BitDAO ECOSYSTEM</span>
+    <h1 class="title" v-html="$t('growth.title')">
     </h1>
     <div class="flow-pc">
       <div class="left">
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon1.svg" alt="">
-          <p>Partner Contributions</p>
+          <p>{{ $t('PartnerContributions') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon2.svg" alt="">
-          <p>Partner Token Growth</p>
+          <p>{{ $t('Partner Token Growth') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon3.svg" alt="">
-          <p>BitDAO Protocol Contributions</p>
+          <p>{{ $t('BitDAO Protocol Contributions') }}</p>
         </div>
       </div>
       <div class="middle">
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon7.svg" alt="">
-          <p>BitDAO TREASURY</p>
+          <p>{{ $t('BitDAO TREASURY') }}</p>
         </div>
         <div class="middle-link">
           <img src="@/assets/image/flow/link.svg" alt="">
           <div class="bitflow-step bitflow-step2">
             <span class="bitflow-step-num">2</span>
-            <span>Proposal and <br>Voting</span>
+            <span v-html="$t('Proposal and Voting')"></span>
           </div>
         </div>
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon8.svg" alt="">
-          <p>BitDAO GOVERNANCE</p>
+          <p>{{ $t('BitDAO GOVERNANCE') }}</p>
         </div>
       </div>
       <div class="right">
         <div class="right-top">
           <div class="flow-icon">
             <img src="@/assets/image/flow/icon4.svg" alt="">
-            <p>Grants</p>
+            <p>{{ $t('Grants') }}</p>
           </div>
           <div class="flow-icon">
             <img src="@/assets/image/flow/icon5.svg" alt="">
-            <p>Token Swaps</p>
+            <p>{{ $t('Token Swaps') }}</p>
           </div>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon6.svg" alt="">
-          <p>Protocol Upgrades</p>
-          <p class="p-eg">e.g. New BitDAO products and partner integrations</p>
+          <p>{{ $t('Protocol Upgrades') }}</p>
+          <p class="p-eg">{{ $t('Protocol Upgrades eg') }}</p>
         </div>
       </div>
       <div class="arrow-right1">
         <img src="@/assets/image/flow/arrow-right1.svg" alt="">
         <div class="bitflow-step">
           <span class="bitflow-step-num">1</span>
-          <span>Contributions</span>
+          <span>{{ $t('Contributions') }}</span>
         </div>
       </div>
       <div class="arrow-right2">
         <img src="@/assets/image/flow/arrow-right2.svg" alt="">
         <div class="bitflow-step">
           <span class="bitflow-step-num">3</span>
-          <span>Execution</span>
+          <span>{{ $t('Execution') }}</span>
         </div>
       </div>
       <div class="arrow-left">
         <img src="@/assets/image/flow/arrow-left.svg" alt="">
         <div class="bitflow-step bitflow-step4">
           <span class="bitflow-step-num">4</span>
-          <span>Ecosystem Growth</span>
+          <span>{{ $t('Ecosystem Growth', ['']) }}</span>
         </div>
       </div>
     </div>
@@ -78,15 +77,15 @@
       <div class="top">
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon1.svg" alt="">
-          <p>Partner Contributions</p>
+          <p>{{ $t('PartnerContributions') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon2.svg" alt="">
-          <p>Partner Token Growth</p>
+          <p>{{ $t('Partner Token Growth') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon3.svg" alt="">
-          <p>BitDAO Protocol Contributions</p>
+          <p>{{ $t('BitDAO Protocol Contributions') }}</p>
         </div>
       </div>
       <div class="middle">
@@ -95,38 +94,38 @@
             <img src="@/assets/image/flow/mobile/arrow-down1.svg" alt="">
             <div class="bitflow-step">
               <span class="bitflow-step-num">1</span>
-              <span>Contributions</span>
+              <span>{{ $t('Contributions') }}</span>
             </div>
           </div>
           <div class="middle-icon-container">
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon7.svg" alt="">
-              <p>BitDAO TREASURY</p>
+              <p>{{ $t('BitDAO TREASURY') }}</p>
             </div>
             <div class="middle-link mobile-arrow">
               <img src="@/assets/image/flow/mobile/link.svg" alt="">
               <div class="bitflow-step bitflow-step2">
                 <span class="bitflow-step-num">2</span>
-                <span>Proposal<br> and Voting</span>
+                <span v-html="$t('Proposal and Voting')"></span>
               </div>
             </div>
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon8.svg" alt="">
-              <p>BitDAO GOVERNANCE</p>
+              <p>{{ $t('BitDAO GOVERNANCE') }}</p>
             </div>
           </div>
           <div class="mobile-arrow">
             <img src="@/assets/image/flow/mobile/arrow-down2.svg" alt="">
             <div class="bitflow-step">
               <span class="bitflow-step-num">3</span>
-              <span>Execution</span>
+              <span>{{ $t('Execution') }}</span>
             </div>
           </div>
         </div>
         <div class="middle-right mobile-arrow">
           <img src="@/assets/image/flow/mobile/arrow-up.svg" alt="">
           <div class="bitflow-step bitflow-step4">
-            <span>Ecosystem<br> Growth</span>
+            <span v-html="$t('Ecosystem Growth', ['<br>'])"></span>
             <span class="bitflow-step-num">4</span>
           </div>
         </div>
@@ -134,20 +133,20 @@
       <div class="bottom">
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon4.svg" alt="">
-          <p>Grants</p>
+          <p>{{ $t('Grants') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon6.svg" alt="">
-          <p>Protocol Upgrades</p>
-          <p class="p-eg">e.g. New BitDAO products and partner integrations</p>
+          <p>{{ $t('Protocol Upgrades') }}</p>
+          <p class="p-eg">{{ $t('Protocol Upgrades eg') }}</p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon5.svg" alt="">
-          <p>Token Swaps</p>
+          <p>{{ $t('Token Swaps') }}</p>
         </div>
       </div>
     </div>
-    <p class="flow-subtitle">We are calling on the community to define and build our vision together.<br>Participate in our forum and governance process.</p>
+    <p class="flow-subtitle" v-html="$t('growingDesc')"></p>
     <div class="flow-button">
       <a
         href="https://discourse.bitdao.io/"
@@ -156,7 +155,7 @@
         rel="noopener noreferrer"
         target="_blank"
       >
-        <span class="bit-button_text">Enter Forum</span>
+        <span class="bit-button_text">{{ $t('Enter Forum') }}</span>
       </a>
 
       <a
@@ -166,7 +165,7 @@
         rel="noopener noreferrer"
         target="_blank"
       >
-        <span class="bit-button_text">Governance</span>
+        <span class="bit-button_text">{{ $t('Governance') }}</span>
       </a>
     </div>
   </section>
@@ -184,6 +183,7 @@
   .title {
     font-size: 3rem;
     margin-bottom: 4rem;
+    text-align: center;
     span:first-child {
       color: #F9C3CB;
     }
@@ -367,9 +367,9 @@
       }
     }
     .bitflow-step4 {
-      left: 0;
+      left: 100%;
       top: 80%;
-      transform: translate(-71%, -50%);
+      transform: translate(-100%, 0%);
       text-align: center;
       flex-direction: row;
       display: flex;

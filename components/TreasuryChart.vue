@@ -24,19 +24,19 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span class="bit-button_text">See Treasury</span>
+            <span class="bit-button_text">{{ $t('SeeTreasury') }}</span>
           </a>
         </div>
       </div>
       <div class="chart-box2">
         <h2 class="title">
-          Partner Contributions
+          {{ $t('PartnerContributions') }}
         </h2>
         <p class="subtitle">
         </p>
         <PledgedBalance />
         <p class="tips">
-          *Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume
+          {{ $t('PartnerContributionsTips') }}
         </p>
         <div class="box-button-container">
           <a
@@ -46,7 +46,7 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span class="bit-button_text">See Analytics</span>
+            <span class="bit-button_text">{{ $t('SeeAnalytics') }}</span>
           </a>
         </div>
       </div>
@@ -161,6 +161,10 @@ export default {
     font-weight: 700;
   }
   .chart-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(180deg, #FFEFF0 -20.48%, #FFFFFF 50.8%);
     box-shadow: 0px 208.675px 166.94px rgba(15, 72, 239, 0.07), 0px 26.1294px 20.9036px rgba(15, 72, 239, 0.035), 0px 5.77458px 4.61966px rgba(15, 72, 239, 0.1);
     border-radius: 16px;
@@ -216,6 +220,7 @@ export default {
       font-size: 14px;
       line-height: 20px;
       padding: 0 20px;
+      margin-top: 20px;
     }
   }
 }

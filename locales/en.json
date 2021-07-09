@@ -25,7 +25,7 @@
         "content": "BitDAO will collaborate with emerging and existing DeFi protocols and teams — through grants, token swaps, and R&D support. BitDAO will build its own protocols. We seek talented developers, community managers and other contributors to join us."
     },
     "counts": {
-        "title": "Every <span class='black'>BIT</span> COUNTS",
+        "title": "Every <span class='blue'>Bit</span> <span class='pink'>Counts</span>",
         "subtitle": "BIT holders own BitDAO and the control of the treasury",
         "content": [
             "Vote to deploy treasury assets",
@@ -40,7 +40,7 @@
         "button": "PARTICIPATE NOW"
     },
     "growth": {
-        "title": "<span class='black'>Growing the</span> BitDAO Ecosystem",
+        "title": "<span class='pink'>GROWING</span> the <span class='blue'>BitDAO ECOSYSTEM</span>",
         "content": [{
             "title": "BYBIT SUPPORT",
             "desc": "Bybit is the first partner of BitDAO, contributing 2.5bps of futures trading volume to the BitDAO treasury."
@@ -72,5 +72,33 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "Supporting open finance and a decentralized tokenized economy"
+    "BitDAODesc": "Supporting open finance and a decentralized tokenized economy",
+    "Docs": "Docs",
+    "EveryBitCounts": "Every <span class='blue'>Bit</span> <span class='pink'>Counts</span>",
+    "HomeSubtitle": "Allocate the world's largest DAO-directed treasury, partner with leading protocols, and build the future of finance.",
+    "LearnMore": "Learn More",
+    "SeeTreasury": "See Treasury",
+    "SeeAnalytics": "See Analytics",
+    "PartnerContributions": "Partner Contributions",
+    "PartnerContributionsTips": "*Pledged and actual contributions, including 2.5bps of Bybit daily futures trading volume",
+    "Period": "Period",
+    "Daily Average": "Daily Average",
+    "Annualized": "Annualized",
+    "Yesterday": "Yesterday",
+    "LastDays": "Last {0} days",
+    "Partner Token Growth": "Partner Token Growth",
+    "BitDAO Protocol Contributions": "BitDAO Protocol Contributions",
+    "Grants": "Grants",
+    "Token Swaps": "Token Swaps",
+    "Protocol Upgrades": "Protocol Upgrades",
+    "Protocol Upgrades eg": "e.g. New BitDAO products and partner integrations",
+    "BitDAO TREASURY": "BitDAO TREASURY",
+    "BitDAO GOVERNANCE": "BitDAO GOVERNANCE",
+    "Contributions": "Contributions",
+    "Proposal and Voting": "Proposal<br> and Voting",
+    "Execution": "Execution",
+    "Ecosystem Growth": "Ecosystem{0} Growth",
+    "growingDesc": "We are calling on the community to define and build our vision together.<br>Participate in our forum and governance process.",
+    "Enter Forum": "Enter Forum",
+    "Documents": "Documents"
 }

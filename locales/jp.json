@@ -40,7 +40,7 @@
         "button": "今すぐ参加"
     },
     "growth": {
-        "title": "<span class='black'>BitDAOエコシステム</span>の発展・成長に向けて",
+        "title": "<span class='blue'>BitDAOエコシステム</span>の<span class='pink'>発展・成長</span>に向けて",
         "content": [{
             "title": "Bybitによるサポート",
             "desc": "BybitはBitDAOにとって最初のパートナーです。先物取引高の2.5bpsに相当する資産を融資しています。"
@@ -70,5 +70,33 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
+    "BitDAODesc": "分散型トークンで開かれた金融経済の未来を支える",
+    "Docs": "ドキュメンツ",
+    "EveryBitCounts": "すべての<span class='blue'>BITが</span><span class='pink'>未来を担う</span>",
+    "HomeSubtitle": "世界最大のDAOによって管理された資金と主要プロトコルとの提携で、一人ひとりが主体的に経済活動を実践する金融の新たな未来を築きます。",
+    "LearnMore": "詳しく見る",
+    "SeeTreasury": "運用資産を見る",
+    "SeeAnalytics": "分析を確認する",
+    "PartnerContributions": "パートナー融資",
+    "PartnerContributionsTips": "※Bybitにおける先物日次取引高の2.5bps相当の金額を含む、予定及び実際の融資額を表します。",
+    "Period": "期間",
+    "Daily Average": "日次平均",
+    "Annualized": "年換算",
+    "Yesterday": "前日",
+    "LastDays": "過去{0}日間",
+    "Partner Token Growth": "パートナートークンの成長",
+    "BitDAO Protocol Contributions": "BitDAOによるプロトコル構築",
+    "Grants": "報酬",
+    "Token Swaps": "トークンスワップ",
+    "Protocol Upgrades": "プロトコルのアップグレード",
+    "Protocol Upgrades eg": "（例：新規BitDAOプロダクトやパートナー統合など）",
+    "BitDAO TREASURY": "BitDAOが保有する資産",
+    "BitDAO GOVERNANCE": "BitDAOのガバナンス",
+    "Contributions": "出資",
+    "Proposal and Voting": "提案<br>と投票",
+    "Execution": "実行",
+    "Ecosystem Growth": "エコシステム{0}の成長",
+    "growingDesc": "私たちは一緒にビジョンの実現を目指すコミュニティを求めています。<br>ぜひフォーラムとガバナンス・プロセスにご参加ください。",
+    "Enter Forum": "フォーラムに参加",
+    "Documents": "資料"
 }

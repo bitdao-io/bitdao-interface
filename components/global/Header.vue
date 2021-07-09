@@ -11,7 +11,7 @@
           rel="noopener noreferrer"
           target="_blank"
         >
-          Docs
+          {{ $t('Docs') }}
         </a>
         <a
           href="https://snapshot.org/#/bitdao.eth"

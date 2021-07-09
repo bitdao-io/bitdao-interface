@@ -40,7 +40,7 @@
         "button": "PARTICIPAR AHORA"
     },
     "growth": {
-        "title": "<span class='black'>Crecimiento del</span> ecosistema de BitDAO",
+        "title": "<span class='pink'>Creciendo</span> el <span class='blue'>ecosistema de BitDAO</span>",
         "content": [{
             "title": "APOYO DE BYBIT",
             "desc": "Bybit es el primer socio de BitDAO, contribuyendo con 2.5bps de volumen de negociación de futuros a la tesorería de BitDAO."
@@ -70,5 +70,33 @@
     "About Us": "About Us",
     "API Docs": "API Docs",
     "Careers": "Careers",
-    "BitDAODesc": "BitDAO is an on-chain protocol governed by BIT token holders"
+    "BitDAODesc": "Apoyando a las finanzas y economías tokenizadas descentralizada",
+    "Docs": "Docs",
+    "EveryBitCounts": "CADA <span class='blue'>BIT</span> <span class='pink'>CUENTA</span>",
+    "HomeSubtitle": "Únase a la más grande tesorería administrada por un DAO, asóciese con protocolos líderes y participe en la creación del futuro de la finanzas.",
+    "LearnMore": "Saber Más",
+    "SeeTreasury": "Ver Tesorería",
+    "SeeAnalytics": "Ver Analíticas",
+    "PartnerContributions": "Contribuciones de Socios",
+    "PartnerContributionsTips": "*Contribuciones actuales y prometidas, incluidos 2.5bps del volumen diario de negociación de futuros de Bybit",
+    "Period": "Período",
+    "Daily Average": "Anualizado",
+    "Annualized": "Ver Analíticas",
+    "Yesterday": "Ayer",
+    "LastDays": "Últimos {0} días",
+    "Partner Token Growth": "Crecimiento del token",
+    "BitDAO Protocol Contributions": "Contribuciones del protocolo de BitDAO",
+    "Grants": "Subsidios",
+    "Token Swaps": "Intercambios",
+    "Protocol Upgrades": "Actualizaciones de protocolo",
+    "Protocol Upgrades eg": "e.g. nuevos productos e integraciones de BitDAO",
+    "BitDAO TREASURY": "Tesorería de BitDAO",
+    "BitDAO GOVERNANCE": "Gobernancia de BitDAO",
+    "Contributions": "Contribuciones",
+    "Proposal and Voting": "Propuestas<br> y votación",
+    "Execution": "Ejecución",
+    "Ecosystem Growth": "Crecimiento{0} del ecosistema",
+    "growingDesc": "Hacemos un llamado a la comunidad para definir y construir nuestra visión juntos.<br> Participa en nuestro foro y envía propuestas.",
+    "Enter Forum": "PARTICIPAR AHORA",
+    "Documents": "DOCUMENTOS"
 }
