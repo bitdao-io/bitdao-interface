@@ -3,7 +3,7 @@
     <div class="footer-container">
       <div class="title-desc">
         <img class="footer-logo" src="@/assets/image/logo.svg" alt="LOGO">
-        <p>{{ $t('BitDAODesc') }}</p>
+        <p :class="{'noWrap': $i18n.locale === 'jp' }">{{ $t('BitDAODesc') }}</p>
       </div>
       <div class="social">
         <h2>{{ $t('social') }}</h2>
@@ -130,6 +130,9 @@
 </template>
 
 <style scoped lang="scss">
+.noWrap {
+  white-space: nowrap;
+}
 footer {
   background: linear-gradient(180deg, #ECF8FF 0%, rgba(255, 255, 255, 0) 100%);
   color: #2D82B7;
