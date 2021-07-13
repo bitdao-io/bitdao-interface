@@ -29,6 +29,8 @@
 
 <script>
 import { GChart } from 'vue-google-charts'
+import API from '@/utils/APIs'
+
 export default {
   components: {
     GChart
@@ -99,7 +101,7 @@ export default {
     },
     async getData () {
       try {
-        const charts = await this.$axios.$get('/api/service/chart', { params: { day: 30 } })
+        const charts = await this.$axios.$get(API.chart, { params: { day: 30 } })
         if (charts.success === true) {
           const chartData = []
           const { list = [] } = charts.body
@@ -115,7 +117,7 @@ export default {
         } else {
           this.handleEmptyCharts()
         }
-        const balance = await this.$axios.$get('/api/service/pledge-sum')
+        const balance = await this.$axios.$get(API.pledgeSum)
         if (balance.success === true) {
           this.usdTotal = balance.body.sumUsd || 0
         }

@@ -68,6 +68,7 @@
 // import JsonExcel from 'vue-json-excel'
 import numeral from 'numeral'
 // import Export2Excel from '@/vendor/Export2Excel'
+import API from '@/utils/APIs'
 
 export default {
   components: {
@@ -99,7 +100,7 @@ export default {
     },
     async getHistory () {
       this.loading = true
-      const data = await this.$axios.$get('/api/service/chart', { params: { day: 100 } })
+      const data = await this.$axios.$get(API.chart, { params: { day: 100 } })
       this.loading = false
       if (data.success === true) {
         const { list, ethPrice } = data.body

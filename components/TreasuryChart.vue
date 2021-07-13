@@ -32,10 +32,9 @@
         <h2 class="title">
           {{ $t('PartnerContributions') }}
         </h2>
-        <p class="subtitle">
-        </p>
+        <p class="subtitle" />
         <PledgedBalance />
-        <p class="tips" v-html="$t('PartnerContributionsTips')"></p>
+        <p class="tips" v-html="$t('PartnerContributionsTips')" />
         <div class="box-button-container">
           <a
             href="/analytics"
@@ -63,6 +62,7 @@
 </template>
 
 <script>
+import API from '@/utils/APIs'
 import CurrentBalance from './CurrentBalance.vue'
 import PledgedBalance from './home/PledgedBalance.vue'
 
@@ -94,7 +94,7 @@ export default {
     async getData () {
       this.loading = true
       try {
-        const data = await this.$axios.$get('/api/service/balance')
+        const data = await this.$axios.$get(API.balance)
         this.loading = false
         if (data.success === true) {
           const chartData = []

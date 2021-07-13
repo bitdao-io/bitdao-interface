@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import API from '@/utils/APIs'
 export default {
   data () {
     return {
@@ -71,7 +72,7 @@ export default {
     },
     async getHistory (pageIndex) {
       this.loading = true
-      const data = await this.$axios.$get(`/api/service/inject-history?page=${pageIndex}&size=${this.pageSize}`)
+      const data = await this.$axios.$get(`${API.injectHistory}?page=${pageIndex}&size=${this.pageSize}`)
       this.loading = false
       if (data.success === true) {
         const { list, total } = data.body
