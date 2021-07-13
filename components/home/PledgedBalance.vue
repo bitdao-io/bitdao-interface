@@ -53,7 +53,7 @@ export default {
   methods: {
     async getChart90d () {
       this.loading = true
-      const data = await this.$axios.$get('/api/service/chart-90d')
+      const data = await this.$axios.$get('/api/service/chart', { params: { day: 30 } })
       this.loading = false
       if (data.success === true) {
         this.handleData(data.body.list)

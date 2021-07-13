@@ -1,8 +1,22 @@
 <template>
   <div class="trading-chart-container">
     <div class="title">
-      <h1>Daily Contribution by BitDAO Partners (Including Pledged and Actual)</h1>
-      <p>Total Contribution in USD Equivalent (Including Pledged and Actual): ${{ usdTotal }}</p>
+      <div class="parameters-section">
+        <p>Parameters</p>
+        <p>
+          text please see:
+          <a
+            href="http://docs.bitdao.io/partners/bybit-pledge"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            http://docs.bitdao.io/partners/bybit-pledge
+          </a>
+        </p>
+      </div>
+      <h2 class="analyze-section-title">Chart</h2>
+      <!-- <h1>Daily Contribution by BitDAO Partners (Including Pledged and Actual)</h1> -->
+      <!-- <p>Total Contribution in USD Equivalent (Including Pledged and Actual): ${{ usdTotal }}</p> -->
     </div>
     <GChart
       type="ColumnChart"
@@ -22,14 +36,14 @@ export default {
   data () {
     return {
       chartData: [
-        ['Date', 'ETH', 'USDT', 'USDC']
+        ['Date', 'Contribute Volume']
       ],
       usdTotal: 0,
       chartOptions: {
         chartArea: { width: '85%', height: '80%' },
         backgroundColor: 'transparent',
-        bar: { groupWidth: 50 },
-        colors: ['#5CC7F1', '#F8C3CB', '#0E47F0'],
+        bar: { groupWidth: 18 },
+        colors: ['#5CC7F1'],
         legend: {
           position: 'top',
           alignment: 'end',
@@ -53,7 +67,7 @@ export default {
         },
         vAxis: {
           baselineColor: '#ccc',
-          title: 'USD',
+          title: 'Bybit Contribution',
           titleTextStyle: {
             color: '#ccc',
             italic: true
@@ -79,20 +93,20 @@ export default {
   },
   methods: {
     handleEmptyCharts () {
-      const emptyArr = ['', 0, 0, 0]
+      const emptyArr = ['', 0]
       this.chartData = [...this.chartData, emptyArr]
       this.chartOptions.vAxis.maxValue = 10000000000
     },
     async getData () {
       try {
-        const charts = await this.$axios.$get('/api/service/chart-30d')
+        const charts = await this.$axios.$get('/api/service/chart', { params: { day: 30 } })
         if (charts.success === true) {
           const chartData = []
           const { list = [] } = charts.body
           if (list && list.length > 0) {
             list.forEach((item) => {
-              const { date, ethAmount, usdtAmount, usdcAmount } = item
-              chartData.push([date, ethAmount, usdtAmount, usdcAmount])
+              const { date, contributeVolume } = item
+              chartData.push([date, contributeVolume])
             })
             this.chartData = [...this.chartData, ...chartData]
           } else {
@@ -120,12 +134,20 @@ export default {
   height: 550px;
   margin-bottom: 100px;
   .title {
-    margin-left: 10px;
-    h1, p {
-      font-size: 16px;
-      font-weight: 500;
-      color: #3CA3D6;
-      line-height: 30px;
+    // h1, p {
+    //   font-size: 16px;
+    //   font-weight: 500;
+    //   color: #3CA3D6;
+    //   line-height: 30px;
+    // }
+    p {
+      line-height: 20px;
+      a {
+        color: #0E47EF;
+      }
+    }
+    .parameters-section {
+      margin-bottom: 2rem;
     }
   }
   .trading-chart {

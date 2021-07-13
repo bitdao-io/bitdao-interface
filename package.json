@@ -18,13 +18,16 @@
     "by-data-pool": "^1.5.0",
     "core-js": "^3.9.1",
     "element-ui": "^2.15.2",
+    "file-saver": "^2.0.5",
     "gsap": "^3.6.1",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-div": "^1.1.0",
     "numeral": "^2.0.6",
     "nuxt": "^2.15.3",
     "nuxt-i18n": "^6.27.0",
-    "vue-google-charts": "^0.3.3"
+    "vue-google-charts": "^0.3.3",
+    "vue-json-excel": "^0.3.0",
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
@@ -45,6 +48,7 @@
     "markdown-it-toc-done-right": "^4.2.0",
     "node-sass": "5.0.0",
     "sass-loader": "10.1.1",
+    "script-loader": "^0.7.2",
     "svg-sprite-loader": "^6.0.7"
   }
 }

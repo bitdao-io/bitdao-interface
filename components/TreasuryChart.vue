@@ -39,7 +39,7 @@
         <div class="box-button-container">
           <a
             href="/analytics"
-            class="bit-button isDisabled"
+            class="bit-button"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"
             target="_blank"

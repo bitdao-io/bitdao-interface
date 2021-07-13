@@ -179,6 +179,10 @@ export default {
     '/api': {
       target: 'http://www.public-test-1.bitdao.io',
       changeOrigin: true
+    },
+    '/api-test': {
+      target: 'http://www.public-test-1.bitdao.io',
+      changeOrigin: true
     }
   }
 }

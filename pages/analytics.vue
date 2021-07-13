@@ -6,9 +6,10 @@
         <h1 class="treasury-title">
           Analytics <svg-icon class="title-icon" icon-class="title-suffix" />
         </h1>
-        <ContributionTable />
+        <h2 class="treasury-subtitle">Bybit Contribution</h2>
       </div>
       <DataDailyTrading />
+      <DailyTradeTable />
     </div>
     <Footer />
     <Sidebar />
@@ -19,13 +20,13 @@
 import Header from '@/components/global/Header.vue'
 import Footer from '@/components/global/Footer.vue'
 import DataDailyTrading from '@/components/mdx/DataDailyTrading.vue'
-import ContributionTable from '@/components/mdx/ContributionTable.vue'
+import DailyTradeTable from '@/components/mdx/DailyTradeTable.vue'
 export default {
   components: {
     Header,
     Footer,
     DataDailyTrading,
-    ContributionTable
+    DailyTradeTable
   },
   head: {
     title: 'BitDAO | Analytics'
@@ -44,21 +45,24 @@ export default {
     padding: 50px 0;
   }
   .title-table {
-    margin-bottom: 100px;
     width: 100%;
     max-width: 1000px;
-    padding: 10px;
   }
   .treasury-title {
     font-size: 48px;
     line-height: 61px;
     color: #3CA3D6;
-    font-weight: 700;
     align-self: flex-start;
-    margin-bottom: 50px;
+    text-transform: uppercase;
     .title-icon {
       font-size: 10px;
     }
+  }
+  .treasury-subtitle {
+    font-size: 24px;
+    color: #0E47EF;
+    font-weight: 700;
+    margin: 2rem 0;
   }
 }
 </style>
