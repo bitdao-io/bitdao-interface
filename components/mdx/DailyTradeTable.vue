@@ -14,10 +14,12 @@
         >
           <el-table-column
             prop="date"
+            width="200"
             label="Date"
           />
           <el-table-column
             label="Trade Volume"
+            width="150"
             :show-overflow-tooltip="true"
           >
             <template slot-scope="scope">
@@ -28,6 +30,7 @@
           </el-table-column>
           <el-table-column
             label="2.5bps Contribution"
+            width="180"
             :show-overflow-tooltip="true"
           >
             <template slot-scope="scope">
@@ -230,8 +233,8 @@ export default {
     color: #3CA3D6;
   }
   .el-table th>.cell, .el-table .cell {
-    padding-left: 40px;
-    padding-right: 40px;
+    // padding-left: 40px;
+    // padding-right: 40px;
     color: #121212;
   }
   .el-table td, .el-table th {
