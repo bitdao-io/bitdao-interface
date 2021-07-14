@@ -28,6 +28,8 @@
       <div class="partner-item"><img src="@/assets/image/partner/preangel.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/fin.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/pyth.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/kronos.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/wemix.svg" alt=""></div>
     </div>
   </section>
 </template>
