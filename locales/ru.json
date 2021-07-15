@@ -1,7 +1,7 @@
 {
     "Litepaper": "Litepaper",
     "Forum": "Обсуждение",
-    "Governance": "Governance",
+    "Governance": "Управление",
     "FAQ": "FAQ",
     "THE TREASURY": "THE TREASURY",
     "Annually *Est.": "Annually *Est.",
@@ -84,7 +84,7 @@
     "Daily Average": "В день",
     "Annualized": "В год",
     "Yesterday": "Вчера",
-    "LastDays": "За {0} днейLast",
+    "LastDays": "За {0} дней",
     "Partner Token Growth": "Рост партнерских токенов",
     "BitDAO Protocol Contributions": "Вклады в протокол BitDAO",
     "Grants": "Гранты",
