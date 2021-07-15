@@ -6,7 +6,7 @@
           {{ $t('treasury.current') }}
         </h2>
         <h2 class="total-balance">
-          ${{ usdTotal.toLocaleString() }}
+          ${{ parseInt(usdTotal).toLocaleString() }}
         </h2>
         <!-- <div v-if="chartNoData" class="no-data">
           <div class="no-data-chart"></div>
@@ -37,7 +37,7 @@
         <p class="tips" v-html="$t('PartnerContributionsTips')" />
         <div class="box-button-container">
           <a
-            href="/analytics"
+            :href="`${$i18n.locale === 'en' ? '' : $i18n.locale}/analytics`"
             class="bit-button"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"

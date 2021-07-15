@@ -60,7 +60,7 @@ export default {
   }
   .treasury-subtitle {
     font-size: 24px;
-    color: #0E47EF;
+    color: #121212;
     font-weight: 700;
     margin: 2rem 0;
   }

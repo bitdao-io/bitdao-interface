@@ -4,7 +4,7 @@
       Data
     </h1>
     <div class="c-table-title-container">
-      <span class="download-btn" @click="downloadCSV">Download CSV</span>
+      <span class="download-btn" @click="downloadCSV">Download Data</span>
     </div>
     <div class="c-table-wrapper">
       <client-only>
@@ -24,7 +24,7 @@
           >
             <template slot-scope="scope">
               <span>
-                ${{ scope.row.tradeVolume.toLocaleString() }}
+                ${{ parseInt(scope.row.tradeVolume).toLocaleString() }}
               </span>
             </template>
           </el-table-column>
@@ -35,22 +35,40 @@
           >
             <template slot-scope="scope">
               <span>
-                ${{ (Number(scope.row.tradeVolume) * 0.00025).toLocaleString() }}
+                ${{ parseInt(Number(scope.row.tradeVolume) * 0.00025).toLocaleString() }}
               </span>
             </template>
           </el-table-column>
           <el-table-column
             prop="ethCount"
             label="ETH units"
-          />
+          >
+            <template slot-scope="scope">
+              <span>
+                {{ parseInt(scope.row.ethCount).toLocaleString() }}
+              </span>
+            </template>
+          </el-table-column>
           <el-table-column
             prop="usdcCount"
             label="USDC units"
-          />
+          >
+            <template slot-scope="scope">
+              <span>
+                {{ parseInt(scope.row.usdcCount).toLocaleString() }}
+              </span>
+            </template>
+          </el-table-column>
           <el-table-column
             prop="usdtCount"
             label="USDT units"
-          />
+          >
+            <template slot-scope="scope">
+              <span>
+                {{ parseInt(scope.row.usdtCount).toLocaleString() }}
+              </span>
+            </template>
+          </el-table-column>
         </el-table>
         <el-pagination
           :hide-on-single-page="true"
@@ -106,14 +124,14 @@ export default {
       const data = await this.$axios.$get(API.chart, { params: { day: 100 } })
       this.loading = false
       if (data.success === true) {
-        const { list, ethPrice } = data.body
+        const { list } = data.body
         this.rawList = list
         this.list = this.pagination(1, this.pageSize, list)
         this.total = list.length
-        this.handleList(list, ethPrice)
+        this.handleList(list)
       }
     },
-    handleList (list, ethPrice) {
+    handleList (list) {
       const unitFormat = '0.00'
       const priceFormat = '$0.00'
       const result = []
@@ -143,7 +161,7 @@ export default {
           '50%',
           '25%',
           '25%',
-          numeral(ethPrice).format(priceFormat),
+          numeral(item.ethPrice).format(priceFormat),
           '$1.00',
           '$1.00',
           '0.00',
@@ -238,7 +256,7 @@ export default {
     color: #121212;
   }
   .el-table td, .el-table th {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 800px){

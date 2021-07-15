@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-container">
-      <a href="/" class="header__left">
+      <a :href="`/${$i18n.locale === 'en' ? '' : $i18n.locale}`" class="header__left">
         <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
       </a>
       <div class="header__right">

@@ -94,6 +94,7 @@ export default {
         annual: 0
       }]
       const format = '($0.00a)'
+      const formatNoDecimal = '($0a)'
       for (let i = 0; i < len; i++) {
         const item = list[i]
         const totalUsd = item.ethAmount + item.usdcAmount + item.usdtAmount
@@ -112,7 +113,7 @@ export default {
           _tableData[i].annual = '-'
         } else {
           _tableData[i].average = numeral(dailyUsd).format(format)
-          _tableData[i].annual = numeral(annualUsd).format(format)
+          _tableData[i].annual = numeral(annualUsd).format(formatNoDecimal)
         }
       }
       this.tableData = _tableData
@@ -143,7 +144,7 @@ export default {
   }
   .el-table {
     th:first-child>.cell {
-      padding-left: 20px;
+      padding-left: 10px;
     }
     th:not(:first-child)>.cell{
       text-align: center;
@@ -155,12 +156,13 @@ export default {
   .el-table__row {
     td:first-child {
       .cell {
-        padding-left: 20px;
+        padding-left: 10px;
       }
     }
     td:not(:first-child) {
       .cell {
         text-align: center;
+        text-transform: uppercase;
       }
     }
   }

@@ -135,7 +135,7 @@ export default {
     color: #121212;
   }
   .el-table td, .el-table th {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 800px){

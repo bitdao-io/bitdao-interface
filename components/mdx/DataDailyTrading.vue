@@ -2,9 +2,9 @@
   <div class="trading-chart-container">
     <div class="title">
       <div class="parameters-section">
-        <p>Parameters</p>
+        <h3 class="analyze-section-title">Parameters</h3>
         <p>
-          text please see:
+          See:
           <a
             href="http://docs.bitdao.io/partners/bybit-pledge"
             rel="noopener noreferrer"
@@ -14,26 +14,26 @@
           </a>
         </p>
       </div>
-      <h2 class="analyze-section-title">Chart</h2>
+      <!-- <h2 class="analyze-section-title">Chart</h2> -->
       <!-- <h1>Daily Contribution by BitDAO Partners (Including Pledged and Actual)</h1> -->
       <!-- <p>Total Contribution in USD Equivalent (Including Pledged and Actual): ${{ usdTotal }}</p> -->
     </div>
-    <GChart
+    <!-- <GChart
       type="ColumnChart"
       :data="chartData"
       :options="chartOptions"
       class="trading-chart"
-    />
+    /> -->
   </div>
 </template>
 
 <script>
-import { GChart } from 'vue-google-charts'
+// import { GChart } from 'vue-google-charts'
 import API from '@/utils/APIs'
 
 export default {
   components: {
-    GChart
+    // GChart
   },
   data () {
     return {
@@ -91,7 +91,7 @@ export default {
     }
   },
   mounted () {
-    this.getData()
+    // this.getData()
   },
   methods: {
     handleEmptyCharts () {
@@ -133,8 +133,8 @@ export default {
 .trading-chart-container {
   width: 100%;
   max-width: 1000px;
-  height: 550px;
-  margin-bottom: 100px;
+  // height: 550px;
+  // margin-bottom: 100px;
   .title {
     // h1, p {
     //   font-size: 16px;
