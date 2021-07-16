@@ -37,7 +37,7 @@
         <p class="tips" v-html="$t('PartnerContributionsTips')" />
         <div class="box-button-container">
           <a
-            :href="`${$i18n.locale === 'en' ? '' : $i18n.locale}/analytics`"
+            href="/analytics"
             class="bit-button"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"

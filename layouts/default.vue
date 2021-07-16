@@ -15,14 +15,29 @@ export default {
           content: this.$t('BitDAODesc')
         },
         {
-          hid: 'description',
-          name: 'description',
+          hid: 'og:description',
+          name: 'og:description',
           content: this.$t('BitDAODesc')
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.$t('BitDAODesc')
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: this.$t('BitDAOTitle')
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.$t('BitDAOTitle')
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.$t('BitDAOTitle')
         },
         {
           hid: 'og:url',
