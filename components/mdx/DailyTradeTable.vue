@@ -4,23 +4,22 @@
       Data
     </h1>
     <div class="c-table-title-container">
-      <span class="download-btn" @click="downloadCSV">Download Data</span>
+      <span class="download-btn" @click="downloadCSV">Download</span>
     </div>
     <div class="c-table-wrapper">
       <client-only>
         <el-table
           :data="list"
-          class="c-table"
+          class="c-table pc-table"
         >
           <el-table-column
             prop="date"
-            width="200"
             label="Date"
+            width="15%"
           />
           <el-table-column
             label="Trade Volume"
-            width="150"
-            :show-overflow-tooltip="true"
+            width="20%"
           >
             <template slot-scope="scope">
               <span>
@@ -29,9 +28,8 @@
             </template>
           </el-table-column>
           <el-table-column
-            label="2.5bps Contribution"
-            width="180"
-            :show-overflow-tooltip="true"
+            label="Contribution"
+            width="20%"
           >
             <template slot-scope="scope">
               <span>
@@ -41,7 +39,8 @@
           </el-table-column>
           <el-table-column
             prop="ethCount"
-            label="ETH units"
+            label="ETH"
+            width="15%"
           >
             <template slot-scope="scope">
               <span>
@@ -51,7 +50,8 @@
           </el-table-column>
           <el-table-column
             prop="usdcCount"
-            label="USDC units"
+            label="USDC"
+            width="15%"
           >
             <template slot-scope="scope">
               <span>
@@ -61,11 +61,30 @@
           </el-table-column>
           <el-table-column
             prop="usdtCount"
-            label="USDT units"
+            label="USDT"
+            width="15%"
           >
             <template slot-scope="scope">
               <span>
                 {{ parseInt(scope.row.usdtCount).toLocaleString() }}
+              </span>
+            </template>
+          </el-table-column>
+        </el-table>
+        <el-table
+          :data="list"
+          class="c-table mobile-table"
+        >
+          <el-table-column
+            prop="date"
+            label="Date"
+          />
+          <el-table-column
+            label="Contribution"
+          >
+            <template slot-scope="scope">
+              <span>
+                ${{ parseInt(Number(scope.row.tradeVolume) * 0.00025).toLocaleString() }}
               </span>
             </template>
           </el-table-column>
@@ -101,9 +120,10 @@ export default {
       rawList: [],
       loading: true,
       pageIndex: 1,
-      pageSize: 10,
+      pageSize: 15,
       total: 0,
-      tableData: []
+      tableData: [],
+      showTooltip: false
     }
   },
   mounted () {
@@ -189,7 +209,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .c-table-container {
-  overflow: hidden;
   .download-btn {
     font-weight: 400;
     font-size: 16px;
@@ -205,9 +224,9 @@ export default {
     // line-height: 31px;
     // color: #3CA3D6;
     background: linear-gradient(180deg, #FFF7F8 28.13%, #FFFFFF 54.17%);
-    padding: 30px 40px;
-    max-width: 1000px;
-    width: 100%;
+    padding: 30px 10px;
+    // max-width: 1000px;
+    // width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom: 1px solid #EBEEF5;
@@ -215,12 +234,12 @@ export default {
     justify-content: flex-end;
   }
   .c-table-wrapper {
-    width: 100%;
+    // width: 100%;
     position: relative;
   }
   .c-table {
     max-width: 1000px;
-    width: 100%;
+    // width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
@@ -233,6 +252,12 @@ export default {
       white-space: nowrap;
       color: #3CA3D6;
     }
+  }
+  .pc-table {
+    display: block;
+  }
+  .mobile-table {
+    display: none;
   }
 }
 
@@ -258,16 +283,35 @@ export default {
   .el-table td, .el-table th {
     padding: 10px 0;
   }
+  .el-table {
+    th:not(:first-child)>.cell{
+      text-align: right;
+    }
+    td:not(:first-child)>.cell{
+      text-align: right;
+    }
+  }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 650px){
   .c-table-container {
     .c-table-title {
       padding: 20px 10px;
+    }
+    .c-table-title-container {
+      padding: 15px 10px;
     }
   }
   /deep/ {
     .el-table th>.cell, .el-table .cell {
       padding: 0 10px;
+    }
+  }
+  .c-table-container {
+    .pc-table {
+      display: none;
+    }
+    .mobile-table {
+      display: block;
     }
   }
 }
