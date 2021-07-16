@@ -17,17 +17,17 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'title', name: 'title', content: 'BitDAO' },
       { hid: 'description', name: 'description', content: 'Supporting open finance and a decentralized tokenized economy.' },
-      { name: 'og:title', content: 'BitDAO' },
-      { name: 'og:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
-      { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://www.bitdao.io/' },
-      { name: 'og:image', content: 'https://www.bitdao.io/twitter-card.jpg' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:url', content: 'https://www.bitdao.io/' },
-      { name: 'twitter:title', content: 'BitDAO' },
-      { name: 'twitter:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
-      { name: 'twitter:creator', content: '@BitDAO_Official' },
-      { name: 'twitter:image', content: 'https://www.bitdao.io/twitter-card.jpg' }
+      { hid: 'og:title', name: 'og:title', content: 'BitDAO' },
+      { hid: 'og:description', name: 'og:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      { hid: 'og:url', name: 'og:url', content: 'https://www.bitdao.io/' },
+      { hid: 'og:image', name: 'og:image', content: 'https://www.bitdao.io/twitter-card.jpg' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:url', name: 'twitter:url', content: 'https://www.bitdao.io/' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'BitDAO' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Supporting open finance and a decentralized tokenized economy.' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@BitDAO_Official' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.bitdao.io/twitter-card.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
