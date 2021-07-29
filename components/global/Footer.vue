@@ -2,7 +2,10 @@
   <footer>
     <div class="footer-container">
       <div class="title-desc">
-        <img class="footer-logo" src="@/assets/image/logo.svg" alt="LOGO">
+        <!-- <div class="logo-bitdao"> -->
+        <img class="footer-logo" src="@/assets/image/BitDAO.png" alt="LOGO">
+        <!-- <h1>BitDAO</h1> -->
+        <!-- </div> -->
         <p :class="{'noWrap': $i18n.locale === 'jp' }">{{ $t('BitDAODesc') }}</p>
       </div>
       <div class="social">
@@ -196,6 +199,27 @@ footer {
     .footer-container {
       padding: 2rem;
       flex-wrap: wrap;
+    }
+  }
+}
+</style>
+
+<style lang="less">
+.logo-bitdao {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+  }
+  h1 {
+    margin: 0!important;
+    padding: 0!important;
+  }
+}
+header a:hover {
+  .logo-bitdao {
+    h1 {
+      color: #000;
     }
   }
 }

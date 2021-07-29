@@ -2,7 +2,10 @@
   <header>
     <div class="header-container">
       <a :href="`/${$i18n.locale === 'en' ? '' : $i18n.locale}`" class="header__left">
-        <img class="logo" src="@/assets/image/logo.svg" alt="LOGO">
+        <!-- <div class="logo-bitdao"> -->
+        <img class="logo" src="@/assets/image/BitDAO.png" alt="LOGO">
+        <!-- <h1>BitDAO</h1>
+        </div> -->
       </a>
       <div class="header__right">
         <a
@@ -75,7 +78,8 @@ header {
       font-size: 22px;
       font-weight: 700;
       .logo {
-        width: 100px;
+        // width: 100px;
+        height: 50px;
       }
     }
     .header__right {

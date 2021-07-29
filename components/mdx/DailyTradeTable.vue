@@ -152,7 +152,8 @@ export default {
       }
     },
     handleList (list) {
-      const unitFormat = '0.00'
+      const unitFormat = '0,0.00'
+      const unitFormat2 = '0,0'
       const priceFormat = '$0.00'
       const result = []
       for (const item of list) {
@@ -186,15 +187,16 @@ export default {
           '$1.00',
           '0.00',
           numeral(item.ethCount).format(unitFormat),
-          numeral(item.usdtCount).format(unitFormat),
-          numeral(item.usdcCount).format(unitFormat)
+          numeral(item.usdtCount).format(unitFormat2),
+          numeral(item.usdcCount).format(unitFormat2)
         ])
       }
       this.tableData = result
+      console.log(result)
     },
     downloadCSV () {
       import('@/vendor/Export2Excel').then((excel) => {
-        const tHeader = ['Date', 'Trade Volume', '2.5bps Contribution', 'BTC %', 'ETH %', 'USDT %', 'USDC %', 'ETHPrice', 'USDC Price', 'USDT Price', 'BTC Units', 'ETH Units', 'USDT Units', 'USDC Units']
+        const tHeader = ['Date', 'Trade Volume', 'Contribution', 'BTC %', 'ETH %', 'USDT %', 'USDC %', 'ETHPrice', 'USDC Price', 'USDT Price', 'BTC Units', 'ETH Units', 'USDT Units', 'USDC Units']
         excel.export_json_to_excel({
           header: tHeader, // 表头 必填
           data: this.tableData, // 具体数据 必填

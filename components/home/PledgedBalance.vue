@@ -23,8 +23,9 @@
 </template>
 
 <script>
-import numeral from 'numeral'
+// import numeral from 'numeral'
 import API from '@/utils/APIs'
+import { abbreviateNumber } from '@/utils/util'
 
 export default {
   data () {
@@ -93,8 +94,8 @@ export default {
         average: 0,
         annual: 0
       }]
-      const format = '($0.00a)'
-      const formatNoDecimal = '($0a)'
+      // const format = '($0.00a)'
+      // const formatNoDecimal = '($0a)'
       for (let i = 0; i < len; i++) {
         const item = list[i]
         const totalUsd = item.ethAmount + item.usdcAmount + item.usdtAmount
@@ -112,8 +113,8 @@ export default {
           _tableData[i].average = '-'
           _tableData[i].annual = '-'
         } else {
-          _tableData[i].average = numeral(dailyUsd).format(format)
-          _tableData[i].annual = numeral(annualUsd).format(formatNoDecimal)
+          _tableData[i].average = abbreviateNumber(dailyUsd)
+          _tableData[i].annual = abbreviateNumber(annualUsd)
         }
       }
       this.tableData = _tableData
