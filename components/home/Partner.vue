@@ -32,6 +32,7 @@
       <div class="partner-item"><img src="@/assets/image/partner/wemix.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/brooker.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/kenetic.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
     </div>
   </section>
 </template>
