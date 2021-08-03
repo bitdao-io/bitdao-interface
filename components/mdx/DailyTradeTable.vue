@@ -44,7 +44,7 @@
           >
             <template slot-scope="scope">
               <span>
-                {{ parseInt(scope.row.ethCount).toLocaleString() }}
+                {{ scope.row.ethCount.toLocaleString() }}
               </span>
             </template>
           </el-table-column>
