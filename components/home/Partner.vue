@@ -11,6 +11,7 @@
       <div class="partner-item"><img src="@/assets/image/partner/spartan.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/sushi.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/kain.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/jump.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/peak.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/amber.svg" alt=""></div>
@@ -22,7 +23,6 @@
       <div class="partner-item"><img src="@/assets/image/partner/longhash.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/alphanonce.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/iangels.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/uva.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/mgnr.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/la.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/preangel.svg" alt=""></div>
@@ -32,7 +32,7 @@
       <div class="partner-item"><img src="@/assets/image/partner/wemix.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/brooker.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/kenetic.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/uva.svg" alt=""></div>
     </div>
   </section>
 </template>
