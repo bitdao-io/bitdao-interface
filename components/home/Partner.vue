@@ -14,6 +14,7 @@
       <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/jump.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/peak.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/VRM.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/amber.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/cambium.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/coinhako.svg" alt=""></div>
