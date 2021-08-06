@@ -7,16 +7,16 @@
       <div class="partner-item"><img src="@/assets/image/partner/pantera.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/dragonfly.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/alan.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/bybit.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/spartan.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/sushi.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/spartan.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/bybit.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/kain.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/jump.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/peak.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/VRM.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/amber.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/cambium.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/amber.svg" alt=""></div>
+      <div class="partner-item"><img src="@/assets/image/partner/VRM.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/coinhako.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/fenbushi.svg" alt=""></div>
       <div class="partner-item"><img src="@/assets/image/partner/tembusu.svg" alt=""></div>
