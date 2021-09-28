@@ -1,39 +1,111 @@
 <template>
   <section class="partner">
-    <h1 class="title">{{ $t('partners') }}</h1>
+    <h1 class="title">
+      {{ $t('partners') }}
+    </h1>
     <div class="partner-logos">
-      <div class="partner-item"><img src="@/assets/image/partner/peter.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/founders.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/pantera.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/dragonfly.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/alan.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/sushi.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/spartan.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/bybit.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/kain.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/polygon.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/jump.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/peak.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/cambium.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/amber.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/VRM.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/coinhako.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/fenbushi.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/tembusu.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/ngc.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/longhash.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/alphanonce.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/iangels.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/mgnr.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/la.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/preangel.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/fin.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/pyth.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/kronos.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/wemix.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/brooker.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/kenetic.svg" alt=""></div>
-      <div class="partner-item"><img src="@/assets/image/partner/uva.svg" alt=""></div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/peter.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/founders.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/pantera.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/dragonfly.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/alan.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/sushi.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/spartan.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/bybit.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/kain.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/polygon.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/jump.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/peak.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/cambium.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/amber.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/VRM.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/coinhako.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/fenbushi.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/tembusu.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/ngc.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/longhash.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/alphanonce.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/iangels.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/mgnr.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/la-new.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/preangel.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/fin.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/pyth.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/kronos.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/wemix.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/brooker.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/kenetic.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/uva.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/ctj.svg" alt="">
+      </div>
+      <div class="partner-item">
+        <img src="@/assets/image/partner/myforex.svg" alt="">
+      </div>
     </div>
   </section>
 </template>

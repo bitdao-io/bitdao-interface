@@ -1,7 +1,6 @@
 <template>
   <section class="bitflow">
-    <h1 class="title" v-html="$t('growth.title')">
-    </h1>
+    <h1 class="title" v-html="$t('growth.title')" />
     <div class="flow-pc">
       <div class="left">
         <div class="flow-icon">
@@ -20,18 +19,22 @@
       <div class="middle">
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon7.svg" alt="">
-              <p v-html="$t('BitDAO TREASURY')"></p>
+          <p>
+            {{ $t('BitDAO TREASURY') }}
+          </p>
         </div>
         <div class="middle-link">
           <img src="@/assets/image/flow/link.svg" alt="">
           <div class="bitflow-step bitflow-step2">
             <span class="bitflow-step-num">2</span>
-            <span v-html="$t('Proposal and Voting')"></span>
+            <span>{{ $t('Proposal and Voting') }}</span>
           </div>
         </div>
         <div class="middle-icon">
           <img src="@/assets/image/flow/icon8.svg" alt="">
-          <p v-html="$t('BitDAO GOVERNANCE')"></p>
+          <p>
+            {{ $t('BitDAO GOVERNANCE') }}
+          </p>
         </div>
       </div>
       <div class="right">
@@ -47,8 +50,12 @@
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon6.svg" alt="">
-          <p>{{ $t('Protocol Upgrades') }}</p>
-          <p class="p-eg">{{ $t('Protocol Upgrades eg') }}</p>
+          <p>
+            {{ $t('Protocol Upgrades') }}
+          </p>
+          <p class="p-eg">
+            {{ $t('Protocol Upgrades eg') }}
+          </p>
         </div>
       </div>
       <div class="arrow-right1">
@@ -100,18 +107,24 @@
           <div class="middle-icon-container">
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon7.svg" alt="">
-              <p v-html="$t('BitDAO TREASURY')"></p>
+              <p>
+                {{ $t('BitDAO TREASURY') }}
+              </p>
             </div>
             <div class="middle-link mobile-arrow">
               <img src="@/assets/image/flow/mobile/link.svg" alt="">
               <div class="bitflow-step bitflow-step2">
                 <span class="bitflow-step-num">2</span>
-                <span v-html="$t('Proposal and Voting')"></span>
+                <span>
+                  {{ $t('Proposal and Voting') }}
+                </span>
               </div>
             </div>
             <div class="middle-icon">
               <img src="@/assets/image/flow/icon8.svg" alt="">
-              <p v-html="$t('BitDAO GOVERNANCE')"></p>
+              <p>
+                {{ $t('BitDAO GOVERNANCE') }}
+              </p>
             </div>
           </div>
           <div class="mobile-arrow">
@@ -125,7 +138,7 @@
         <div class="middle-right mobile-arrow">
           <img src="@/assets/image/flow/mobile/arrow-up.svg" alt="">
           <div class="bitflow-step bitflow-step4">
-            <span v-html="$t('Ecosystem Growth', ['<br>'])"></span>
+            <span>{{ $t('Ecosystem Growth', ['<br>']) }}</span>
             <span class="bitflow-step-num">4</span>
           </div>
         </div>
@@ -133,20 +146,28 @@
       <div class="bottom">
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon4.svg" alt="">
-          <p>{{ $t('Grants') }}</p>
+          <p>
+            {{ $t('Grants') }}
+          </p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon6.svg" alt="">
-          <p>{{ $t('Protocol Upgrades') }}</p>
-          <p class="p-eg">{{ $t('Protocol Upgrades eg') }}</p>
+          <p>
+            {{ $t('Protocol Upgrades') }}
+          </p>
+          <p class="p-eg">
+            {{ $t('Protocol Upgrades eg') }}
+          </p>
         </div>
         <div class="flow-icon">
           <img src="@/assets/image/flow/icon5.svg" alt="">
-          <p>{{ $t('Token Swaps') }}</p>
+          <p>
+            {{ $t('Token Swaps') }}
+          </p>
         </div>
       </div>
     </div>
-    <p class="flow-subtitle" v-html="$t('growingDesc')"></p>
+    <p class="flow-subtitle" v-html="$t('growingDesc')" />
     <div class="flow-button">
       <a
         href="https://discourse.bitdao.io/"

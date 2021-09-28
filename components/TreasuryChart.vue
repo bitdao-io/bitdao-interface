@@ -8,14 +8,7 @@
         <h2 class="total-balance">
           ${{ parseInt(usdTotal).toLocaleString() }}
         </h2>
-        <!-- <div v-if="chartNoData" class="no-data">
-          <div class="no-data-chart"></div>
-        </div>
-        <CurrentBalance v-else :chart-data="chartData" /> -->
         <CurrentBalance :chart-data="barChart" />
-        <!-- <p class="tips">
-          {{ $t('treasury.tips') }}
-        </p> -->
         <div class="box-button-container">
           <a
             href="https://etherscan.io/address/0x78605Df79524164911C144801f41e9811B7DB73D"
@@ -32,9 +25,11 @@
         <h2 class="title">
           {{ $t('PartnerContributions') }}
         </h2>
-        <p class="subtitle" />
+
         <PledgedBalance />
-        <p class="tips" v-html="$t('PartnerContributionsTips')" />
+        <p class="tips">
+          {{ $t('PartnerContributionsTips') }}
+        </p>
         <div class="box-button-container">
           <a
             href="/analytics"
@@ -62,9 +57,9 @@
 </template>
 
 <script>
-import API from '@/utils/APIs'
 import CurrentBalance from './CurrentBalance.vue'
 import PledgedBalance from './home/PledgedBalance.vue'
+import API from '@/utils/APIs'
 
 export default {
   components: {

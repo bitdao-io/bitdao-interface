@@ -2,7 +2,9 @@
   <div class="trading-chart-container">
     <div class="title">
       <div class="parameters-section">
-        <h3 class="analyze-section-title">Parameters</h3>
+        <h3 class="analyze-section-title">
+          Parameters
+        </h3>
         <p>
           See:
           <a
