@@ -43,7 +43,6 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/vue_plugins.js',
-    { src: '~plugins/ga.js', mode: 'client' },
     { src: '@/plugins/element-ui', ssr: false }
   ],
 
@@ -176,13 +175,5 @@ export default {
     }
   },
   proxy: {
-    '/api': {
-      target: 'http://www.public-test-1.bitdao.io',
-      changeOrigin: true
-    },
-    '/api-test': {
-      target: 'http://www.public-test-1.bitdao.io',
-      changeOrigin: true
-    }
   }
 }

