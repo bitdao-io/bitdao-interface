@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="chart-box2">
-        <h2 class="title">
+        <h2 class="title mb-30">
           {{ $t('PartnerContributions') }}
         </h2>
 
@@ -112,6 +112,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mb-30 {
+  margin-bottom: 30px;
+}
 .treasury {
   // background: linear-gradient(180deg, #D9E5F3, rgba(247, 238, 246, 0.6));
   display: flex;
@@ -174,7 +177,6 @@ export default {
     }
     .total-balance {
       font-size: 2.6rem;
-      margin-bottom: 50px;
     }
     .tips {
       font-weight: normal;
