@@ -6,7 +6,9 @@
         <img class="footer-logo" src="@/assets/image/BitDAO.png" alt="LOGO">
         <!-- <h1>BitDAO</h1> -->
         <!-- </div> -->
-        <p :class="{'noWrap': $i18n.locale === 'jp' }">{{ $t('BitDAODesc') }}</p>
+        <p :class="{'noWrap': $i18n.locale === 'jp' }">
+          {{ $t('BitDAODesc') }}
+        </p>
       </div>
       <div class="social">
         <h2>{{ $t('social') }}</h2>
@@ -85,14 +87,14 @@
           >
             {{ $t('Forum') }}
           </a>
-          <!-- <a
-            class="isDisabled"
-            href=""
+          <a
+            href="https://delegate.bitdaotools.io/"
             data-buried="click,footer_governance,governance_type=delegate"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            Delegate
-          </a> -->
+            {{ $t('delegate') }}
+          </a>
           <a
             href="https://snapshot.org/#/bitdao.eth"
             data-buried="click,footer_governance,governance_type=vote"
@@ -133,75 +135,75 @@
 </template>
 
 <style scoped lang="scss">
-.noWrap {
-  white-space: nowrap;
-}
-footer {
-  background: linear-gradient(180deg, #ECF8FF 0%, rgba(255, 255, 255, 0) 100%);
-  color: #2D82B7;
-  margin: auto;
-  .footer-logo {
-    height: 80px;
-    margin-left: -15px;
+  .noWrap {
+    white-space: nowrap;
   }
-  .footer-container{
-    max-width: 1000px;
-    box-sizing: border-box;
-    padding: 5rem 0;
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    a {
-      color: #2D82B7;
-    }
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 22px;
-    }
-    .social {
-      margin-top: 2rem;
-      margin-right: 2rem;
-      h2 {
-        text-transform: uppercase;
-      }
-    }
-    .title-desc {
-      width: 280px;
-      margin-top: 2rem;
-      margin-right: 2rem;
-      h1 {
-        font-size: 42px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-      p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-      }
-    }
-    .link-container {
-      display: flex;
-      flex-direction: column;
-      a {
-        margin-top: 20px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1000px){
   footer {
-    .footer-container {
-      padding: 2rem;
-      flex-wrap: wrap;
+    background: linear-gradient(180deg, #ECF8FF 0%, rgba(255, 255, 255, 0) 100%);
+    color: #2D82B7;
+    margin: auto;
+    .footer-logo {
+      height: 80px;
+      margin-left: -15px;
+    }
+    .footer-container{
+      max-width: 1000px;
+      box-sizing: border-box;
+      padding: 5rem 0;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      a {
+        color: #2D82B7;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+      .social {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        h2 {
+          text-transform: uppercase;
+        }
+      }
+      .title-desc {
+        width: 280px;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        h1 {
+          font-size: 42px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin-top: 20px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
     }
   }
-}
+
+  @media screen and (max-width: 1000px){
+    footer {
+      .footer-container {
+        padding: 2rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
 </style>
 
 <style lang="less">

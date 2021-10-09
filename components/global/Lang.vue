@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="dropdown-container"
-  >
+  <div class="dropdown-container">
     <div class="dropdown-inner">
       <button
         class="dropdown-button"
@@ -16,10 +14,7 @@
       <transition
         name="drop-fade"
       >
-        <ul
-          v-show="isOptionsExpanded"
-          class="dropdown-ul"
-        >
+        <ul v-show="isOptionsExpanded" class="dropdown-ul">
           <li
             v-for="(option, index) in options"
             :key="index"
@@ -28,7 +23,6 @@
             @click="setOption(option)"
           >
             <img :src="icons[option.key]" :alt="option.value" class="lang-img">
-            <!-- <svg-icon :icon-class="`lang-${option.key}`" class="lang-icon" /> -->
             {{ option.value }}
           </li>
         </ul>
@@ -43,7 +37,7 @@ export default {
     return {
       isOptionsExpanded: false,
       selectedOption: {
-        key: 'EN',
+        key: 'en',
         value: 'EN'
       },
       options: [
