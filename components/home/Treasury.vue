@@ -20,7 +20,7 @@
         <h2 class="total-balance">
           $1,000,000
         </h2>
-        <PledgedBalance />
+<!--        <PledgedBalance />-->
       </div>
     </div>
     <a
@@ -38,12 +38,12 @@
 
 <script>
 import CurrentBalance from './CurrentBalance.vue'
-import PledgedBalance from './PledgedBalance.vue'
+// import PledgedBalance from './PledgedBalance.vue'
 
 export default {
   components: {
-    CurrentBalance,
-    PledgedBalance
+    CurrentBalance
+    // PledgedBalance
   },
   data () {
     return {

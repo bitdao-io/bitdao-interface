@@ -26,13 +26,13 @@
           {{ $t('PartnerContributions') }}
         </h2>
 
-        <PledgedBalance />
+<!--        <PledgedBalance />-->
         <p class="tips">
           {{ $t('PartnerContributionsTips') }}
         </p>
         <div class="box-button-container">
           <a
-            href="/analytics"
+            href="https://bitdao.io/analytics"
             class="bit-button"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"
@@ -58,13 +58,13 @@
 
 <script>
 import CurrentBalance from './CurrentBalance.vue'
-import PledgedBalance from './home/PledgedBalance.vue'
+// import PledgedBalance from './home/PledgedBalance.vue'
 import API from '@/utils/APIs'
 
 export default {
   components: {
-    CurrentBalance,
-    PledgedBalance
+    CurrentBalance
+    // PledgedBalance
   },
   data () {
     return {
@@ -191,6 +191,7 @@ export default {
     color: #fff;
     padding: 20px 0;
     width: 380px;
+    height: 250px;
     text-align: center;
     .title {
       font-weight: normal;
