@@ -24,7 +24,7 @@
 
 <script>
 // import numeral from 'numeral'
-import API from '@/utils/APIs'
+// import API from '@/utils/APIs'
 import { abbreviateNumber } from '@/utils/util'
 
 export default {
@@ -56,7 +56,7 @@ export default {
   methods: {
     async getChart90d () {
       this.loading = true
-      const data = await this.$axios.$get(API.chart, { params: { day: 30 } })
+      const data = await this.$axios.$get(this.$config.chartApi)
       this.loading = false
       if (data.success === true) {
         this.handleData(data.body.list)

@@ -59,7 +59,7 @@
 <script>
 import CurrentBalance from './CurrentBalance.vue'
 import PledgedBalance from './home/PledgedBalance.vue'
-import API from '@/utils/APIs'
+// import API from '@/utils/APIs'
 
 export default {
   components: {
@@ -89,7 +89,7 @@ export default {
     async getData () {
       this.loading = true
       try {
-        const data = await this.$axios.$get(API.balance)
+        const data = await this.$axios.$get(this.$config.balanceApi)
         this.loading = false
         if (data.success === true) {
           const chartData = []
@@ -192,6 +192,9 @@ export default {
     padding: 20px 0;
     width: 380px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .title {
       font-weight: normal;
       font-size: 24px;
