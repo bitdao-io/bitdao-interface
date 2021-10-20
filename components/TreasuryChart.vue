@@ -36,7 +36,6 @@
             class="bit-button"
             data-buried="click,banner_treasury_seeanalytics"
             rel="noopener noreferrer"
-            target="_blank"
           >
             <span class="bit-button_text">{{ $t('SeeAnalytics') }}</span>
           </a>
