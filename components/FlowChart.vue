@@ -1,3 +1,4 @@
+ <!-- eslint-disable vue/no-v-html -->
 <template>
   <section class="bitflow">
     <h1 class="title" v-html="$t('growth.title')" />
@@ -27,7 +28,7 @@
           <img src="@/assets/image/flow/link.svg" alt="">
           <div class="bitflow-step bitflow-step2">
             <span class="bitflow-step-num">2</span>
-            <span>{{ $t('Proposal and Voting') }}</span>
+            <span v-html="$t('Proposal and Voting')" />
           </div>
         </div>
         <div class="middle-icon">
@@ -115,9 +116,7 @@
               <img src="@/assets/image/flow/mobile/link.svg" alt="">
               <div class="bitflow-step bitflow-step2">
                 <span class="bitflow-step-num">2</span>
-                <span>
-                  {{ $t('Proposal and Voting') }}
-                </span>
+                <span v-html="$t('Proposal and Voting')" />
               </div>
             </div>
             <div class="middle-icon">
@@ -138,7 +137,7 @@
         <div class="middle-right mobile-arrow">
           <img src="@/assets/image/flow/mobile/arrow-up.svg" alt="">
           <div class="bitflow-step bitflow-step4">
-            <span>{{ $t('Ecosystem Growth', ['<br>']) }}</span>
+            <span v-html="$t('Ecosystem Growth', ['<br>'])" />
             <span class="bitflow-step-num">4</span>
           </div>
         </div>
