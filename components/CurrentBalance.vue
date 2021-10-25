@@ -35,6 +35,13 @@
       </div>
       <el-progress :show-text="false" color="#94dbfe" :stroke-width="18" :percentage="usdcPrecent" />
     </div>
+    <div class="balance-progress">
+      <div class="balance-progress__text">
+        <span>FTT</span>
+        <span>${{ fttInUsd.toLocaleString() }}</span>
+      </div>
+      <el-progress :show-text="false" color="#f69baa" :stroke-width="18" :percentage="fttPrecent" />
+    </div>
   </div>
 </template>
 
@@ -48,6 +55,7 @@ export default {
           ethCount: 0,
           bitCount: 0,
           xsushiCount: 0,
+          fttCount: 0,
           usdtCount: 0,
           usdcCount: 0,
           usdTotal: 0,
@@ -101,6 +109,15 @@ export default {
       const { usdcCount = 0, usdTotal = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return usdcCount / usdTotal * 100
+    },
+    fttInUsd () {
+      const { fttCount = 0, fttPrice = 0 } = this.chartData
+      return parseInt(fttCount * fttPrice)
+    },
+    fttPrecent () {
+      const { fttCount = 0, usdTotal = 0, fttPrice = 0 } = this.chartData
+      if (usdTotal === 0) { return 0 }
+      return (fttCount * fttPrice) / usdTotal * 100
     }
   }
 }
