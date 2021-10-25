@@ -103,7 +103,7 @@ export default {
     },
     async getData () {
       try {
-        const charts = await this.$axios.$get(API.chart, { params: { day: 30 } })
+        const charts = await this.$axios.$get(this.$config.chartApi)
         if (charts.success === true) {
           const chartData = []
           const { list = [] } = charts.body

@@ -8,7 +8,14 @@ function resolve (dir) {
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  // env config https://nuxtjs.org/tutorials/moving-from-nuxtjs-dotenv-to-runtime-config/
+  publicRuntimeConfig: {
+    apiBase: process.env.API_BASE,
+    balanceApi: '${API_BASE}${BALANCE_PATH}',
+    chartApi: '${API_BASE}${CHART_PATH}'
+  },
+  privateRuntimeConfig: {
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'BitDAO',
@@ -52,8 +59,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
