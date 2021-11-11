@@ -5,35 +5,42 @@
         <span>ETH</span>
         <span>${{ ethInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#3CA3D6" :stroke-width="18" :percentage="ethPrecent" />
+      <el-progress :show-text="false" color="#3CA3D6" :stroke-width="18" :percentage="ethPercent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>BIT</span>
         <span>${{ bitInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#F9C3CB" :stroke-width="18" :percentage="bitPrecent" />
+      <el-progress :show-text="false" color="#F9C3CB" :stroke-width="18" :percentage="bitPercent" />
+    </div>
+    <div class="balance-progress">
+      <div class="balance-progress__text">
+        <span>FTT</span>
+        <span>${{ fttInUsd.toLocaleString() }}</span>
+      </div>
+      <el-progress :show-text="false" color="#5cc7f1" :stroke-width="18" :percentage="fttPercent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>xSUSHI</span>
         <span>${{ xsushiInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#5cc7f1" :stroke-width="18" :percentage="xsushiPrecent" />
+      <el-progress :show-text="false" color="#5cc7f1" :stroke-width="18" :percentage="xsushiPercent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>USDT</span>
         <span>${{ usdtInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#f69baa" :stroke-width="18" :percentage="usdtPrecent" />
+      <el-progress :show-text="false" color="#f69baa" :stroke-width="18" :percentage="usdtPercent" />
     </div>
     <div class="balance-progress">
       <div class="balance-progress__text">
         <span>USDC</span>
         <span>${{ usdcInUsd.toLocaleString() }}</span>
       </div>
-      <el-progress :show-text="false" color="#94dbfe" :stroke-width="18" :percentage="usdcPrecent" />
+      <el-progress :show-text="false" color="#94dbfe" :stroke-width="18" :percentage="usdcPercent" />
     </div>
   </div>
 </template>
@@ -47,6 +54,7 @@ export default {
         return {
           ethCount: 0,
           bitCount: 0,
+          fttCount: 0,
           xsushiCount: 0,
           usdtCount: 0,
           usdcCount: 0,
@@ -61,7 +69,7 @@ export default {
       const { ethCount = 100, ethPrice = 1000 } = this.chartData
       return parseInt(ethCount * ethPrice)
     },
-    ethPrecent () {
+    ethPercent () {
       const { ethCount = 0, ethPrice = 0, usdTotal = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return (ethCount * ethPrice) / usdTotal * 100
@@ -70,7 +78,7 @@ export default {
       const { bitCount = 0, bitPrice = 0 } = this.chartData
       return parseInt(bitCount * bitPrice)
     },
-    bitPrecent () {
+    bitPercent () {
       const { bitCount = 0, usdTotal = 0, bitPrice = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return (bitCount * bitPrice) / usdTotal * 100
@@ -79,16 +87,25 @@ export default {
       const { xsushiCount = 0, xsushiPrice = 0 } = this.chartData
       return parseInt(xsushiCount * xsushiPrice)
     },
-    xsushiPrecent () {
+    xsushiPercent () {
       const { xsushiCount = 0, usdTotal = 0, xsushiPrice = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return (xsushiCount * xsushiPrice) / usdTotal * 100
+    },
+    fttInUsd () {
+      const { fttCount = 0, fttPrice = 0 } = this.chartData
+      return parseInt(fttCount * fttPrice)
+    },
+    fttPercent () {
+      const { fttCount = 0, usdTotal = 0, fttPrice = 0 } = this.chartData
+      if (usdTotal === 0) { return 0 }
+      return (fttCount * fttPrice) / usdTotal * 100
     },
     usdtInUsd () {
       const { usdtCount } = this.chartData
       return parseInt(usdtCount)
     },
-    usdtPrecent () {
+    usdtPercent () {
       const { usdtCount = 0, usdTotal = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return usdtCount / usdTotal * 100
@@ -97,7 +114,7 @@ export default {
       const { usdcCount } = this.chartData
       return parseInt(usdcCount)
     },
-    usdcPrecent () {
+    usdcPercent () {
       const { usdcCount = 0, usdTotal = 0 } = this.chartData
       if (usdTotal === 0) { return 0 }
       return usdcCount / usdTotal * 100
