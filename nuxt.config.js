@@ -75,7 +75,7 @@ export default {
   ],
   gtm: {
     enabled: true,
-    id: 'G-9K9NSNF0QY'
+    id: 'GTM-5SM4F2M'
   },
   i18n,
   markdownit: {
